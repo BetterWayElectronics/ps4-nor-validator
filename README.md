@@ -24,16 +24,16 @@ This program is NOT perfect, but it is WAY better than just using a hex editor o
 
 This also goes above and beyond that of the psdevwiki page regarding the main flash of the PS4 (Thank you cfwprpht). 
 
-======================================================================================
+#### TLDR: ####
 
-- TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 - but NOT perconsole data!
-- TLDR; Will this prove my BLOD is software based? Yes, if the dump comes up 100% valid then it is likely a hardware issue - I recommend enabling UART and seeing its output.
+##### Will this fix my BLOD? #####
+Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 - but NOT perconsole data!
+##### Will this prove my BLOD is software based? #####
+Yes, if the dump comes up 100% valid then it is likely a hardware issue - I recommend enabling UART and seeing its output.
 
-======================================================================================
+#### Menu Options: ####
 
-## Menu Options: ##
-
-### 1 - Comparison ###
+##### 1 - Comparison #####
 
 Launches the comparison app, used for bulk diagnosis of offsets
 
@@ -44,36 +44,31 @@ Launches the comparison app, used for bulk diagnosis of offsets
 	5. Double Comparison (Result 1 - Result 2 - Filename)
 	6. Dynamic MD5 Calculation (Size - MD5 - FW & SKU - Filename)
 
-### 2 - Patch (/Patches/) ###
+##### 2 - Patch (/Patches/) #####
 
 Designed to load .bin patches from the /patches/ directory. It will interpret and auto locate patch offsets if they've been extracted by my program.
 
-### 3 - Enable/Disable UART ###
+##### 3 - Enable/Disable UART #####
 
 Enabling/Disabling the UART flag within the PS4 - Will work without the need to jailbreak. If this does not work check the UNK UART Flag status and email me!
 
-### 4 - Extract (BwE Style) ###
+##### 4 - Extract (BwE Style) #####
 
 Extract based on literal files and does so dynamically based on their size
 
-### 5 - Extract (Zecoxao Style) ###
+##### 5 - Extract (Zecoxao Style) #####
 
 Extracting file sections pursuant to Sony's file blocks
 
-### 6 - Validate ###
+##### 6 - Validate #####
 
 Pretty obvious, will scan the entire dump from start to finish and produce a readable validation output in HTML format
 
-
-======================================================================================
-
-## Stats: ##
+#### Stats: ####
 - 14,167+ Lines of Code
 - 2182+ Offsets Read
 
-======================================================================================
-
-## Version History: ##
+#### Version History: ####
 - 1.5.2 (20/11/20) Updated WiFi/BT MD5s, Added 2nd UART Flag, Updated Unlisted Validations
 - 1.5.1 (3/11/20) Updated Unlisted Validations, Added UART Enabler, Removed Unused Validation Option, Added Basic Loader
 - 1.5.0 (30/10/20) Updated Unlisted Validations, Upgraded Existing Validations, Removed Loader (Secret Patcher Coming Soon!)
@@ -96,21 +91,19 @@ Pretty obvious, will scan the entire dump from start to finish and produce a rea
 - 1.1 (28/11/18) Improved VTRM & CID Validation, Typo Fixes & Better Colours. 
 - 1.0 (27/11/18) First Release!
 
-## More Information: ##
+#### More Information: ####
 - File MD5: 5F31A7B20F7E66D49C4BB8CFD38CB29B
 - Technical Support: heeeeeeeelp@betterwayelectronics.com.au
 
-## System Requirements: ##
+#### System Requirements: ####
 - Minimum 4 CPU Threads
 - Windows XP, 7, 8 or 10 (64bit) 
 - 9mb+ Storage Space
 
-## Archive Password: ##
+#### Archive Password: ####
 BwE
  
-=======================================================================================
-
-## Greetz/Credit: ##
+#### Greetz/Credit: ####
 - Thailand (Xohke!)
 - PS3/PS4 Dev Wiki (+ Its Contributors)
 - eussNL (<3)
@@ -130,20 +123,16 @@ Proudly made in PERL with Notepad++
 
 Thanks to all the people who email me and beg me to update my program <3 
 
-=======================================================================================
-
-### Console Repair Discord: ###
+#### Console Repair Discord: ####
 https://discord.gg/pXeUHMy
 
-### Forums: ###
+#### Forums: ####
 https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
 https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
 
-### My Website: ###
+#### My Website: ####
 https://www.betterwayelectronics.com.au/
 http://www.ps5repair.com.au/
-
-=======================================================================================
 
 Made In Australia!
 
