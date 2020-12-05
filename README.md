@@ -69,6 +69,7 @@ Pretty obvious, will scan the entire dump from start to finish and produce a rea
 - 2182+ Offsets Read
 
 #### Version History: ####
+- 1.5.3 (5/12/20) Updated Unlisted Validations, Updated WiFi/BT MD5s & Entropy Validation
 - 1.5.2 (20/11/20) Updated WiFi/BT MD5s, Added 2nd UART Flag, Updated Unlisted Validations
 - 1.5.1 (3/11/20) Updated Unlisted Validations, Added UART Enabler, Removed Unused Validation Option, Added Basic Loader
 - 1.5.0 (30/10/20) Updated Unlisted Validations, Upgraded Existing Validations, Removed Loader (Secret Patcher Coming Soon!)
@@ -92,7 +93,7 @@ Pretty obvious, will scan the entire dump from start to finish and produce a rea
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 5F31A7B20F7E66D49C4BB8CFD38CB29B
+- File MD5: E295F19A282CE7F2CC613C25AF7ACD1A
 - Technical Support: heeeeeeeelp@betterwayelectronics.com.au
 
 #### System Requirements: ####
@@ -116,6 +117,7 @@ BwE
 - GregoryRasputin
 - zecoxao
 - Cliques Unique (For Discord Help)
+- ProConsoles NL
 - SCE
 - You! 
 
