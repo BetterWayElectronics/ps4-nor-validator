@@ -64,11 +64,17 @@ Extracting file sections pursuant to Sony's file blocks
 
 Pretty obvious, will scan the entire dump from start to finish and produce a readable validation output in HTML format
 
+#### Upload Feature: ####
+
+As of 1.5.5 there is a feature to upload your dump directly to me. These dumps will be used to improve the validation of this program.
+Users who abuse this system may be banned from this application and or future updates of it.
+
 #### Stats: ####
 - 14,167+ Lines of Code
 - 2182+ Offsets Read
 
 #### Version History: ####
+- 1.5.5 (8/1/21) Updated Pro/Slim Specific Validations, Updated Unlisted Validations, Updated CID Validations, Updated UNK Validations, Added Dump Upload Feature
 - 1.5.3 (5/12/20) Updated Unlisted Validations, Updated WiFi/BT MD5s & Entropy Validation
 - 1.5.2 (20/11/20) Updated WiFi/BT MD5s, Added 2nd UART Flag, Updated Unlisted Validations
 - 1.5.1 (3/11/20) Updated Unlisted Validations, Added UART Enabler, Removed Unused Validation Option, Added Basic Loader
