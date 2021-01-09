@@ -70,8 +70,8 @@ As of 1.5.5 there is a feature to upload your dump directly to me. These dumps w
 Users who abuse this system may be banned from this application and or future updates of it.
 
 #### Stats: ####
-- 14,167+ Lines of Code
-- 2182+ Offsets Read
+- 14,370+ Lines of Code
+- 2220+ Offsets Read
 
 #### Version History: ####
 - 1.5.5 (8/1/21) Updated Pro/Slim Specific Validations, Updated Unlisted Validations, Updated CID Validations, Updated UNK Validations, Added Dump Upload Feature
