@@ -74,7 +74,7 @@ Users who abuse this system may be banned from this application and or future up
 - 2220+ Offsets Read
 
 #### Version History: ####
-- 1.5.7 (11/1/21) Improved Statistics, Removed Some Unlisted Results (Improved Validation), Updated Upload Feature, Improved Compiler
+- 1.5.7 (11/1/21) Fixed Version Checker, Improved Statistics, Removed Some Unlisted Results (Improved Validation), Updated Upload Feature, Improved Compiler
 - 1.5.6 (10/1/21) Improved CID and UNK Validations, Updated Unlisted Validations, IDU Flags Added, Some Code Optimization
 - 1.5.5 (8/1/21) Updated Pro/Slim Specific Validations, Updated Unlisted Validations, Updated CID Validations, Updated UNK Validations, Added Dump Upload Feature
 - 1.5.3 (5/12/20) Updated Unlisted Validations, Updated WiFi/BT MD5s & Entropy Validation
@@ -101,7 +101,7 @@ Users who abuse this system may be banned from this application and or future up
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: E295F19A282CE7F2CC613C25AF7ACD1A
+- File MD5: 29BAF28CF231797E7E6A4849EEB58005
 - Technical Support: heeeeeeeelp@betterwayelectronics.com.au
 
 #### System Requirements: ####
