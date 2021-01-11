@@ -70,10 +70,11 @@ As of 1.5.5 there is a feature to upload your dump directly to me. These dumps w
 Users who abuse this system may be banned from this application and or future updates of it.
 
 #### Stats: ####
-- 14,450+ Lines of Code
+- 14,480+ Lines of Code
 - 2220+ Offsets Read
 
 #### Version History: ####
+- 1.5.7 (11/1/21) Improved Statistics, Removed Some Unlisted Results (Improved Validation), Updated Upload Feature, Improved Compiler
 - 1.5.6 (10/1/21) Improved CID and UNK Validations, Updated Unlisted Validations, IDU Flags Added, Some Code Optimization
 - 1.5.5 (8/1/21) Updated Pro/Slim Specific Validations, Updated Unlisted Validations, Updated CID Validations, Updated UNK Validations, Added Dump Upload Feature
 - 1.5.3 (5/12/20) Updated Unlisted Validations, Updated WiFi/BT MD5s & Entropy Validation
