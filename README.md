@@ -35,18 +35,23 @@ Yes, if the dump comes up 100% valid then it is likely a hardware issue - I reco
 
 ##### 1 - Comparison #####
 
-Launches the comparison app, used for bulk diagnosis of offsets
+Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output options.
 
-	1. Compare Offsets (Result - SKU - Filename)
-	2. Compare Offsets MD5 (MD5 Hash - Filename)
-	3. Compare Offsets Entropy (Entropy - Filename)
-	4. Compare File MD5 (MD5 Hash - Filename)
-	5. Double Comparison (Result 1 - Result 2 - Filename)
-	6. Dynamic MD5 Calculation (Size - MD5 - FW & SKU - Filename)
+	1. Compare Offsets
+	2. Compare Offsets MD5
+	3. Compare Offsets Entropy
+	4. Double Offset Comparison
+	5. Dynamic MD5 Calculation
+	6. Compare File MD5
+	7. Compare File Entropy & Byte Count
 
 ##### 2 - Patch (/Patches/) #####
 
-Designed to load .bin patches from the /patches/ directory. It will interpret and auto locate patch offsets if they've been extracted by my program.
+Designed to load .bin patches from the /patches/ directory. It will interpret and auto locate patch offsets if they've been extracted by my program. If not it will ask for a start address.
+
+##### 3 - Patch Corrupt CoreOS (SU-30631-3 Error #####
+
+Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 
 ##### 3 - Enable/Disable UART #####
 
@@ -64,16 +69,34 @@ Extracting file sections pursuant to Sony's file blocks
 
 Pretty obvious, will scan the entire dump from start to finish and produce a readable validation output in HTML format
 
-#### Upload Feature: ####
+#### Notes: ####
 
 As of 1.5.5 there is a feature to upload your dump directly to me. These dumps will be used to improve the validation of this program.
+It is kinda slow in uploading so please be patient!
+
 Users who abuse this system may be banned from this application and or future updates of it.
 
+Regarding virus detection, these are 100% false-positives. The reason for this is because I protect my program prior to distribution.
+The same methodology used to protect my program is the same as what some people use to make viruses undetected. Which is unfortunate.
+I have done my best to reduce the amount of detections and as of 1.6.3 it has dropped significantly. But it is not perfect.
+For it to be perfect I would have to buy access to better programs, which I cannot afford.
+
+So! If you still have any fears I suggest you upload my program to an virus sandbox for analysis.
+If so desire you can buy an unmodified or custom version of my program (bulk scanning abilities etc).
+
+https://www.virustotal.com/gui/file/807818b3c304c7e452bda22c382dbd5e65b1fcbb6b1083196134242bf845d6fb/detection
+
 #### Stats: ####
-- 14,480+ Lines of Code
+- 15,300+ Lines of Code
 - 2220+ Offsets Read
 
 #### Version History: ####
+- 1.6.5 (31/3/21) Added CoreOS Statistical Analysis, Changed Some Results, Changed Some Output Formatting, Returned to Previous Packer.
+- 1.6.3 (30/3/21) Added CoreOS Patcher (SU-30631-3 Error Specific), Updated Results, Added Unlisted Results, Fixed Readme, Changed Packer.
+- 1.6.2 (18/3/21) Repaired CID Validation, Improved Handling of 72xx, Added Unlisted Results, Improved Dump Uploading Process.
+- 1.6.1 (20/2/21) Repaired CID Validation, Added Unlisted Results (Thanks Uploaders!)
+- 1.6.0 (4/2/21) Added IDU Mode Patcher, Improved Validations, Added Unlisted Results.
+- 1.5.9 (29/1/21) Major Improvement to CID and UNK Validations, Added Unlisted Results, Improved UART Patching, Better Handling of 1200/Pro/Slim Validations, Added v1.5 of Comparator (Comparison Tool, Option 1)
 - 1.5.7 (11/1/21) Fixed Version Checker, Improved Statistics, Removed Some Unlisted Results (Improved Validation), Updated Upload Feature, Improved Compiler
 - 1.5.6 (10/1/21) Improved CID and UNK Validations, Updated Unlisted Validations, IDU Flags Added, Some Code Optimization
 - 1.5.5 (8/1/21) Updated Pro/Slim Specific Validations, Updated Unlisted Validations, Updated CID Validations, Updated UNK Validations, Added Dump Upload Feature
@@ -101,8 +124,8 @@ Users who abuse this system may be banned from this application and or future up
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 29BAF28CF231797E7E6A4849EEB58005
-- Technical Support: heeeeeeeelp@betterwayelectronics.com.au
+- File MD5: 927CDBE7AD0B454E1E31FAD4270803CC
+- Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
 - Minimum 4 CPU Threads
@@ -126,12 +149,16 @@ BwE
 - zecoxao
 - Cliques Unique (For Discord Help)
 - ProConsoles NL
+- YTAndrewPaul
 - SCE
 - You! 
 
 Proudly made in PERL with Notepad++
 
 Thanks to all the people who email me and beg me to update my program <3 
+
+#### Support/Donate: ####
+https://www.buymeacoffee.com/BwE
 
 #### Console Repair Discord: ####
 https://discord.gg/pXeUHMy
