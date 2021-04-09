@@ -50,11 +50,11 @@ Launches the comparison app, used for the bulk diagnosis and comparison of dumps
 
 Designed to load .bin patches from the /patches/ directory. It will interpret and auto locate patch offsets if they've been extracted by my program. If not it will ask for a start address.
 
-##### 3 - Patch Corrupt CoreOS (SU-30631-3 Error #####
+##### 3 - Patch Corrupt CoreOS (SU-30631-3 Error) #####
 
 Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 
-##### 3 - Enable/Disable UART #####
+##### 3 - Enable/Disable UART or IDU Mode #####
 
 Enabling/Disabling the UART flag within the PS4 - Will work without the need to jailbreak. If this does not work check the UNK UART Flag status and email me!
 
