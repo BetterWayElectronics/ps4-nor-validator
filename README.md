@@ -88,10 +88,11 @@ If so desire you can buy an unmodified or custom version of my program (bulk sca
 https://www.virustotal.com/gui/file/807818b3c304c7e452bda22c382dbd5e65b1fcbb6b1083196134242bf845d6fb/detection
 
 #### Stats: ####
-- 15,300+ Lines of Code
+- 15,200+ Lines of Code
 - 2220+ Offsets Read
 
 #### Version History: ####
+- 1.6.6 (12/4/21) Added Unlisted Results, Improved Validation, Changed Output Styling.
 - 1.6.5 (31/3/21) Added CoreOS Statistical Analysis, Changed Some Results, Changed Some Output Formatting, Returned to Previous Packer.
 - 1.6.3 (30/3/21) Added CoreOS Patcher (SU-30631-3 Error Specific), Updated Results, Added Unlisted Results, Fixed Readme, Changed Packer.
 - 1.6.2 (18/3/21) Repaired CID Validation, Improved Handling of 72xx, Added Unlisted Results, Improved Dump Uploading Process.
@@ -125,7 +126,8 @@ https://www.virustotal.com/gui/file/807818b3c304c7e452bda22c382dbd5e65b1fcbb6b10
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 927CDBE7AD0B454E1E31FAD4270803CC
+- File MD5: 6DF1DF6B0645BB3E8EA3BD5D2DD5D2EA
+- File SHA256: 75AB5ADAC51D5C886BF30E2E2594CB328774D43ACFDAC6B9FA26DE957BED94C1
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
