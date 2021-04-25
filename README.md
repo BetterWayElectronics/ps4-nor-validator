@@ -85,13 +85,14 @@ For it to be perfect I would have to buy access to better programs, which I cann
 So! If you still have any fears I suggest you upload my program to an virus sandbox for analysis.
 If so desire you can buy an unmodified or custom version of my program (bulk scanning abilities etc).
 
-https://www.virustotal.com/gui/file/807818b3c304c7e452bda22c382dbd5e65b1fcbb6b1083196134242bf845d6fb/detection
+https://www.virustotal.com/gui/file-analysis/MWI2YWViNDZmY2M2YmRhNjQ3ZWY5ZWY0MThjODRkZDk6MTYxOTM0MDY4Mg==/detection
 
 #### Stats: ####
 - 15,200+ Lines of Code
 - 2220+ Offsets Read
 
 #### Version History: ####
+- 1.6.7 (25/4/21) Repaired UNK 1200 Series Validation, Added Unlisted Results.
 - 1.6.6 (12/4/21) Added Unlisted Results, Improved Validation, Changed Output Styling.
 - 1.6.5 (31/3/21) Added CoreOS Statistical Analysis, Changed Some Results, Changed Some Output Formatting, Returned to Previous Packer.
 - 1.6.3 (30/3/21) Added CoreOS Patcher (SU-30631-3 Error Specific), Updated Results, Added Unlisted Results, Fixed Readme, Changed Packer.
@@ -126,8 +127,8 @@ https://www.virustotal.com/gui/file/807818b3c304c7e452bda22c382dbd5e65b1fcbb6b10
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 6DF1DF6B0645BB3E8EA3BD5D2DD5D2EA
-- File SHA256: 75AB5ADAC51D5C886BF30E2E2594CB328774D43ACFDAC6B9FA26DE957BED94C1
+- File MD5: 1B6AEB46FCC6BDA647EF9EF418C84DD9
+- File SHA256: 7611FF92CA120F825422321C4CBDC1F51FD9AC9C7D8AD236D8141031D3DC88C7
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
