@@ -38,13 +38,14 @@ Yes, if the dump comes up 100% valid then it is likely a hardware issue - I reco
 
 Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output options.
 
-	1. Compare Offsets
-	2. Compare Offsets MD5
-	3. Compare Offsets Entropy
-	4. Double Offset Comparison
-	5. Dynamic MD5 Calculation
-	6. Compare File MD5
-	7. Compare File Entropy & Byte Count
+	1. Compare Offsets (Hex)
+	2. Compare Offsets (ASCII)
+	3. Compare Offsets MD5
+	4. Compare Offsets Entropy
+	5. Double Offset Comparison
+	6. Dynamic MD5 Calculation
+	7. Compare File MD5
+	8. Compare File Entropy & Byte Count
 
 ##### 2 - Patch (/Patches/) #####
 
@@ -85,13 +86,14 @@ For it to be perfect I would have to buy access to better programs, which I cann
 So! If you still have any fears I suggest you upload my program to an virus sandbox for analysis.
 If so desire you can buy an unmodified or custom version of my program (bulk scanning abilities etc).
 
-https://www.virustotal.com/gui/file-analysis/MWI2YWViNDZmY2M2YmRhNjQ3ZWY5ZWY0MThjODRkZDk6MTYxOTM0MDY4Mg==/detection
+https://www.virustotal.com/gui/file/503a59f37db86f8b5e1150fd76e3174ad470158a1623943cfb23913ace84ac7d/detection
 
 #### Stats: ####
-- 15,200+ Lines of Code
-- 2220+ Offsets Read
+- 15,320+ Lines of Code
+- 2340+ Offsets Read
 
 #### Version History: ####
+- 1.6.8 (16/5/21) Updated Internal Comparison Application, Improved Serial Number Validation (MB Series), Added Unlisted Results.
 - 1.6.7 (25/4/21) Repaired UNK 1200 Series Validation, Added Unlisted Results.
 - 1.6.6 (12/4/21) Added Unlisted Results, Improved Validation, Changed Output Styling.
 - 1.6.5 (31/3/21) Added CoreOS Statistical Analysis, Changed Some Results, Changed Some Output Formatting, Returned to Previous Packer.
@@ -127,8 +129,8 @@ https://www.virustotal.com/gui/file-analysis/MWI2YWViNDZmY2M2YmRhNjQ3ZWY5ZWY0MTh
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 1B6AEB46FCC6BDA647EF9EF418C84DD9
-- File SHA256: 7611FF92CA120F825422321C4CBDC1F51FD9AC9C7D8AD236D8141031D3DC88C7
+- File MD5: C9FFAA80C18B8004C581F302DA5F0331
+- File SHA256: 503A59F37DB86F8B5E1150FD76E3174AD470158A1623943CFB23913ACE84AC7D
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
@@ -154,6 +156,7 @@ BwE
 - Cliques Unique (For Discord Help)
 - ProConsoles NL
 - YTAndrewPaul
+- Palestine!
 - SCE
 - You! 
 
