@@ -86,13 +86,14 @@ For it to be perfect I would have to buy access to better programs, which I cann
 So! If you still have any fears I suggest you upload my program to an virus sandbox for analysis.
 If so desire you can buy an unmodified or custom version of my program (bulk scanning abilities etc).
 
-https://www.virustotal.com/gui/file/503a59f37db86f8b5e1150fd76e3174ad470158a1623943cfb23913ace84ac7d/detection
+https://www.virustotal.com/gui/file/311698b5f17d9c9e4e63d014333a0247f25dd8a88241b3f0946e7dd95e0676f2/detection
 
 #### Stats: ####
-- 15,320+ Lines of Code
-- 2340+ Offsets Read
+- 15,350+ Lines of Code
+- 2350+ Offsets Read
 
 #### Version History: ####
+- 1.6.9 (26/5/21) Fixed Internal Code Issues, Added Unlisted Results, New Splash Screen (Potentially last update for a short while).
 - 1.6.8 (16/5/21) Updated Internal Comparison Application, Improved Serial Number Validation (MB Series), Added Unlisted Results.
 - 1.6.7 (25/4/21) Repaired UNK 1200 Series Validation, Added Unlisted Results.
 - 1.6.6 (12/4/21) Added Unlisted Results, Improved Validation, Changed Output Styling.
@@ -129,8 +130,8 @@ https://www.virustotal.com/gui/file/503a59f37db86f8b5e1150fd76e3174ad470158a1623
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: C9FFAA80C18B8004C581F302DA5F0331
-- File SHA256: 503A59F37DB86F8B5E1150FD76E3174AD470158A1623943CFB23913ACE84AC7D
+- File MD5: D0E43DC02B68CE1471CC94C6D4DBEC71
+- File SHA256: 311698B5F17D9C9E4E63D014333A0247F25DD8A88241B3F0946E7DD95E0676F2
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
