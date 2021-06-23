@@ -73,26 +73,24 @@ Pretty obvious, will scan the entire dump from start to finish and produce a rea
 
 #### Notes: ####
 
-As of 1.5.5 there is a feature to upload your dump directly to me. These dumps will be used to improve the validation of this program.
-It is kinda slow in uploading so please be patient!
+As of version 1.5.5 there is an ability to upload dumps directly to me. I use these to improve the program and validations.
+Abusing this service will result in your ban from future use of my validator.
 
-Users who abuse this system may be banned from this application and or future updates of it.
+Regarding Anti-Virus:
 
-Regarding virus detection, these are 100% false-positives. The reason for this is because I protect my program prior to distribution.
-The same methodology used to protect my program is the same as what some people use to make viruses undetected. Which is unfortunate.
-I have done my best to reduce the amount of detections and as of 1.6.3 it has dropped significantly. But it is not perfect.
-For it to be perfect I would have to buy access to better programs, which I cannot afford.
+I protect my program with Themida. The problem with this is that heuristically some AV software see it as a threat.
+This is because people who make or redistribute old malware also use Themida to help make themselves undetected.
 
-So! If you still have any fears I suggest you upload my program to an virus sandbox for analysis.
-If so desire you can buy an unmodified or custom version of my program (bulk scanning abilities etc).
+Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file/311698b5f17d9c9e4e63d014333a0247f25dd8a88241b3f0946e7dd95e0676f2/detection
+https://www.virustotal.com/gui/file/2f9f748a3d9f68c8d35a08a39ad54069461a12b70f288acfd3f35f72030256d7/details
 
 #### Stats: ####
-- 15,350+ Lines of Code
-- 2350+ Offsets Read
+- 15,420+ Lines of Code
+- 2370+ Offsets Read
 
 #### Version History: ####
+- 1.7.0 (23/6/21) Added Question Regarding Dump When Uploading, Added New CID Validation (Weird Key or Flag), Fixed UART Validation, Added Unlisted Results.
 - 1.6.9 (26/5/21) Fixed Internal Code Issues, Added Unlisted Results, New Splash Screen (Potentially last update for a short while).
 - 1.6.8 (16/5/21) Updated Internal Comparison Application, Improved Serial Number Validation (MB Series), Added Unlisted Results.
 - 1.6.7 (25/4/21) Repaired UNK 1200 Series Validation, Added Unlisted Results.
@@ -130,8 +128,8 @@ https://www.virustotal.com/gui/file/311698b5f17d9c9e4e63d014333a0247f25dd8a88241
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: D0E43DC02B68CE1471CC94C6D4DBEC71
-- File SHA256: 311698B5F17D9C9E4E63D014333A0247F25DD8A88241B3F0946E7DD95E0676F2
+- File MD5: 4BFCA0DA79346881C57E62491EF47588
+- File SHA256: 2F9F748A3D9F68C8D35A08A39AD54069461A12B70F288ACFD3F35F72030256D7
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
