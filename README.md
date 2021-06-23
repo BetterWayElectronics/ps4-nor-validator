@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator
  
-![Github Logo](https://i.imgur.com/pfr7YEF.png)
+![Github Logo](https://i.imgur.com/bhQ5Qb0.png)
 
 
 This program is the release version of my PS4 NOR Validator, it is designed solely to validate the NOR flash of your PS4 console!
