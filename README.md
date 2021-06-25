@@ -90,6 +90,7 @@ https://www.virustotal.com/gui/file/2f9f748a3d9f68c8d35a08a39ad54069461a12b70f28
 - 2370+ Offsets Read
 
 #### Version History: ####
+- 1.7.1 (25/6/21) Fixed Uploading Questions, Added MB Serial to Outputs, New Spash Screen.
 - 1.7.0 (23/6/21) Added Question Regarding Dump When Uploading, Added New CID Validation (Weird Key or Flag), Fixed UART Validation, Added Unlisted Results.
 - 1.6.9 (26/5/21) Fixed Internal Code Issues, Added Unlisted Results, New Splash Screen (Potentially last update for a short while).
 - 1.6.8 (16/5/21) Updated Internal Comparison Application, Improved Serial Number Validation (MB Series), Added Unlisted Results.
@@ -128,8 +129,8 @@ https://www.virustotal.com/gui/file/2f9f748a3d9f68c8d35a08a39ad54069461a12b70f28
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 4BFCA0DA79346881C57E62491EF47588
-- File SHA256: 2F9F748A3D9F68C8D35A08A39AD54069461A12B70F288ACFD3F35F72030256D7
+- File MD5: F9BFD391C09B8E087584AA9CA028267F
+- File SHA256: B84EBF004BF3EAA7B6B17EE1335F3E7ECC2A2748A91B9BB2E54DC033F322DE28
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
