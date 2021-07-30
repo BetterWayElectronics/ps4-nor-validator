@@ -74,7 +74,7 @@ Pretty obvious, will scan the entire dump from start to finish and produce a rea
 #### Notes: ####
 
 As of version 1.5.5 there is an ability to upload dumps directly to me. I use these to improve the program and validations.
-Abusing this service will result in your ban from future use of my validator.
+Abusing this service will result in your ban from future use of my validator. Mislabling files that are clearly corrupt as working will result in a ban.
 
 Regarding Anti-Virus:
 
@@ -83,13 +83,14 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file/2f9f748a3d9f68c8d35a08a39ad54069461a12b70f288acfd3f35f72030256d7/details
+https://www.virustotal.com/gui/file/3c831f2a2a2942a9d61f4dc3c6de271b4711a69c196a93983420947e1954ce1b/detection
 
 #### Stats: ####
-- 15,420+ Lines of Code
+- 15,440+ Lines of Code
 - 2370+ Offsets Read
 
 #### Version History: ####
+- 1.7.2 (30/7/21) Fixed Mishandling of Bulk Warning/Danger Results (Significantly), Added Unlisted/New Results.
 - 1.7.1 (25/6/21) Fixed Uploading Questions, Added MB Serial to Outputs, New Spash Screen.
 - 1.7.0 (23/6/21) Added Question Regarding Dump When Uploading, Added New CID Validation (Weird Key or Flag), Fixed UART Validation, Added Unlisted Results.
 - 1.6.9 (26/5/21) Fixed Internal Code Issues, Added Unlisted Results, New Splash Screen (Potentially last update for a short while).
@@ -129,8 +130,8 @@ https://www.virustotal.com/gui/file/2f9f748a3d9f68c8d35a08a39ad54069461a12b70f28
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: F9BFD391C09B8E087584AA9CA028267F
-- File SHA256: B84EBF004BF3EAA7B6B17EE1335F3E7ECC2A2748A91B9BB2E54DC033F322DE28
+- File MD5: 2C544BCA8B61276DDF5DCDAA6DDE8B51
+- File SHA256: 3C831F2A2A2942A9D61F4DC3C6DE271B4711A69C196A93983420947E1954CE1B
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
