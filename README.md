@@ -173,9 +173,9 @@ https://www.buymeacoffee.com/BwE
 https://discord.gg/pXeUHMy
 
 #### Forums: ####
-https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
-https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
-https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
+- https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
+- https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
+- https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 
 #### My Websites: ####
 https://www.betterwayelectronics.com.au/
