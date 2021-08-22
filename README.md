@@ -83,13 +83,14 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file/3c831f2a2a2942a9d61f4dc3c6de271b4711a69c196a93983420947e1954ce1b/detection
+https://www.virustotal.com/gui/file/c67b5c728e9aff0005fc6137fb9964ca738b83997cf131abc9ba3f51cfb79dcd/detection
 
 #### Stats: ####
-- 15,440+ Lines of Code
+- 15,450+ Lines of Code
 - 2370+ Offsets Read
 
 #### Version History: ####
+- 1.7.3 (22/8/21) Fixed IDU Patching, Added Unlisted/New Results (Thank You Uploaders!)
 - 1.7.2 (30/7/21) Fixed Mishandling of Bulk Warning/Danger Results (Significantly), Added Unlisted/New Results.
 - 1.7.1 (25/6/21) Fixed Uploading Questions, Added MB Serial to Outputs, New Spash Screen.
 - 1.7.0 (23/6/21) Added Question Regarding Dump When Uploading, Added New CID Validation (Weird Key or Flag), Fixed UART Validation, Added Unlisted Results.
@@ -130,8 +131,8 @@ https://www.virustotal.com/gui/file/3c831f2a2a2942a9d61f4dc3c6de271b4711a69c196a
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 2C544BCA8B61276DDF5DCDAA6DDE8B51
-- File SHA256: 3C831F2A2A2942A9D61F4DC3C6DE271B4711A69C196A93983420947E1954CE1B
+- File MD5: 828b004e388d2a53ff71b6231c890b36
+- File SHA256: c67b5c728e9aff0005fc6137fb9964ca738b83997cf131abc9ba3f51cfb79dcd
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
@@ -174,8 +175,9 @@ https://discord.gg/pXeUHMy
 #### Forums: ####
 https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
 https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
+https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 
-#### My Website: ####
+#### My Websites: ####
 https://www.betterwayelectronics.com.au/
 http://www.ps5repair.com.au/
 
