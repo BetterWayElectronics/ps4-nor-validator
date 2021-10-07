@@ -83,13 +83,14 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file/c67b5c728e9aff0005fc6137fb9964ca738b83997cf131abc9ba3f51cfb79dcd/detection
+https://www.virustotal.com/gui/file-analysis/NDc4MTFiODEzM2Y0ZGNiNjAyYzc3YjZhOTllMTU5NmE6MTYzMzU4MzMyOQ==
 
 #### Stats: ####
-- 15,450+ Lines of Code
+- 15,490+ Lines of Code
 - 2370+ Offsets Read
 
 #### Version History: ####
+- 1.7.4 (7/10/21) Fixed Uploading Criteria, Fixed Server Side Uploading Issue (58 Dumps Lost!), Added Unlisted Results
 - 1.7.3 (22/8/21) Fixed IDU Patching, Added Unlisted/New Results (Thank You Uploaders!)
 - 1.7.2 (30/7/21) Fixed Mishandling of Bulk Warning/Danger Results (Significantly), Added Unlisted/New Results.
 - 1.7.1 (25/6/21) Fixed Uploading Questions, Added MB Serial to Outputs, New Spash Screen.
@@ -131,8 +132,8 @@ https://www.virustotal.com/gui/file/c67b5c728e9aff0005fc6137fb9964ca738b83997cf1
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 828b004e388d2a53ff71b6231c890b36
-- File SHA256: c67b5c728e9aff0005fc6137fb9964ca738b83997cf131abc9ba3f51cfb79dcd
+- File MD5: 47811B8133F4DCB602C77B6A99E1596A
+- File SHA256: D9E05654C68130A32B1BFC4EA00AE47EDCE98C8233EEB94701C3BF29B505AF43
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
