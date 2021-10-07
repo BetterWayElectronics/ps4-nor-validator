@@ -55,21 +55,25 @@ Designed to load .bin patches from the /patches/ directory. It will interpret an
 
 Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 
-##### 3 - Enable/Disable UART or IDU Mode #####
+##### 4 - Enable/Disable UART or IDU Mode #####
 
 Enabling/Disabling the UART flag within the PS4 - Will work without the need to jailbreak. If this does not work check the UNK UART Flag status and email me!
 
-##### 4 - Extract (BwE Style) #####
+##### 5 - Extract (BwE Style) #####
 
 Extract based on literal files and does so dynamically based on their size
 
-##### 5 - Extract (Zecoxao Style) #####
+##### 6 - Extract (Zecoxao Style) #####
 
 Extracting file sections pursuant to Sony's file blocks
 
-##### 6 - Validate #####
+##### 7 - Validate #####
 
 Pretty obvious, will scan the entire dump from start to finish and produce a readable validation output in HTML format
+
+##### 8 - Upload Only ##### 
+
+If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier.
 
 #### Notes: ####
 
