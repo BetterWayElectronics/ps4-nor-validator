@@ -88,6 +88,7 @@ This is because people who make or redistribute old malware also use Themida to 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
 https://www.virustotal.com/gui/file-analysis/NDc4MTFiODEzM2Y0ZGNiNjAyYzc3YjZhOTllMTU5NmE6MTYzMzU4MzMyOQ==
+https://antiscan.me/scan/new/result?id=W0CuuVFbg557
 
 #### Stats: ####
 - 15,490+ Lines of Code
