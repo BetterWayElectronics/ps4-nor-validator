@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator
  
-![Github Logo](https://i.imgur.com/bhQ5Qb0.png)
+![Github Logo](https://i.imgur.com/QoUGxZb.png)
 
 
 This program is the release version of my PS4 NOR Validator, it is designed solely to validate the NOR flash of your PS4 console!
@@ -55,9 +55,10 @@ Designed to load .bin patches from the /patches/ directory. It will interpret an
 
 Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 
-##### 4 - Enable/Disable UART or IDU Mode #####
+##### 4 - Enable/Disable/Toggle UART, IDU, Boot Parameter, Memory Budget or Slow HDD Mode #####
 
-Enabling/Disabling the UART flag within the PS4 - Will work without the need to jailbreak. If this does not work check the UNK UART Flag status and email me!
+These flags will work without the need to jailbreak. UART is well vetted, the others are not so use at own risk.
+I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide
 
 ##### 5 - Extract (BwE Style) #####
 
@@ -67,13 +68,13 @@ Extract based on literal files and does so dynamically based on their size
 
 Extracting file sections pursuant to Sony's file blocks
 
-##### 7 - Validate #####
+##### 7 - Upload Only #####
 
-Pretty obvious, will scan the entire dump from start to finish and produce a readable validation output in HTML format
+If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 
-##### 8 - Upload Only ##### 
+##### 8 - Validate ##### 
 
-If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier.
+Pretty obvious, will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 7 if offline.
 
 #### Notes: ####
 
@@ -87,14 +88,14 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file-analysis/NDc4MTFiODEzM2Y0ZGNiNjAyYzc3YjZhOTllMTU5NmE6MTYzMzU4MzMyOQ==
-https://antiscan.me/scan/new/result?id=W0CuuVFbg557
+https://www.virustotal.com/gui/file/fda35cc278adc934f7573e4bd142ad472f63212cf0532e44fb3958f1c4cb0654/detection
 
 #### Stats: ####
-- 15,490+ Lines of Code
-- 2370+ Offsets Read
+- 15,870+ Lines of Code
+- 2410+ Offsets Read
 
 #### Version History: ####
+- 1.8.0 (15/11/21) Added Unlisted Results, Added New Flags & Patches (Boot Parameter (Dev, Assist, Release), Memory Budget and Slow HDD Mode), Added New WiFi/BT FW MD5, Changed Patch Offset Interpretation For WiFi/BT, Fixed Patching Showing Dump MD5 Instead of Patch MD5, Changed Interpretation of Dump Files (Save Time With Hardcore Corruption/Wrong Files), Cosmetic Fixes, Connection Fixes (Temporary).
 - 1.7.4 (7/10/21) Fixed Uploading Criteria, Fixed Server Side Uploading Issue (58 Dumps Lost!), Added Unlisted Results
 - 1.7.3 (22/8/21) Fixed IDU Patching, Added Unlisted/New Results (Thank You Uploaders!)
 - 1.7.2 (30/7/21) Fixed Mishandling of Bulk Warning/Danger Results (Significantly), Added Unlisted/New Results.
@@ -137,8 +138,8 @@ https://antiscan.me/scan/new/result?id=W0CuuVFbg557
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 47811B8133F4DCB602C77B6A99E1596A
-- File SHA256: D9E05654C68130A32B1BFC4EA00AE47EDCE98C8233EEB94701C3BF29B505AF43
+- File MD5: 03AE349A30A99496054CBA1AE0186662
+- File SHA256: FDA35CC278ADC934F7573E4BD142AD472F63212CF0532E44FB3958F1C4CB0654
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
@@ -163,6 +164,10 @@ BwE
 - zecoxao
 - Cliques Unique (For Discord Help)
 - ProConsoles NL
+- Centrino
+- Viktor TechStars Romania
+- Nikesh
+- Orbis/Akiong
 - YTAndrewPaul
 - Palestine!
 - SCE
@@ -183,9 +188,16 @@ https://discord.gg/pXeUHMy
 - https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
 - https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 
+#### Video Featuring My Program: ####
+https://www.youtube.com/watch?v=35DFGCim_WY
+
+#### Website Featuring My Program: ####
+- https://repair.wiki/w/PS4_UART_Guide
+- https://psdevwiki.com
+
 #### My Websites: ####
-https://www.betterwayelectronics.com.au/
-http://www.ps5repair.com.au/
+- https://www.betterwayelectronics.com.au/
+- http://www.ps5repair.com.au/
 
 Made In Australia!
 
