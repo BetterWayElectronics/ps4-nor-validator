@@ -93,8 +93,10 @@ https://www.virustotal.com/gui/file/fda35cc278adc934f7573e4bd142ad472f63212cf053
 #### Stats: ####
 - 15,870+ Lines of Code
 - 2410+ Offsets Read
+- 2688 Possible Results
 
 #### Version History: ####
+- 1.8.2 (21/11/21) Improved Validation & Classification of WiFi/BT Modules, Improved Validation of All Encrypted Sections, Added New WiFi/BT FW MD5s, Bug Fix Handling Files In /Dumps/.
 - 1.8.0 (15/11/21) Added Unlisted Results, Added New Flags & Patches (Boot Parameter (Dev, Assist, Release), Memory Budget and Slow HDD Mode), Added New WiFi/BT FW MD5, Changed Patch Offset Interpretation For WiFi/BT, Fixed Patching Showing Dump MD5 Instead of Patch MD5, Changed Interpretation of Dump Files (Save Time With Hardcore Corruption/Wrong Files), Cosmetic Fixes, Connection Fixes (Temporary).
 - 1.7.4 (7/10/21) Fixed Uploading Criteria, Fixed Server Side Uploading Issue (58 Dumps Lost!), Added Unlisted Results
 - 1.7.3 (22/8/21) Fixed IDU Patching, Added Unlisted/New Results (Thank You Uploaders!)
@@ -138,8 +140,8 @@ https://www.virustotal.com/gui/file/fda35cc278adc934f7573e4bd142ad472f63212cf053
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 03AE349A30A99496054CBA1AE0186662
-- File SHA256: FDA35CC278ADC934F7573E4BD142AD472F63212CF0532E44FB3958F1C4CB0654
+- File MD5: 90FA982ED2CC80B553459FF3CE7FA484
+- File SHA256: 4CDBECE6B8C2907A1AEB588370E814A231C1F038B9339EA4352D8E46F64A3047
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
