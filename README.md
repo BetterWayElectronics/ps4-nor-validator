@@ -54,6 +54,7 @@ Designed to load .bin patches from the /patches/ directory. It will interpret an
 ##### 3 - Patch Corrupt CoreOS (SU-30631-3 Error) #####
 
 Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
+If you have this error but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 
 ##### 4 - Enable/Disable/Toggle UART, IDU, Boot Parameter, Memory Budget or Slow HDD Mode #####
 
@@ -88,14 +89,15 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file/83A9625D9F7C14BBD09CDC414A21FBE5/detection
+https://www.virustotal.com/gui/file-analysis/OTg2NjAzOTRhNjg4NGMxZmIzYjRhYTQxNThmNjk0ZjQ6MTY0NTYyNjc2NA==
 
 #### Stats: ####
-- 16,120+ Lines of Code
+- 16,360+ Lines of Code
 - 2430+ Offsets Read
-- 2696 Possible Results
+- 2757 Possible Results/Outputs
 
 #### Version History: ####
+- 1.8.5 (25/1/22) New Validations, Added Unlisted/New Results, New Statistical Values, Fixed Results HTML File Name Bug, Improved CID & UNK Validation (Removed False Warnings), Cosmetic Fix To 'Validation Complete', Added Block For v1.8.0 & Below.
 - 1.8.3 (26/11/21) Improved File Handling When Patching, Added UART Enabling Question After Validation (Requested Feature), Bug Fix Handling Files NOT In /Dumps/ (Whoops), Bug Fix Handling UART.
 - 1.8.2 (21/11/21) Improved Validation & Classification of WiFi/BT Modules, Improved Validation of All Encrypted Sections, Added New WiFi/BT FW MD5s, Bug Fix Handling Files In /Dumps/.
 - 1.8.0 (15/11/21) Added Unlisted Results, Added New Flags & Patches (Boot Parameter (Dev, Assist, Release), Memory Budget and Slow HDD Mode), Added New WiFi/BT FW MD5, Changed Patch Offset Interpretation For WiFi/BT, Fixed Patching Showing Dump MD5 Instead of Patch MD5, Changed Interpretation of Dump Files (Save Time With Hardcore Corruption/Wrong Files), Cosmetic Fixes, Connection Fixes (Temporary).
@@ -141,8 +143,7 @@ https://www.virustotal.com/gui/file/83A9625D9F7C14BBD09CDC414A21FBE5/detection
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File MD5: 83A9625D9F7C14BBD09CDC414A21FBE5
-- File SHA256: E1D0CD448173243E1BEA287D8E113D9E89A8C60D70F03CDA22C189868EA7C251
+- File SHA256: E529BE57440ADBA6D1BD40D348BA9B7E478060BC7BFB411D0847866010873EE4 
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
