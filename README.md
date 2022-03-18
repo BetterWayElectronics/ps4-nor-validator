@@ -89,14 +89,15 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file-analysis/OTg2NjAzOTRhNjg4NGMxZmIzYjRhYTQxNThmNjk0ZjQ6MTY0NTYyNjc2NA==
+https://www.virustotal.com/gui/file-analysis/YjNmZjJmMzUyOGY0N2QzZmMxNjA2Y2EzMDFlNTc1ZWE6MTY0NzYwODI0MA==
 
 #### Stats: ####
-- 16,360+ Lines of Code
+- 16,730+ Lines of Code
 - 2430+ Offsets Read
 - 2757 Possible Results/Outputs
 
 #### Version History: ####
+- 1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
 - 1.8.5 (25/1/22) New Validations, Added Unlisted/New Results, New Statistical Values, Fixed Results HTML File Name Bug, Improved CID & UNK Validation (Removed False Warnings), Cosmetic Fix To 'Validation Complete', Added Block For v1.8.0 & Below.
 - 1.8.3 (26/11/21) Improved File Handling When Patching, Added UART Enabling Question After Validation (Requested Feature), Bug Fix Handling Files NOT In /Dumps/ (Whoops), Bug Fix Handling UART.
 - 1.8.2 (21/11/21) Improved Validation & Classification of WiFi/BT Modules, Improved Validation of All Encrypted Sections, Added New WiFi/BT FW MD5s, Bug Fix Handling Files In /Dumps/.
