@@ -89,7 +89,7 @@ This is because people who make or redistribute old malware also use Themida to 
 
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a sandbox to see for yourself.
 
-https://www.virustotal.com/gui/file-analysis/YjNmZjJmMzUyOGY0N2QzZmMxNjA2Y2EzMDFlNTc1ZWE6MTY0NzYwODI0MA==
+https://www.virustotal.com/gui/file/E3670521C5506FC589E0DE01710257A2/detection
 
 #### Stats: ####
 - 16,730+ Lines of Code
@@ -97,6 +97,7 @@ https://www.virustotal.com/gui/file-analysis/YjNmZjJmMzUyOGY0N2QzZmMxNjA2Y2EzMDF
 - 2757 Possible Results/Outputs
 
 #### Version History: ####
+- 1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
 - 1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
 - 1.8.5 (25/1/22) New Validations, Added Unlisted/New Results, New Statistical Values, Fixed Results HTML File Name Bug, Improved CID & UNK Validation (Removed False Warnings), Cosmetic Fix To 'Validation Complete', Added Block For v1.8.0 & Below.
 - 1.8.3 (26/11/21) Improved File Handling When Patching, Added UART Enabling Question After Validation (Requested Feature), Bug Fix Handling Files NOT In /Dumps/ (Whoops), Bug Fix Handling UART.
@@ -144,7 +145,7 @@ https://www.virustotal.com/gui/file-analysis/YjNmZjJmMzUyOGY0N2QzZmMxNjA2Y2EzMDF
 - 1.0 (27/11/18) First Release!
 
 #### More Information: ####
-- File SHA256: E529BE57440ADBA6D1BD40D348BA9B7E478060BC7BFB411D0847866010873EE4 
+- File SHA256: 8EF10F1DF2B8D032DB569578692200E080F7516F6030DA83D2A2C4A5F9BC4D38  
 - Technical Support: heeeeeeeelp [at] betterwayelectronics.com.au
 
 #### System Requirements: ####
