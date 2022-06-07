@@ -208,23 +208,31 @@ Thanks to all the people who email me and beg me to update my program <3
 https://www.buymeacoffee.com/BwE
 
 ### Console Repair Discord: ###
-https://discord.gg/pXeUHMy
+- https://discord.com/servers/console-repair-discord-754165317961383997
+- https://discord.gg/pXeUHMy
 
 ### Forums: ###
 - https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
 - https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
 - https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 
-### Video Featuring My Program: ###
-https://www.youtube.com/watch?v=35DFGCim_WY
+### Videos Featuring My Program: ###
+- https://www.youtube.com/watch?v=35DFGCim_WY
+- https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited :( awh)
 
 ### Website Featuring My Program: ###
 - https://repair.wiki/w/PS4_UART_Guide
-- https://psdevwiki.com
+- https://wololo.net/tag/bwe/
+- http://www.logic-sunrise.com/recherche/bwe/
+- https://www.biteyourconsole.net/?s=bwe
+- https://psdevwiki.com/ps4/
 
 ### My Websites: ###
 - https://www.betterwayelectronics.com.au/
+- https://instagram.com/betterwayelectronics
+- https://github.com/BetterWayElectronics/
 - http://www.ps5repair.com.au/
+
 
 Made In Australia!
 
