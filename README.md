@@ -13,7 +13,7 @@ It might sound a bit basic to say that my program just checks what the problem i
 This program is designed and catered to other console repair professionals, this is why it is simple and straightforward. If you cannot desolder/reflash your PS4 then you're doomed.
 I am happy to say that my program will check every single byte of the flash, either individually as a value or as an area (such as encrypted/filled). Nothing is skipped.
 
-### What my problem is indeed software? Your program is spitting out WARNING and DANGER everywhere! ### 
+### What if my problem is indeed software? Your program is spitting out WARNING and DANGER everywhere! ### 
 Depending on where in the flash there's corruption also depends if it can be fixed. The flash is semi-encrypted with per-console data as well as universal data.
 You can for example easily patch a corrupt WiFi/BT module on the PS4, I even have a separate program to do just that. This is because that data is NOT unique to anybody's console.
 Other areas such as the CoreOS can be patched for common corruptions, but the patches are generic and technically do NOT match your console as your CoreOS is entirely UNIQUE.
