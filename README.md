@@ -92,6 +92,8 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 
 		UART is well vetted, the others are not so use at own risk.
 		I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide It includes drivers and programming software you may need.
+		
+		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
 	5 - Extract (BwE Style)
 
@@ -129,6 +131,7 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	2797 Possible Results/Outputs
 	
 ## Version History: ##
+	1.8.9 (N/A) Added CoreOS Swapping + Southbridge Flag Patching, Added Improved CoreOS Intepretation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas.
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
 	1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
 	1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
@@ -218,7 +221,15 @@ https://www.buymeacoffee.com/BwE
 
 ### Videos Featuring My Program: ###
 - https://www.youtube.com/watch?v=35DFGCim_WY
-- https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited :( awh)
+- https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited)
+- https://www.youtube.com/watch?v=AH-9jE1uDPk
+- https://www.youtube.com/watch?v=iSOWV-r_0J4 (Uncredited)
+- https://www.youtube.com/watch?v=kol1Zy9xc8I
+- https://www.youtube.com/watch?v=AH-9jE1uDPk
+- https://www.youtube.com/watch?v=E-ukC-Jjwfg
+- https://www.youtube.com/watch?v=QjkbB3lnRLw (Weird)
+- https://www.youtube.com/watch?v=A2c2UeM9V3A (Uhhh)
+- https://www.youtube.com/watch?v=FAk2oF0cByg
 
 ### Website Featuring My Program: ###
 - https://repair.wiki/w/PS4_UART_Guide
