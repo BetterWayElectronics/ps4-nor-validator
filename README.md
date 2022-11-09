@@ -125,10 +125,10 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	BwE
 
 ## Stats: ##
-	16,820+ Lines of Code
-	639,991 bytes of Code
-	2500+ Offsets Read
-	2797 Possible Results/Outputs
+	17,770+ Lines of Code
+	655 KB of Code
+	2600+ Offsets Read
+	2890+ Possible Results/Outputs
 	
 ## Version History: ##
 	1.9.0 (N/A) Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas.
