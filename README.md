@@ -128,7 +128,7 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 
 
 ## File Information: ##
-	File MD5: C14F5A81A865C41CEA06E453C1AEE8C1 
+	File MD5: 7C9D2BEE9FF2D025816F0A56D2ED6D6B 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
