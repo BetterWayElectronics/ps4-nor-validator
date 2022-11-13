@@ -76,8 +76,18 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 		Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 		If you have this error (or SU-37553-3) but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 		Another option is to wipe the flash entirely with FF or 00 and re-read it and THEN reflash your original valid dump. Do not just use the default wipe+flash option in your software.
+		
+	4 - Swap CoreOS 0 & CoreOS 1 (& Patch Southbridge/CoreOS Flags)
 
-	4 - Enable/Disable/Toggle 8 System Flags
+		Allows for swapping of the CoreOS to aid in either downgrading or repairing LoadBIOS errors. Must not be used on an original or unpatched Syscon chip.
+		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
+		Note that Syscon patching will be released in the next version of this program.
+
+		1. Swap & Patch CoreOS 0 & 1 + Patch CoreOS Header
+		2. Swap & Patch CoreOS 0 & 1 Only (Experimental)
+		3. Patch CoreOS Header Only
+
+	5 - Enable/Disable/Toggle 8 System Flags
 
 		These flags will work without the need to jailbreak. 
 
@@ -95,25 +105,25 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
-	5 - Extract (BwE Style)
+	6 - Extract (BwE Style)
 
 		Extract based on literal files and does so dynamically based on their size.
 
-	6 - Extract (Zecoxao Style)
+	7 - Extract (Zecoxao Style)
 
 		Extracting file sections pursuant to Sony's file blocks.
 
-	7 - Upload Only
+	8 - Upload Only
 
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 
-	7/8 - Validate
+	8/9 - Validate
 
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 7 if offline.
 
 
 ## File Information: ##
-	File SHA256: 17802EA26213EF7632ECCF39756E01FC7E1F496D1BD9E8A2E1B337FAFBEC72BA 
+	File MD5: C14F5A81A865C41CEA06E453C1AEE8C1 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -131,7 +141,7 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	2890+ Possible Results/Outputs
 	
 ## Version History: ##
-	1.9.0 (N/A) Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas.
+	1.9.0 (N/A) Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
 	1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
 	1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
