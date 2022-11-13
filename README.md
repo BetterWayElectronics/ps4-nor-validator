@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator
  
-![Github Logo](https://betterwayelectronics.com.au/example.png)
+![BwE](https://i.imgur.com/D61byLU.png)
 
 ## Introduction ##
 
