@@ -83,9 +83,9 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
 		Note that Syscon patching will be released in the next version of this program.
 
-		1. Swap & Patch CoreOS 0 & 1 + Patch CoreOS Header
-		2. Swap & Patch CoreOS 0 & 1 Only (Experimental)
-		3. Patch CoreOS Header Only
+			1. Swap & Patch CoreOS 0 & 1 + Patch CoreOS Header
+			2. Swap & Patch CoreOS 0 & 1 Only (Experimental)
+			3. Patch CoreOS Header Only
 
 	5 - Enable/Disable/Toggle 8 System Flags
 
