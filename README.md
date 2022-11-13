@@ -56,7 +56,12 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 ## Menu Options: ##
 	1 - Comparison
 
-		Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output options.
+		Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). FFeatures multiple output and filter options.
+		
+			1. Compare Specific Version Only
+			2. Compare Specific SKU Only
+			3. Compare Specific Version & SKU Only
+			4. Compare All Dumps
 
 			1. Compare Offsets (Hex)
 			2. Compare Offsets (ASCII)
