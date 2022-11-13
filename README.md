@@ -146,7 +146,7 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	2890+ Possible Results/Outputs
 	
 ## Version History: ##
-	1.9.0 (N/A) Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
+	1.9.0 (13/11/22) Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
 	1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
 	1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
