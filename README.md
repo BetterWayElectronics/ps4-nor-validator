@@ -140,9 +140,9 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	BwE
 
 ## Stats: ##
-	17,770+ Lines of Code
-	655 KB of Code
-	2600+ Offsets Read
+	17,890+ Lines of Code
+	659 KB of Code
+	2630+ Offsets Read
 	2890+ Possible Results/Outputs
 	
 ## Version History: ##
