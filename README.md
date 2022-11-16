@@ -33,9 +33,11 @@ I have designed it to read dumps from either the same directory you run the prog
 You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
 There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
 
-### Why is your software free? ###
+### Why is your software no longer free? ###
 I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult. I am also developing PS5 software and more innovations for the PS4.
 For me to set aside other things for these programs I definitely need some sort of payment. Since I started in 2008, all of my programs have been free. I cannot do that any longer unfortunately!
+
+Note: My software and future software will still run at least once as a trial. This is suitable for regular consumers who need to fix their personal console. Business use must require payment for an unlimited license.
 	
 ### Your program is a VIRUS! ### 
 I protect my program with Themida. The problem with this is that heuristically some AV software see it as a threat.
