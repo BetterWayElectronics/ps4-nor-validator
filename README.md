@@ -5,47 +5,52 @@
 ## Introduction ##
 
 I am BwE of betterwayelectronics.com.au and I have been creating software to validate the PlayStation's flash since 2008 with the help of psdevwiki.com :)
-I also repair consoles locally in Australia and have been doing that since 2008 also. I am only recently slowing that down due to commitments with a PhD I am undertaking. 
+I also repair consoles locally in Australia and have been doing that since 2008 also. I am only recently slowing that down due to commitments with a PhD I am undertaking.
 
-## So what is this program exactly and why should you use it? ##
+## FAQ ##
+
+### So what is this program exactly and why should you use it? ###
 This program is for those with the BLOD or 'blue light of death' or any other weird issue with their PS4. Using my program can help you determine if its a software or hardware issue.
 It might sound a bit basic to say that my program just checks what the problem is, but ultimately without it you could be repairing things for no reason and wondering why it isn't working.
 This program is designed and catered to other console repair professionals, this is why it is simple and straightforward. If you cannot desolder/reflash your PS4 then you're doomed.
 I am happy to say that my program will check every single byte of the flash, either individually as a value or as an area (such as encrypted/filled). Nothing is skipped.
 
-## What if my problem is indeed software? Your program is spitting out WARNING and DANGER everywhere! ##
+### What if my problem is indeed software? Your program is spitting out WARNING and DANGER everywhere! ###
 Depending on where in the flash there's corruption also depends if it can be fixed. The flash is semi-encrypted with per-console data as well as universal data.
 You can for example easily patch a corrupt WiFi/BT module on the PS4, I even have a separate program to do just that. This is because that data is NOT unique to anybody's console.
 Other areas such as the CoreOS can be patched for common corruptions, but the patches are generic and technically do NOT match your console as your CoreOS is entirely UNIQUE.
 The rest of the console is a bit of a hit and miss. I may be able to help by using existing data from the 1000's of dumps I have, but your specific corruption may be unfixable.
 
-## What is this UART thing I hear about? ##
+### What is this UART thing I hear about? ###
 Well this is the debugging system Sony uses. I added an ability to patch your dump to enable it, both before and after validation.
 Have a look at https://repair.wiki/w/PS4_UART_Guide for a guide on how to do this.
 Once you start outputting a log, the last thing it ends on is generally the error thats stopping your console from booting (or what's causing it to crash).
 Since I don't work for Sony I cannot tell you what every single error code means, but I or others can surely help (check my discord for example).
 
-## What else can your program do? ##
+### What else can your program do? ###
 I have bundled in my comparison program as well as my patching, flagging and extraction tools. Some of these are on my Github (https://github.com/BetterWayElectronics/) as individual apps.
 I have designed it to read dumps from either the same directory you run the program from or a /dumps/ directory. It also accepts different file formats beyond .bin. 
 You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
 There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
 
-## Why is your software free? ##
-Well I learnt how to make it for free, I learned about the flash for free and I enjoy making it.
-If you want to donate visit https://www.buymeacoffee.com/BwE
+### Why is your software free? ###
+I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult. I am also developing PS5 software and more innovations for the PS4.
+For me to set aside other things for these programs I definitely need some sort of payment. Since I started in 2008, all of my programs have been free. I cannot do that any longer unfortunately!
 	
-## Your program is a VIRUS! ## 
+### Your program is a VIRUS! ### 
 I protect my program with Themida. The problem with this is that heuristically some AV software see it as a threat.
 This is because people who make or redistribute old malware also use Themida to help make themselves undetected.
 Ultimately, it is up to you to trust the program and me. I encourage you to upload to a malware sandbox or virustotal to see for yourself.
 This is why there is a password on the RAR file (that being 'BwE')
 
-## Whats up with the image that pops up when the program starts? ##
+### Whats up with the image that pops up when the program starts? ###
 Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
 
-## What are those files you put on Github? ##
+### What are those files you put on Github? ###
 I have added a few old and unidentifiable dumps for your perusal. This is for people who have no actual PS4 or personal dumps but still wish to see the functionality of my program. They have had their serial numbers and MAC addresses removed. They were originally taken from psdevwiki and or colleagues. I have also added a more modern example output html file that my program produces, for those wishing to skip the downloading process.
+
+### Your program is crashing!? ###
+It is either because of the newer protections I have added since adding licencing, or your antivirus is having an issue with the program. Contact me and provide what AV, OS and whether you had issues with older versions.
 
 ## TLDR ##
 * TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 (or from a different section) - but NOT perconsole data (maybe)!
@@ -128,7 +133,7 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 
 
 ## File Information: ##
-	File MD5: 7C9D2BEE9FF2D025816F0A56D2ED6D6B 
+	File MD5: FBB7068F56423AC9226E7C4606B02B19 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -146,7 +151,7 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	2890+ Possible Results/Outputs
 	
 ## Version History: ##
-	1.9.0 (13/11/22) Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
+	1.9.0 (16/11/22) Added Licencing (Trial Executions = 1 (Suitable For Non-Business Use), Fixed Crashing (Maybe), Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
 	1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
 	1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
@@ -221,6 +226,8 @@ I have added a few old and unidentifiable dumps for your perusal. This is for pe
 	
 Proudly made in PERL with Notepad++
 Thanks to all the people who email me and beg me to update my program <3 
+
+## Links ##
 
 ### Support/Donate: ###
 https://www.buymeacoffee.com/BwE
