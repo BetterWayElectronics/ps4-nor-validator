@@ -269,6 +269,13 @@ https://www.buymeacoffee.com/BwE
 - https://github.com/BetterWayElectronics/
 - http://www.ps5repair.com.au/
 
+## Purchase Link ##
+
+If you are a commercial user, I highly suggest you buy the software here: https://buy.stripe.com/3cs3fc7eR7NQeHKcMN
+Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
+
+Other users will only be able to validate one dump.
+
 
 Made In Australia!
 
