@@ -154,7 +154,7 @@ It is either because of the newer protections I have added since adding licencin
 	
 ## Version History: ##
 	1.9.1 (N/A) Syscon Unlocking, Syscon Patching, TBA
-	1.9.0 (16/11/22) Added Licencing (Trial Executions = 1 (Suitable For Non-Business Use), Fixed Crashing (Maybe), Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methdology For CoreOS Swap, Added Improved CoreOS Intepretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Subdirectory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
+	1.9.0 (16/11/22) Added Licensing (Trial Executions = 1 (Suitable For Non-Business Use), Improved Licensing Handling, New Min Version 1.9,0, Improved Result Handling, Fixed Crashing & Incompatibility, Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methodology For CoreOS Swap, Added Improved CoreOS Interpretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Sub-directory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
 	1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
 	1.8.6 (18/3/22) Bug Fix (Crash After Launch If Online), Added New WiFi/BT FW, Added Unlisted Results, Adjusted Some Validation Results
