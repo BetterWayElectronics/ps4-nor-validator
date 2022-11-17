@@ -230,6 +230,8 @@ It is either because of the newer protections I have added since adding licencin
 Proudly made in PERL with Notepad++
 Thanks to all the people who email me and beg me to update my program <3 
 
+Made In Australia!
+
 ## Links ##
 
 ### Support/Donate: ###
@@ -277,6 +279,4 @@ Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com
 Other users will only be able to validate one dump.
 
 
-Made In Australia!
-
-![Github Logo](https://betterwayelectronics.com.au/example_end.png)
+![End](https://i.imgur.com/iauhGcv.png)
