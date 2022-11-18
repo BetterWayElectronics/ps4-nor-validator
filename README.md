@@ -37,6 +37,8 @@ There is also the ability to upload dumps to me after the validation is complete
 I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult. I am also developing PS5 software and more innovations for the PS4.
 For me to set aside other things for these programs I definitely need some sort of payment. Since I started in 2008, all of my programs have been free. I cannot do that any longer unfortunately!
 
+Visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a key!
+
 Note: My software and future software will still run at least once as a trial. This is suitable for regular consumers who need to fix their personal console. Business use must require payment for an unlimited license.
 	
 ### Your program is a VIRUS! ### 
@@ -135,7 +137,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: EFB73D29329C6237242046B2DD10EDD8 
+	File MD5: FA4960FC8A8AC82B5ADFC7411D44AD71 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -273,7 +275,7 @@ https://www.buymeacoffee.com/BwE
 
 ## Purchase Link ##
 
-If you are a commercial user, I highly suggest you buy the software here: https://buy.stripe.com/3cs3fc7eR7NQeHKcMN
+If you are a commercial user, I highly suggest you buy the software here: https://buy.stripe.com/3cs3fc7eR7NQeHKcMN or at https://betterwayelectronics.com.au/bweps4norvalidator
 Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
 
 Other users will only be able to validate one dump.
