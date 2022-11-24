@@ -33,13 +33,17 @@ I have designed it to read dumps from either the same directory you run the prog
 You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
 There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
 
-### Why is your software no longer free? ###
-I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult. I am also developing PS5 software and more innovations for the PS4.
-For me to set aside other things for these programs I definitely need some sort of payment. Since I started in 2008, all of my programs have been free. I cannot do that any longer unfortunately!
+As of 1.9.1: Syscon Patch Scanning (No Auto-Patching Yet). Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors.
 
-Visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a key!
+### Why is your software no longer free? ###
+I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult, I started in 2008 and since then it has been free. 
+However, I am now spending time I shouldn't be spending developing PS5 software and continued innovations for the PS4.
+Finally, the majority of endusers for this program are businesses (and that is the target market) so while they profit off my program, I do not.
+
+If you enjoy my program visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a key!
 
 Note: My software and future software will still run at least once as a trial. This is suitable for regular consumers who need to fix their personal console. Business use must require payment for an unlimited license.
+Each licence allows once PC and is locked to your HWID. You can change your HD and format your PC and the licence will work, but you cannot use it on another PC.
 	
 ### Your program is a VIRUS! ### 
 I protect my program with Themida. The problem with this is that heuristically some AV software see it as a threat.
@@ -137,7 +141,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: FA4960FC8A8AC82B5ADFC7411D44AD71 
+	File MD5: 21EC3C296C49A6B1EA30AD4E0E0E5B47 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -149,13 +153,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	17,890+ Lines of Code
-	659 KB of Code
-	2630+ Offsets Read
+	19,480+ Lines of Code
+	727 KB of Code
+	2730+ Offsets Read
 	2890+ Possible Results/Outputs
 	
 ## Version History: ##
-	1.9.1 (N/A) Syscon Unlocking, Syscon Patching, TBA
+	1.9.1 (24/11/22) Added Syscon Patch Scanning (No Auto-Patching Yet - 1.9.2+) Includes: Syscon Slot Discovery, Syscon Active Slot Discovery, Syscon Patchable Area & Slot Discovery, Syscon Upload. Also: Improved Validations, Improved Code Structure
 	1.9.0 (16/11/22) Added Licensing (Trial Executions = 1 (Suitable For Non-Business Use), Improved Licensing Handling, New Min Version 1.9,0, Improved Result Handling, Fixed Crashing & Incompatibility, Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methodology For CoreOS Swap, Added Improved CoreOS Interpretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Sub-directory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
 	1.8.7 (13/4/22) Added Three New v9.50 WiFi/BT FWs, Added Unlisted Results, Added Region Information
@@ -208,6 +212,8 @@ It is either because of the newer protections I have added since adding licencin
 ### Greetz/Credit: ###
 	Thailand (Xohke!)
 	PS3/PS4 Dev Wiki (+ Its Contributors)
+	DARKNESMONK
+	Bert NL
 	eussNL (<3)
 	cfwprpht
 	judges
@@ -226,6 +232,8 @@ It is either because of the newer protections I have added since adding licencin
 	YTAndrewPaul (YouTube)
 	Palestine!
 	luminouslamp367 for Regex: (\S*)\s?(\$\S*)\s*?(\$FOO)\s?(\S*)
+	Hoea
+	DigiMod 
 	SCE
 	You! 
 	
@@ -251,6 +259,7 @@ https://www.buymeacoffee.com/BwE
 ### Videos Featuring My Program: ###
 - https://www.youtube.com/watch?v=35DFGCim_WY
 - https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited)
+- https://www.youtube.com/watch?v=5q0WWyYNsTs (Uncredited)
 - https://www.youtube.com/watch?v=AH-9jE1uDPk
 - https://www.youtube.com/watch?v=iSOWV-r_0J4 (Uncredited)
 - https://www.youtube.com/watch?v=kol1Zy9xc8I
@@ -277,6 +286,8 @@ https://www.buymeacoffee.com/BwE
 
 If you are a commercial user, I highly suggest you buy the software here: https://buy.stripe.com/3cs3fc7eR7NQeHKcMN or at https://betterwayelectronics.com.au/bweps4norvalidator
 Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
+
+One Licence Per PC!
 
 Other users will only be able to validate one dump.
 
