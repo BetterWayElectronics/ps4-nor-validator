@@ -66,7 +66,17 @@ It is either because of the newer protections I have added since adding licencin
 * TLDR; OK = OK, Warning = Weird but MIGHT be okay, DANGER = Bad
 
 
-## Menu Options: ##
+## Syscon Menu Options: ##
+	
+	1 - Validate Syscon
+	2 - Scan For Downgrade/Service Mode Flags
+		1. Patch for Downgrade
+		2. Patch to Enable Service Mode
+		3. Patch to Disable Service Mode
+		
+
+## NOR Menu Options: ##
+
 	1 - Comparison
 
 		Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). FFeatures multiple output and filter options.
@@ -159,6 +169,7 @@ It is either because of the newer protections I have added since adding licencin
 	2890+ Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.2 (?/12/22) Updated Validations, Added Unlisted Results, Fixed Version (10+ Bug), Added Syscon Patching (Downgrade & Service Mode), Added Syscon Validation, Added User Statistics
 	1.9.1 (24/11/22) Added Syscon Patch Scanning (No Auto-Patching Yet - 1.9.2+) Includes: Syscon Slot Discovery, Syscon Active Slot Discovery, Syscon Patchable Area & Slot Discovery, Syscon Upload. Also: Improved Validations, Improved Code Structure
 	1.9.0 (16/11/22) Added Licensing (Trial Executions = 1 (Suitable For Non-Business Use), Improved Licensing Handling, New Min Version 1.9,0, Improved Result Handling, Fixed Crashing & Incompatibility, Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methodology For CoreOS Swap, Added Improved CoreOS Interpretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Sub-directory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
@@ -257,6 +268,7 @@ https://www.buymeacoffee.com/BwE
 - https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 
 ### Videos Featuring My Program: ###
+- https://www.youtube.com/watch?v=7D4Zte3vzvg
 - https://www.youtube.com/watch?v=35DFGCim_WY
 - https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited)
 - https://www.youtube.com/watch?v=5q0WWyYNsTs (Uncredited)
