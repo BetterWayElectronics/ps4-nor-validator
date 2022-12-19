@@ -307,6 +307,7 @@ https://www.buymeacoffee.com/BwE
 ## Purchase Link ##
 
 If you are a commercial user, I highly suggest you buy the software here: https://betterwayelectronics.com.au/bweps4norvalidator
+
 I also sell Syscon writing hardware here: https://betterwayelectronics.com.au/#hardware
 
 Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
