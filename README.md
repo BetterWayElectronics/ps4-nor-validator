@@ -33,7 +33,19 @@ I have designed it to read dumps from either the same directory you run the prog
 You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
 There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
 
-As of 1.9.1: Syscon Patch Scanning (No Auto-Patching Yet). Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors.
+### Syscon? ###
+As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors. Do not use separately, you will brick.
+Add your 512kb .bin file in the same folder as this program :)
+
+What can you do with the Syscon?
+	Downgrade (CoreOS Swap)
+	Repair LoadBios -8 Error
+	Repair BlStorageHeader Error
+	Repair checkUpdVersion Error 
+
+Guide TBA!
+
+More Information: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html
 
 ### Why is your software no longer free? ###
 I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult, I started in 2008 and since then it has been free. 
@@ -68,12 +80,7 @@ It is either because of the newer protections I have added since adding licencin
 
 ## Syscon Menu Options: ##
 	
-	1 - Validate Syscon
-	2 - Scan For Downgrade/Service Mode Flags
-		1. Patch for Downgrade
-		2. Patch to Enable Service Mode
-		3. Patch to Disable Service Mode
-		
+TBA		
 
 ## NOR Menu Options: ##
 
@@ -151,7 +158,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 21EC3C296C49A6B1EA30AD4E0E0E5B47 
+	File MD5: 99E68698C73690989EDF2E1CCE79105A 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -163,13 +170,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	19,480+ Lines of Code
-	727 KB of Code
-	2730+ Offsets Read
-	2890+ Possible Results/Outputs
+	20,069 Lines of Code
+	750KB of Code
+	2770+ Offsets Read
+	2926 Possible Results/Outputs
 	
 ## Version History: ##
-	1.9.2 (?/12/22) Updated Validations, Added Unlisted Results, Fixed Version (10+ Bug), Added Syscon Patching (Downgrade & Service Mode), Added Syscon Validation, Added User Statistics
+	1.9.2 (19/12/22) Added Syscon Auto & Manual Patching (Beta), Added Syscon Service Mode Patch Scanning (No Auto-Patching Yet), Massive Changes to Syscon Scanning, Updated Extractor, Added Unlisted/New Validations (FW 10+), UNK Changes, Added New SKU (OMG! 7218C From THAILAND!), Added Mercy For Trial Users (No Files? Try Again!), New Boot Logo & HTML Graphics
 	1.9.1 (24/11/22) Added Syscon Patch Scanning (No Auto-Patching Yet - 1.9.2+) Includes: Syscon Slot Discovery, Syscon Active Slot Discovery, Syscon Patchable Area & Slot Discovery, Syscon Upload. Also: Improved Validations, Improved Code Structure
 	1.9.0 (16/11/22) Added Licensing (Trial Executions = 1 (Suitable For Non-Business Use), Improved Licensing Handling, New Min Version 1.9,0, Improved Result Handling, Fixed Crashing & Incompatibility, Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methodology For CoreOS Swap, Added Improved CoreOS Interpretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Sub-directory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
 	1.8.8 (5/6/22) Updated Readme, Fixed Offsets MD5 Comparison, Added Highlighting, Added Unlisted Hashes, Added: Update Mode, Show Mode (TestKit), Registry Recover, Software Version (Old/Useless) and Arcade Mode Flags & Patches (Except Show & Software Version).
