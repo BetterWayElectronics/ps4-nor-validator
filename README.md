@@ -275,6 +275,8 @@ https://www.buymeacoffee.com/BwE
 - https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 
 ### Videos Featuring My Program: ###
+- https://www.youtube.com/watch?v=gHifHpquN6E
+- https://www.youtube.com/watch?v=laxB_D80nJE
 - https://www.youtube.com/watch?v=7D4Zte3vzvg
 - https://www.youtube.com/watch?v=35DFGCim_WY
 - https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited)
@@ -299,14 +301,15 @@ https://www.buymeacoffee.com/BwE
 - https://www.betterwayelectronics.com.au/
 - https://instagram.com/betterwayelectronics
 - https://github.com/BetterWayElectronics/
+- https://twitter.com/BwE_Dev
 - http://www.ps5repair.com.au/
 
 ## Purchase Link ##
 
-If you are a commercial user, I highly suggest you buy the software here: https://buy.stripe.com/3cs3fc7eR7NQeHKcMN or at https://betterwayelectronics.com.au/bweps4norvalidator
-Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
+If you are a commercial user, I highly suggest you buy the software here: https://betterwayelectronics.com.au/bweps4norvalidator
+I also sell Syscon writing hardware here: https://betterwayelectronics.com.au/#hardware
 
-One Licence Per PC!
+Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
 
 Other users will only be able to validate one dump.
 
