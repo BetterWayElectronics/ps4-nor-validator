@@ -158,7 +158,7 @@ TBA
 
 
 ## File Information: ##
-	File MD5: 8AA751688C5BF8E644D8CAAC373B4E61 
+	File MD5: 786511E42045B8D358AAE03B1AF204B1 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -176,6 +176,7 @@ TBA
 	2926 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.3 (22/12/22) Updated Syscon Scanning & Patching (Still Considered Beta)
 	1.9.2 (20/12/22) Added Syscon Auto & Manual Patching (Beta), Added Syscon Service Mode Patch Scanning (No Auto-Patching Yet), Massive Changes to Syscon Scanning, Updated Extractor, Added Unlisted/New Validations (FW 10+), UNK Changes, Added New SKU (OMG! 7218C From THAILAND!), Added Mercy For Trial Users (No Files? Try Again!), New Boot Logo & HTML Graphics, Fixed Failure Message
 	1.9.1 (24/11/22) Added Syscon Patch Scanning (No Auto-Patching Yet - 1.9.2+) Includes: Syscon Slot Discovery, Syscon Active Slot Discovery, Syscon Patchable Area & Slot Discovery, Syscon Upload. Also: Improved Validations, Improved Code Structure
 	1.9.0 (16/11/22) Added Licensing (Trial Executions = 1 (Suitable For Non-Business Use), Improved Licensing Handling, New Min Version 1.9,0, Improved Result Handling, Fixed Crashing & Incompatibility, Added CoreOS Swapping + Southbridge Flag Patching (Added Bespoke, Predetermined Patching), Added Secondary Methodology For CoreOS Swap, Added Improved CoreOS Interpretation/Validation, Added UserIDs, Improved File Handling including the /Dumps/ Sub-directory Traversal, Improved Validation of PerConsole Areas, Updated Comparator (Filter by SKU/Version/Both).
