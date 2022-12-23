@@ -158,7 +158,7 @@ TBA
 
 
 ## File Information: ##
-	File MD5: 786511E42045B8D358AAE03B1AF204B1 
+	File MD5: EE0D0925A176837C9AF52E2922B5D3E1 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -176,6 +176,7 @@ TBA
 	2926 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.4 (24/12/22) Bugfix in Syscon Scanning (<= 0 Length Slot1 Crashing App), Bundled External HWID Generator App (Auto Copies HWID to Clipboard!)
 	1.9.3 (22/12/22) Updated Syscon Scanning & Patching (Still Considered Beta)
 	1.9.2 (20/12/22) Added Syscon Auto & Manual Patching (Beta), Added Syscon Service Mode Patch Scanning (No Auto-Patching Yet), Massive Changes to Syscon Scanning, Updated Extractor, Added Unlisted/New Validations (FW 10+), UNK Changes, Added New SKU (OMG! 7218C From THAILAND!), Added Mercy For Trial Users (No Files? Try Again!), New Boot Logo & HTML Graphics, Fixed Failure Message
 	1.9.1 (24/11/22) Added Syscon Patch Scanning (No Auto-Patching Yet - 1.9.2+) Includes: Syscon Slot Discovery, Syscon Active Slot Discovery, Syscon Patchable Area & Slot Discovery, Syscon Upload. Also: Improved Validations, Improved Code Structure
