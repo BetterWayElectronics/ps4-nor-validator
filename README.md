@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator
  
-![BwE](https://i.imgur.com/pvMI01Q.png)
+![BwE](https://i.imgur.com/ToOrIjt.png)
 
 ## Introduction ##
 
