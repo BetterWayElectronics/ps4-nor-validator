@@ -35,13 +35,13 @@ There is also the ability to upload dumps to me after the validation is complete
 
 ### Syscon? ###
 As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors. Do not use separately, you will brick.
-Add your 512kb .bin file in the same folder as this program :)
-
+	Add your 512kb .bin file in the same folder as this program :)
+	
 What can you do with the Syscon?
-	Downgrade (CoreOS Swap)
-	Repair LoadBios -8 Error
-	Repair BlStorageHeader Error
-	Repair checkUpdVersion Error 
+
+	- Downgrade (CoreOS Swap)
+	- Repair LoadBios -8 Error
+	- Repair checkUpdVersion Error 
 
 Guide TBA!
 
@@ -112,15 +112,15 @@ TBA
 		If you have this error (or SU-37553-3) but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 		Another option is to wipe the flash entirely with FF or 00 and re-read it and THEN reflash your original valid dump. Do not just use the default wipe+flash option in your software.
 		
-	4 - Swap CoreOS 0 & CoreOS 1 (& Patch Southbridge/CoreOS Flags)
+	4 - Patch & Switch CoreOS + Southbridge Slots
 
-		Allows for swapping of the CoreOS to aid in either downgrading or repairing LoadBIOS errors. Must not be used on an original or unpatched Syscon chip.
+		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used on an unpatched Syscon chip.
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
 		Note that Syscon patching will be released in the next version of this program.
 
-			1. Swap & Patch CoreOS 0 & 1 + Patch CoreOS Header
-			2. Swap & Patch CoreOS 0 & 1 Only (Experimental)
-			3. Patch CoreOS Header Only
+			1. Patch Southbridge Flag & CoreOS Header
+			2. CoreOS Header Only
+			3. Southbridge Header Only
 
 	5 - Enable/Disable/Toggle 8 System Flags
 
@@ -158,7 +158,7 @@ TBA
 
 
 ## File Information: ##
-	File MD5: EE0D0925A176837C9AF52E2922B5D3E1 
+	File MD5: 9438EE3EDFC1B2AC3E1FBD7958B4DFD8 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -176,6 +176,7 @@ TBA
 	2926 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.5 (26/12/22) Reworking of CoreOS/Southbridge Patching (Avoids BlStorageHeader Errors), Improved Auto-Patching Syscon (If You Still Have CheckUpdVersion Errors Let Me Know!)
 	1.9.4 (24/12/22) Bugfix in Syscon Scanning (<= 0 Length Slot1 Crashing App), Bundled External HWID Generator App (Auto Copies HWID to Clipboard!)
 	1.9.3 (22/12/22) Updated Syscon Scanning & Patching (Still Considered Beta)
 	1.9.2 (20/12/22) Added Syscon Auto & Manual Patching (Beta), Added Syscon Service Mode Patch Scanning (No Auto-Patching Yet), Massive Changes to Syscon Scanning, Updated Extractor, Added Unlisted/New Validations (FW 10+), UNK Changes, Added New SKU (OMG! 7218C From THAILAND!), Added Mercy For Trial Users (No Files? Try Again!), New Boot Logo & HTML Graphics, Fixed Failure Message
