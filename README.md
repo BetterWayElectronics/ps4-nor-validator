@@ -158,7 +158,7 @@ TBA
 
 
 ## File Information: ##
-	File MD5: A447449CE4C63F20F99FB3F622EF02D4 
+	File MD5: DF4871608420FECC05C08CE5EC1CF208 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -176,6 +176,7 @@ TBA
 	2926 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.7 (28/12/22) Serious Bug Fix In Syscon Patching.
 	1.9.6 (28/12/22) Significant Changes To Syscon Patching (Still Beta - Expect More Updates) - Some Manual Patching Explicitly Required (Soon To Be Auto).
 	1.9.5 (26/12/22) Reworking of CoreOS/Southbridge Patching (Avoids BlStorageHeader Errors), Improved Auto-Patching Syscon (If You Still Have CheckUpdVersion Errors Let Me Know!)
 	1.9.4 (24/12/22) Bugfix in Syscon Scanning (<= 0 Length Slot1 Crashing App), Bundled External HWID Generator App (Auto Copies HWID to Clipboard!)
