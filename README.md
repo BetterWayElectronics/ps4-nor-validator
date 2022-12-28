@@ -176,6 +176,7 @@ TBA
 	2926 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.6 (28/12/22) Significant Changes To Syscon Patching (Still Beta - Expect More Updates) - Some Manual Patching Explicitly Required (Soon To Be Auto).
 	1.9.5 (26/12/22) Reworking of CoreOS/Southbridge Patching (Avoids BlStorageHeader Errors), Improved Auto-Patching Syscon (If You Still Have CheckUpdVersion Errors Let Me Know!)
 	1.9.4 (24/12/22) Bugfix in Syscon Scanning (<= 0 Length Slot1 Crashing App), Bundled External HWID Generator App (Auto Copies HWID to Clipboard!)
 	1.9.3 (22/12/22) Updated Syscon Scanning & Patching (Still Considered Beta)
