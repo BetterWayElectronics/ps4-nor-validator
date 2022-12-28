@@ -158,7 +158,7 @@ TBA
 
 
 ## File Information: ##
-	File MD5: 9438EE3EDFC1B2AC3E1FBD7958B4DFD8 
+	File MD5: A447449CE4C63F20F99FB3F622EF02D4 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
