@@ -285,15 +285,12 @@ https://www.buymeacoffee.com/BwE
 - https://discord.com/servers/console-repair-discord-754165317961383997
 - https://discord.gg/pXeUHMy
 
-### Forums: ###
-- https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
-- https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
-- https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
-
 ### Videos Featuring My Program: ###
+- https://www.youtube.com/watch?v=Yal7cwdIKCg
+- https://www.youtube.com/watch?v=m5ZUEyya82g
 - https://www.youtube.com/watch?v=gHifHpquN6E
 - https://www.youtube.com/watch?v=laxB_D80nJE
-- https://www.youtube.com/watch?v=7D4Zte3vzvg
+- https://www.youtube.com/watch?v=7D4Zte3vzvg 
 - https://www.youtube.com/watch?v=35DFGCim_WY
 - https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited)
 - https://www.youtube.com/watch?v=5q0WWyYNsTs (Uncredited)
@@ -305,6 +302,10 @@ https://www.buymeacoffee.com/BwE
 - https://www.youtube.com/watch?v=QjkbB3lnRLw (Weird)
 - https://www.youtube.com/watch?v=A2c2UeM9V3A (Uhhh)
 - https://www.youtube.com/watch?v=FAk2oF0cByg
+- https://www.youtube.com/watch?v=PLrudwJHycU (Kinda Uncredited)
+- https://www.youtube.com/watch?v=bGnEu4UwsU4
+- https://www.youtube.com/watch?v=5q0WWyYNsTs (Uncredited)
+- https://www.youtube.com/watch?v=ZEwgtvKcB58 (Uncredited/Indian)
 
 ### Website Featuring My Program: ###
 - https://repair.wiki/w/PS4_UART_Guide
@@ -312,6 +313,16 @@ https://www.buymeacoffee.com/BwE
 - http://www.logic-sunrise.com/recherche/bwe/
 - https://www.biteyourconsole.net/?s=bwe
 - https://psdevwiki.com/ps4/
+- https://psx-core.ru/forum/48-3196-3
+- https://consolefix.ru/aktivaciya-uart-dlya-diagnostiki-blod/
+- https://vlab.su/
+- https://gbatemp.net/search/3666652/?q=bwe&o=relevance
+- https://gamegaz.com/2022122937784/
+- https://www.psxhax.com/threads/release-bwe-ps4-nor-validator.6139/
+- https://www.playstationhax.xyz/forums/topic/5259-release-bwe-ps4-nor-validator/
+- https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
+- https://tieba.baidu.com/p/8196671153
+- https://yoschi.cc/gaming/es-ist-anscheinend-moeglich-ihre-ps4-ohne-backup/
 
 ### My Websites: ###
 - https://www.betterwayelectronics.com.au/
@@ -326,7 +337,7 @@ If you are a commercial user, I highly suggest you buy the software here: https:
 
 I also sell Syscon writing hardware here: https://betterwayelectronics.com.au/#hardware
 
-Provide your HWID (via the trial) and email it to sales@betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
+Provide your HWID (via the trial or provided application) and email it to sales(at)betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
 
 Other users will only be able to validate one dump.
 
