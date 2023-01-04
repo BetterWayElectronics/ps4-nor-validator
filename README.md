@@ -42,10 +42,9 @@ What can you do with the Syscon?
 	- Downgrade (CoreOS Swap)
 	- Repair LoadBios -8 Error
 	- Repair checkUpdVersion Error 
+	- Repair BlStorageHeader
 
-Guide TBA!
-
-More Information: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html
+More Information/Guide: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html
 
 ### Why is your software no longer free? ###
 I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult, I started in 2008 and since then it has been free. 
@@ -75,12 +74,20 @@ It is either because of the newer protections I have added since adding licencin
 ## TLDR ##
 * TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 (or from a different section) - but NOT perconsole data (maybe)!
 * TLDR; Will this prove my BLOD is software based? Yes, if the dump comes up 100% valid then it is likely a hardware issue - I recommend enabling UART and seeing its output.
+* TLDR; Will this fix my corrupt CoreOS? Yeah with a patched Syscon.
+* TLDR; Will this fix my loadBios -8 Error? Yeah with a patched Syscon.
 * TLDR; OK = OK, Warning = Weird but MIGHT be okay, DANGER = Bad
 
 
 ## Syscon Menu Options: ##
 	
-TBA		
+	Syscon Menu:
+
+		1. Auto Patch
+			Will automatically grab the last 080B and replace it with the first in the current active slot or blank out the latest, depending on your Syscon.
+		2. Manual Patch
+			If it cannot automatically patch, or if you decide to manually patch you may do the above yourself.
+			You must then replace the last active 080B with an earlier one, or with an empty slot/space. Sizing is automatic so if you go over it will auto-trim.
 
 ## NOR Menu Options: ##
 
@@ -112,15 +119,18 @@ TBA
 		If you have this error (or SU-37553-3) but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 		Another option is to wipe the flash entirely with FF or 00 and re-read it and THEN reflash your original valid dump. Do not just use the default wipe+flash option in your software.
 		
-	4 - Patch & Switch CoreOS + Southbridge Slots
+	4 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
 
-		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used on an unpatched Syscon chip.
+		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used without first backing up Syscon chip.
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
-		Note that Syscon patching will be released in the next version of this program.
 
 			1. Patch Southbridge Flag & CoreOS Header
 			2. CoreOS Header Only
 			3. Southbridge Header Only
+
+		See Guide/s:
+		https://betterwayelectronics.com.au/sce_syscon.html
+		https://betterwayelectronics.com.au/syscon.html
 
 	5 - Enable/Disable/Toggle 8 System Flags
 
@@ -158,7 +168,7 @@ TBA
 
 
 ## File Information: ##
-	File MD5: DF4871608420FECC05C08CE5EC1CF208 
+	File MD5: 0A0E4FF1CDEE3342C7B85FC3816A6210 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -170,12 +180,13 @@ TBA
 	BwE
 
 ## Stats: ##
-	20,069 Lines of Code
-	750KB of Code
-	2770+ Offsets Read
-	2926 Possible Results/Outputs
+	20,249 Lines of Code
+	754KB of Code
+	2780+ Offsets Read
+	2919 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.8 (5/1/23) Update to CoreOS/SB Patching, Added Unlisted Results, Added New Validations, Updated Internal Comparator
 	1.9.7 (28/12/22) Serious Bug Fix In Syscon Patching.
 	1.9.6 (28/12/22) Significant Changes To Syscon Patching (Still Beta - Expect More Updates) - Some Manual Patching Explicitly Required (Soon To Be Auto).
 	1.9.5 (26/12/22) Reworking of CoreOS/Southbridge Patching (Avoids BlStorageHeader Errors), Improved Auto-Patching Syscon (If You Still Have CheckUpdVersion Errors Let Me Know!)
