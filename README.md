@@ -119,7 +119,12 @@ It is either because of the newer protections I have added since adding licencin
 		If you have this error (or SU-37553-3) but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 		Another option is to wipe the flash entirely with FF or 00 and re-read it and THEN reflash your original valid dump. Do not just use the default wipe+flash option in your software.
 		
-	4 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
+	4 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error)
+	
+		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots.
+		Repairs BLOD related to EAP Key panic.
+		
+	5 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
 
 		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used without first backing up Syscon chip.
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
@@ -132,7 +137,7 @@ It is either because of the newer protections I have added since adding licencin
 		https://betterwayelectronics.com.au/sce_syscon.html
 		https://betterwayelectronics.com.au/syscon.html
 
-	5 - Enable/Disable/Toggle 8 System Flags
+	6 - Enable/Disable/Toggle 8 System Flags
 
 		These flags will work without the need to jailbreak. 
 
@@ -150,25 +155,25 @@ It is either because of the newer protections I have added since adding licencin
 		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
-	6 - Extract (BwE Style)
+	7 - Extract (BwE Style)
 
 		Extract based on literal files and does so dynamically based on their size.
 
-	7 - Extract (Zecoxao Style)
+	8 - Extract (Zecoxao Style)
 
 		Extracting file sections pursuant to Sony's file blocks.
 
-	8 - Upload Only
+	9 - Upload Only
 
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 
-	8/9 - Validate
+	9/10 - Validate
 
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 7 if offline.
 
 
 ## File Information: ##
-	File MD5: 0A0E4FF1CDEE3342C7B85FC3816A6210 
+	File MD5: 89355F9E675A6E8C10AD9BDF06C8260F 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -180,12 +185,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	20,249 Lines of Code
-	754KB of Code
-	2780+ Offsets Read
-	2919 Possible Results/Outputs
+	20,519 Lines of Code
+	765KB of Code
+	2810+ Offsets Read
+	2925 Possible Results/Outputs
 	
 ## Version History: ##
+	1.9.9 (8/1/23) Added Syscon Firmware Validation, Better EAP Key Validations, Better UNK Validations, Added EAP Key Repair (Panic EAP Key Not Available Error/Corrupt UNK Section), Fixed v1.xx Version Errors.
 	1.9.8 (5/1/23) Update to CoreOS/SB Patching, Added Unlisted Results, Added New Validations, Updated Internal Comparator
 	1.9.7 (28/12/22) Serious Bug Fix In Syscon Patching.
 	1.9.6 (28/12/22) Significant Changes To Syscon Patching (Still Beta - Expect More Updates) - Some Manual Patching Explicitly Required (Soon To Be Auto).
