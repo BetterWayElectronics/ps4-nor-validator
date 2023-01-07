@@ -41,8 +41,9 @@ What can you do with the Syscon?
 
 	- Downgrade (CoreOS Swap)
 	- Repair LoadBios -8 Error
+	- Repair sceSblSlLoadSelf -8 Error
 	- Repair checkUpdVersion Error 
-	- Repair BlStorageHeader
+	- Repair BlStorageHeader Error
 
 More Information/Guide: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html
 
