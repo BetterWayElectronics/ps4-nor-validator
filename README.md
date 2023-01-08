@@ -174,7 +174,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 89355F9E675A6E8C10AD9BDF06C8260F 
+	File MD5: CE3D0D15BA0312C303C21E8087BB43AF 
 	Technical Support: ilovebwe@betterwayelectronics.com.au
 
 	System Requirements:
@@ -293,6 +293,8 @@ https://www.buymeacoffee.com/BwE
 - https://discord.gg/pXeUHMy
 
 ### Videos Featuring My Program: ###
+- https://www.youtube.com/watch?v=m3wgiudcTEA
+- https://www.youtube.com/watch?v=EISO-t2fnMw
 - https://www.youtube.com/watch?v=Yal7cwdIKCg
 - https://www.youtube.com/watch?v=m5ZUEyya82g
 - https://www.youtube.com/watch?v=gHifHpquN6E
