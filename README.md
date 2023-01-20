@@ -45,7 +45,8 @@ What can you do with the Syscon?
 	- Repair checkUpdVersion Error 
 	- Repair BlStorageHeader Error
 
-More Information/Guide: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html
+More Information/Guide: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html or https://www.youtube.com/watch?v=hcmMSYmwSUQ
+
 
 ### Why is your software no longer free? ###
 I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult, I started in 2008 and since then it has been free. 
@@ -137,6 +138,7 @@ It is either because of the newer protections I have added since adding licencin
 		See Guide/s:
 		https://betterwayelectronics.com.au/sce_syscon.html
 		https://betterwayelectronics.com.au/syscon.html
+		https://www.youtube.com/watch?v=hcmMSYmwSUQ
 
 	6 - Enable/Disable/Toggle 8 System Flags
 
@@ -147,7 +149,7 @@ It is either because of the newer protections I have added since adding licencin
 			3. Toggle Boot Parameter Modes
 			4. Toggle Memory Budget Mode
 			5. Toggle Slow HDD Mode
-			6. Enable/Disable Update Mode
+			6. Enable/Disable Update Mode (Fixes CE-35888-2)
 			7. Enable/Disable Registry Recover Mode
 			8. Enable/Disable Arcade Mode
 
@@ -174,8 +176,8 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: CE3D0D15BA0312C303C21E8087BB43AF 
-	Technical Support: ilovebwe@betterwayelectronics.com.au
+	File MD5: 95ABB94E2E843C2BD2371AEF86EC8B47 
+	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
 	Minimum 4 CPU Threads
@@ -186,12 +188,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	20,519 Lines of Code
-	765KB of Code
-	2810+ Offsets Read
-	2925 Possible Results/Outputs
+	21,679 Lines of Code
+	805KB of Code
+	2877+ Offsets Read
+	2992 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.0 (20/1/23) Added UART Patching To CoreOS/Southbridge Patcher, Added Bulk CoreOS/SB Patching (1-4 or 1-2), Added Per File Entropy Pursuant To Sony's File Structure, Improved Syscon File Handling, Bundled Serial Reader Application (Auto Detects COM Port then Reads & Auto-saves Serial as ASCII (.txt) or Hex (.bin)).
 	1.9.9 (8/1/23) Added Syscon Firmware Validation, Better EAP Key Validations, Better UNK Validations, Added EAP Key Repair (Panic EAP Key Not Available Error/Corrupt UNK Section), Fixed v1.xx Version Errors.
 	1.9.8 (5/1/23) Update to CoreOS/SB Patching, Added Unlisted Results, Added New Validations, Updated Internal Comparator
 	1.9.7 (28/12/22) Serious Bug Fix In Syscon Patching.
@@ -293,6 +296,11 @@ https://www.buymeacoffee.com/BwE
 - https://discord.gg/pXeUHMy
 
 ### Videos Featuring My Program: ###
+- https://www.youtube.com/watch?v=hcmMSYmwSUQ <--- My video!
+- https://www.youtube.com/watch?v=NBktKSx4FzQ
+- https://www.youtube.com/watch?v=GXOBX6BDg0I
+- https://www.youtube.com/watch?v=p8DyudhA7ME
+- https://www.youtube.com/watch?v=1gk7HtYih84
 - https://www.youtube.com/watch?v=m3wgiudcTEA
 - https://www.youtube.com/watch?v=EISO-t2fnMw
 - https://www.youtube.com/watch?v=Yal7cwdIKCg
