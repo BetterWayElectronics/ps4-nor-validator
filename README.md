@@ -26,12 +26,16 @@ Well this is the debugging system Sony uses. I added an ability to patch your du
 Have a look at https://repair.wiki/w/PS4_UART_Guide for a guide on how to do this.
 Once you start outputting a log, the last thing it ends on is generally the error thats stopping your console from booting (or what's causing it to crash).
 Since I don't work for Sony I cannot tell you what every single error code means, but I or others can surely help (check my discord for example).
+My program will fix a majority of issues that UART outputs, some issues like IDPS error and SAMU Enter/Leave cannot be fixed at this time.
+
 
 ### What else can your program do? ###
 I have bundled in my comparison program as well as my patching, flagging and extraction tools. Some of these are on my Github (https://github.com/BetterWayElectronics/) as individual apps.
 I have designed it to read dumps from either the same directory you run the program from or a /dumps/ directory. It also accepts different file formats beyond .bin. 
 You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
 There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
+I have lots of patches for corruption and for various flags, this will fix and or enable lots of new interesting features on your PS4.
+
 
 ### Syscon? ###
 As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors. Do not use separately, you will brick.
@@ -123,7 +127,7 @@ It is either because of the newer protections I have added since adding licencin
 		
 	4 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error)
 	
-		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots.
+		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots. If patch fails, there is a reverse patch option.
 		Repairs BLOD related to EAP Key panic.
 		
 	5 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
@@ -149,13 +153,25 @@ It is either because of the newer protections I have added since adding licencin
 			3. Toggle Boot Parameter Modes
 			4. Toggle Memory Budget Mode
 			5. Toggle Slow HDD Mode
-			6. Enable/Disable Update Mode (Fixes CE-35888-2)
+			6. Enable/Disable Update Mode (Fixes CE-35888-2/SU-35888-2)
 			7. Enable/Disable Registry Recover Mode
 			8. Enable/Disable Arcade Mode
+			9. Enable/Disable MANU Mode
+			10. Enable/Disable Safe Mode Boot
+			11. Enable/Disable Memory Test
+			12. Enable/Disable RNG/Keystorage Test
+			13. Enable/Disable UART + Memory & RNG/Keystorange Test
+			14. Swap X and O Buttons
 
 		UART is well vetted, the others are not so use at own risk.
 		I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide It includes drivers and programming software you may need.
-		
+
+		Memory Test mode tests the memory within UART.
+
+		Update mode will fix CE-35888-2/SU-35888-2 errors.
+
+		MANU Mode will enable Service Mode on older firmwares.
+
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
 	7 - Extract (BwE Style)
@@ -176,7 +192,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 95ABB94E2E843C2BD2371AEF86EC8B47 
+	File MD5: 0D69C397C6B05586C89BE6BD1B357B08 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -188,12 +204,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	21,679 Lines of Code
-	805KB of Code
-	2877+ Offsets Read
-	2992 Possible Results/Outputs
+	22,697 Lines of Code
+	842KB of Code
+	2971+ Offsets Read
+	3047 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.1 (31/1/23) Updated Syscon Patcher (Less Manual Patching (Still Beta)), Significant Updates to UNK, CID, Naming Schemes and Flags, Added MANU (Manufacturer Mode (Service Mode (Old FW Only)) Mode, Safe Mode, Memory Test, RNG/Keystorage Test, X and O Button Swap & Multi Patches, Added EAP Reverse Patch (Use If First Fails), Better File Handling & Messages.
 	2.0.0 (20/1/23) Added UART Patching To CoreOS/Southbridge Patcher, Added Bulk CoreOS/SB Patching (1-4 or 1-2), Added Per File Entropy Pursuant To Sony's File Structure, Improved Syscon File Handling, Bundled Serial Reader Application (Auto Detects COM Port then Reads & Auto-saves Serial as ASCII (.txt) or Hex (.bin)).
 	1.9.9 (8/1/23) Added Syscon Firmware Validation, Better EAP Key Validations, Better UNK Validations, Added EAP Key Repair (Panic EAP Key Not Available Error/Corrupt UNK Section), Fixed v1.xx Version Errors.
 	1.9.8 (5/1/23) Update to CoreOS/SB Patching, Added Unlisted Results, Added New Validations, Updated Internal Comparator
@@ -281,7 +298,7 @@ It is either because of the newer protections I have added since adding licencin
 	SCE
 	You! 
 	
-Proudly made in PERL with Notepad++
+Proudly made in Perl with Notepad++ by BwE, alone </3
 Thanks to all the people who email me and beg me to update my program <3 
 
 Made In Australia!
