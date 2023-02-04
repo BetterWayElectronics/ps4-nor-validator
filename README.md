@@ -134,6 +134,8 @@ It is either because of the newer protections I have added since adding licencin
 
 		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used without first backing up Syscon chip.
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
+		
+		Apply in sequence until BLOD with checkUpdVersion 0xfffffff AND secure loader version lower than standby version.
 
 			1. Patch Southbridge Flag & CoreOS Header
 			2. CoreOS Header Only
@@ -192,7 +194,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 0D69C397C6B05586C89BE6BD1B357B08 
+	File MD5: BF8FB6B9DA5DD4106B64617B8F071BBB 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -204,12 +206,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	22,697 Lines of Code
-	842KB of Code
-	2971+ Offsets Read
+	22,762 Lines of Code
+	845KB of Code
+	2981+ Offsets Read
 	3047 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.2 (4/2/23) Vital Update to Southbridge & CoreOS Patching (For FAT Models), New Update Handling Process, Other Mild Fixes
 	2.0.1 (31/1/23) Updated Syscon Patcher (Less Manual Patching (Still Beta)), Significant Updates to UNK, CID, Naming Schemes and Flags, Added MANU (Manufacturer Mode (Service Mode (Old FW Only)) Mode, Safe Mode, Memory Test, RNG/Keystorage Test, X and O Button Swap & Multi Patches, Added EAP Reverse Patch (Use If First Fails), Better File Handling & Messages.
 	2.0.0 (20/1/23) Added UART Patching To CoreOS/Southbridge Patcher, Added Bulk CoreOS/SB Patching (1-4 or 1-2), Added Per File Entropy Pursuant To Sony's File Structure, Improved Syscon File Handling, Bundled Serial Reader Application (Auto Detects COM Port then Reads & Auto-saves Serial as ASCII (.txt) or Hex (.bin)).
 	1.9.9 (8/1/23) Added Syscon Firmware Validation, Better EAP Key Validations, Better UNK Validations, Added EAP Key Repair (Panic EAP Key Not Available Error/Corrupt UNK Section), Fixed v1.xx Version Errors.
