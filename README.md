@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/ToOrIjt.png)
+![BwE](https://i.imgur.com/thU4Rxn.png)
 
 ## Introduction ##
 
