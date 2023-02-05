@@ -194,7 +194,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 7CB0C6C9C8B46026670C0A68D159B6B5 
+	File MD5: 401ECB4F60A5D81B7D07DD7A6D14EAEB 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
