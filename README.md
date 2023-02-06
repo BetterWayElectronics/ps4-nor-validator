@@ -194,7 +194,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 401ECB4F60A5D81B7D07DD7A6D14EAEB 
+	File MD5: 69853F8E7580B56C69EFF6BDEAA9A3B9 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -206,12 +206,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	22,762 Lines of Code
-	845KB of Code
-	2981+ Offsets Read
-	3047 Possible Results/Outputs
+	23,052 Lines of Code
+	855KB of Code
+	2999+ Offsets Read
+	3048 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.3 (6/2/23) Improved Syscon Auto Patching (Less Chance Of Manual Patching) (Still Beta! Report All Syscon Patch Issues!), Fixed Potentially Broken Trial Mode + HWID Stuff.
 	2.0.2 (4/2/23) Vital Update to Southbridge & CoreOS Patching (For FAT Models), New Update Handling Process, Other Mild Fixes
 	2.0.1 (31/1/23) Updated Syscon Patcher (Less Manual Patching (Still Beta)), Significant Updates to UNK, CID, Naming Schemes and Flags, Added MANU (Manufacturer Mode (Service Mode (Old FW Only)) Mode, Safe Mode, Memory Test, RNG/Keystorage Test, X and O Button Swap & Multi Patches, Added EAP Reverse Patch (Use If First Fails), Better File Handling & Messages.
 	2.0.0 (20/1/23) Added UART Patching To CoreOS/Southbridge Patcher, Added Bulk CoreOS/SB Patching (1-4 or 1-2), Added Per File Entropy Pursuant To Sony's File Structure, Improved Syscon File Handling, Bundled Serial Reader Application (Auto Detects COM Port then Reads & Auto-saves Serial as ASCII (.txt) or Hex (.bin)).
