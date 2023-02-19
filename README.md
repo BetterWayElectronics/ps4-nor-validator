@@ -194,7 +194,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 81BC6B0A02EACF2DBEB96257646AABDE 
+	File MD5: 3D76CDFE23CEF756979519FA9A9054F5 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -206,12 +206,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	23,164 Lines of Code
-	859KB of Code
+	23,225 Lines of Code
+	861KB of Code
 	3010+ Offsets Read
 	3070 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.5 (19/2/23) Bug Fixes to HWID Handling (Also Updated HWID Generator), Bug Fixes to Syscon Patcher, Some Validation Changes/Upgrades
 	2.0.4 (13/2/23) Improved Validation, Preparing For Auto Corruption Repair (Some Areas), Added Unlisted Results, New Flags CID/UNK, Other Mild Changes.
 	2.0.3 (7/2/23) Improved Syscon Auto Patching (Less Chance Of Manual Patching) (Still Beta! Report All Syscon Patch Issues!), Fixed Potentially Broken Trial Mode + HWID Stuff,  Fixed Other Patching Issues.
 	2.0.2 (4/2/23) Vital Update to Southbridge & CoreOS Patching (For FAT Models), New Update Handling Process, Other Mild Fixes
