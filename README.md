@@ -194,7 +194,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: C90164A497528C09C53087F32948DB02 
+	File MD5: C96B56C546E9B827C7C2CD53B268D853 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -206,12 +206,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	23,267 Lines of Code
-	861KB of Code
-	3010+ Offsets Read
-	3070 Possible Results/Outputs
+	23,388 Lines of Code
+	867KB of Code
+	3027+ Offsets Read
+	3098 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.7 (21/2/23) Further Bug Fixes (Bug Testing Sucks), Added Flags to CID, Updated UNK Validation, Updated Unlisted Results, More Unique Values Thanks To Thailand PS4's, Updated 4 Year Old Validations (Wow).
 	2.0.6 (20/2/23) Bug Fixes For Bug Fixes, Better Handling of Trial Users.
 	2.0.5 (19/2/23) Bug Fixes to HWID Handling (Also Updated HWID Generator), Bug Fixes to Syscon Patcher, Some Validation Changes/Upgrades
 	2.0.4 (13/2/23) Improved Validation, Preparing For Auto Corruption Repair (Some Areas), Added Unlisted Results, New Flags CID/UNK, Other Mild Changes.
