@@ -72,9 +72,6 @@ This is why there is a password on the RAR file (that being 'BwE')
 ### Whats up with the image that pops up when the program starts? ###
 Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
 
-### What are those files you put on Github? ###
-I have added a few old and unidentifiable dumps for your perusal. This is for people who have no actual PS4 or personal dumps but still wish to see the functionality of my program. They have had their serial numbers and MAC addresses removed. They were originally taken from psdevwiki and or colleagues. I have also added a more modern example output html file that my program produces, for those wishing to skip the downloading process.
-
 ### Your program is crashing!? ###
 It is either because of the newer protections I have added since adding licencing, or your antivirus is having an issue with the program. Contact me and provide what AV, OS and whether you had issues with older versions.
 
