@@ -59,8 +59,9 @@ Finally, the majority of endusers for this program are businesses (and that is t
 
 If you enjoy my program visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a key!
 
-Note: My software and future software will still run at least once as a trial. This is suitable for regular consumers who need to fix their personal console. Business use must require payment for an unlimited license.
 Each licence allows once PC and is locked to your HWID. You can change your HD and format your PC and the licence will work, but you cannot use it on another PC.
+
+Trials have been removed due to abuse!
 	
 ### Your program is a VIRUS! ### 
 I protect my program with Themida. The problem with this is that heuristically some AV software see it as a threat.
@@ -194,7 +195,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: C9EF9D679968FDCD2BD26318E1A83DA7 
+	File MD5: 6275D7E14A5C7B9C76CD41DB4F887CCE 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -212,6 +213,7 @@ It is either because of the newer protections I have added since adding licencin
 	3098 Possible Results/Outputs
 	
 ## Version History: ##
+	2.0.9 (1/3/23) Small Bug Fixes, Trial Removed
 	2.0.8 (23/2/23) Syscon Patcher Update (Will Also Fix Closing Bug)
 	2.0.7 (21/2/23) Further Bug Fixes (Bug Testing Sucks), Added Flags to CID, Updated UNK Validation, Updated Unlisted Results, More Unique Values Thanks To Thailand PS4's, Updated 4 Year Old Validations (Wow).
 	2.0.6 (20/2/23) Bug Fixes For Bug Fixes, Better Handling of Trial Users.
@@ -380,9 +382,7 @@ If you are a commercial user, I highly suggest you buy the software here: https:
 
 I also sell Syscon writing hardware here: https://betterwayelectronics.com.au/#hardware
 
-Provide your HWID (via the trial or provided application) and email it to sales(at)betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
-
-Other users will only be able to validate one dump.
+Provide your HWID (via the provided application) and email it to sales(at)betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
 
 
 ![End](https://i.imgur.com/iauhGcv.png)
