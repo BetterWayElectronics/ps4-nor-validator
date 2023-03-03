@@ -135,7 +135,7 @@ It is either because of the newer protections I have added since adding licencin
 		
 		Apply in sequence until BLOD with checkUpdVersion 0xfffffff AND secure loader version lower than standby version.
 
-			1. Patch Southbridge Flag & CoreOS Header
+			1. Patch CoreOS Header & UART Automatically (x6 Times)
 			2. CoreOS Header Only
 			3. Southbridge Header Only
 
@@ -144,7 +144,7 @@ It is either because of the newer protections I have added since adding licencin
 		https://betterwayelectronics.com.au/syscon.html
 		https://www.youtube.com/watch?v=hcmMSYmwSUQ
 
-	6 - Enable/Disable/Toggle 8 System Flags
+	6 - Enable/Disable/Toggle 16 System Flags
 
 		These flags will work without the need to jailbreak. 
 
@@ -160,17 +160,21 @@ It is either because of the newer protections I have added since adding licencin
 			10. Enable/Disable Safe Mode Boot
 			11. Enable/Disable Memory Test
 			12. Enable/Disable RNG/Keystorage Test
-			13. Enable/Disable UART + Memory & RNG/Keystorange Test
-			14. Swap X and O Buttons
+			13. Modify SAMU Boot Flag
+			14. Modify Memory Clock Speed
+			15. Enable/Disable UART & Memory & RNG/Keystorage Test
+			16. Swap X and O Buttons
 
 		UART is well vetted, the others are not so use at own risk.
 		I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide It includes drivers and programming software you may need.
 
 		Memory Test mode tests the memory within UART.
 
-		Update mode will fix CE-35888-2/SU-35888-2 errors.
+		Update mode may fix CE-35888-2/SU-35888-2 errors.
 
 		MANU Mode will enable Service Mode on older firmwares.
+		
+		Memory Clock Speed can be adjusted from 400mhz to 2000mhz. Underclocking may repair Loadbios and Memory errors!
 
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
@@ -192,7 +196,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 6275D7E14A5C7B9C76CD41DB4F887CCE 
+	File MD5: A0E1A2733017BF1FDC711773B14D2324 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -204,12 +208,14 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	23,413 Lines of Code
-	868KB of Code
+	23,209 Lines of Code
+	860KB of Code
 	3027+ Offsets Read
 	3098 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.1 (3/3/23) Critical Bug Fix In Syscon Patcher
+	2.1.0 (2/3/23) Added SAMU Boot Flag and Memory Clock Speed Editing (Can Potentially Fix LoadBios/Memory Issues), Added x2 Additional Syscon Patches, Removed Southbridge Patch From Main Patch Option (Only Use For SB FW Errors), Patching Bug
 	2.0.9 (1/3/23) Small Bug Fixes, Trial Removed
 	2.0.8 (23/2/23) Syscon Patcher Update (Will Also Fix Closing Bug)
 	2.0.7 (21/2/23) Further Bug Fixes (Bug Testing Sucks), Added Flags to CID, Updated UNK Validation, Updated Unlisted Results, More Unique Values Thanks To Thailand PS4's, Updated 4 Year Old Validations (Wow).
