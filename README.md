@@ -79,7 +79,7 @@ It is either because of the newer protections I have added since adding licencin
 * TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 (or from a different section) - but NOT perconsole data (maybe)!
 * TLDR; Will this prove my BLOD is software based? Yes, if the dump comes up 100% valid then it is likely a hardware issue - I recommend enabling UART and seeing its output.
 * TLDR; Will this fix my corrupt CoreOS? Yeah with a patched Syscon.
-* TLDR; Will this fix my loadBios -8 Error? Yeah with a patched Syscon.
+* TLDR; Will this fix my loadBios -8 Error? Yeah with a patched Syscon (Or reduced memory clk)
 * TLDR; OK = OK, Warning = Weird but MIGHT be okay, DANGER = Bad
 
 
@@ -162,8 +162,8 @@ It is either because of the newer protections I have added since adding licencin
 			12. Enable/Disable RNG/Keystorage Test
 			13. Modify SAMU Boot Flag
 			14. Modify Memory Clock Speed
-			15. Enable/Disable UART & Memory & RNG/Keystorage Test
-			16. Swap X and O Buttons
+			15. Swap X and O Buttons
+			16. Enable/Disable UART & Memory & RNG/Keystorage Test
 
 		UART is well vetted, the others are not so use at own risk.
 		I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide It includes drivers and programming software you may need.
@@ -196,7 +196,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 6B455CDEC0BC01EB920EC71A63642050 
+	File MD5: BA530894B74DF086D8849B3C8FB77269 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -208,12 +208,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	23,240 Lines of Code
-	861KB of Code
-	3013+ Offsets Read
-	3106 Possible Results/Outputs
+	23,748 Lines of Code
+	883KB of Code
+	3116+ Offsets Read
+	3202 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.3 (5/3/23) Upgraded/Reworked System Patch Handling & Validation (Important Update!), Added New UNK Validation, Won't Ask For UART @ End If Already Enabled!
 	2.1.2 (5/3/23) Added x2 Additional Syscon Patches, Fixed SAMU Boot Flag, Increased Memory CLK to 2250mhz (Samsung HC-25 Recommended), Modified Serial Reader (Removed .BIN Output), Renamed to UART Reader
 	2.1.1 (3/3/23) Critical Bug Fix In Syscon Patcher
 	2.1.0 (2/3/23) Added SAMU Boot Flag and Memory Clock Speed Editing (Can Potentially Fix LoadBios/Memory Issues), Added x2 Additional Syscon Patches, Removed Southbridge Patch From Main Patch Option (Only Use For SB FW Errors), Patching Bug
@@ -289,7 +290,7 @@ It is either because of the newer protections I have added since adding licencin
 	Thailand (Xohke!)
 	PS3/PS4 Dev Wiki (+ Its Contributors)
 	DARKNESMONK
-	Bert NL
+	PDJ
 	eussNL (<3)
 	cfwprpht
 	judges
@@ -299,7 +300,6 @@ It is either because of the newer protections I have added since adding licencin
 	Stooged
 	GregoryRasputin
 	zecoxao
-	Cliques Unique
 	ProConsoles NL
 	Centrino
 	Viktor TechStars Romania
@@ -313,8 +313,9 @@ It is either because of the newer protections I have added since adding licencin
 	SCE
 	You! 
 	
-Proudly made in Perl with Notepad++ by BwE, alone </3
-Thanks to all the people who email me and beg me to update my program <3 
+Proudly made in Perl with Notepad++ by BwE, alone </3 
+To be clear, there has been nobody but myself contributing to the source code of this program! I have only got support on what to do at times!
+Thanks to all of my nice loyal and friendly customers!
 
 Made In Australia!
 
@@ -329,7 +330,12 @@ https://www.buymeacoffee.com/BwE
 
 ### Videos Featuring My Program: ###
 - https://www.youtube.com/watch?v=hcmMSYmwSUQ <--- My video!
+- https://www.youtube.com/watch?v=fE4qGHJyX8E
+- https://www.youtube.com/watch?v=2hXO60rUt40
+- https://www.youtube.com/watch?v=D8-AMvsfadM (Uncredited)
+- https://www.youtube.com/watch?v=syfiph70reQ
 - https://www.youtube.com/watch?v=NBktKSx4FzQ
+- https://www.youtube.com/watch?v=LCOUepj5_8o
 - https://www.youtube.com/watch?v=GXOBX6BDg0I
 - https://www.youtube.com/watch?v=p8DyudhA7ME
 - https://www.youtube.com/watch?v=1gk7HtYih84
@@ -354,7 +360,7 @@ https://www.buymeacoffee.com/BwE
 - https://www.youtube.com/watch?v=PLrudwJHycU (Kinda Uncredited)
 - https://www.youtube.com/watch?v=bGnEu4UwsU4
 - https://www.youtube.com/watch?v=5q0WWyYNsTs (Uncredited)
-- https://www.youtube.com/watch?v=ZEwgtvKcB58 (Uncredited/Indian)
+- https://www.youtube.com/watch?v=ZEwgtvKcB58 (Uncredited)
 
 ### Website Featuring My Program: ###
 - https://repair.wiki/w/PS4_UART_Guide
@@ -372,6 +378,7 @@ https://www.buymeacoffee.com/BwE
 - https://www.psx-place.com/threads/tutorial-how-to-take-a-nor-backup-on-every-ps4.28070/
 - https://tieba.baidu.com/p/8196671153
 - https://yoschi.cc/gaming/es-ist-anscheinend-moeglich-ihre-ps4-ohne-backup/
+- https://psx-core.ru/forum/48-3196-5
 
 ### My Websites: ###
 - https://www.betterwayelectronics.com.au/
