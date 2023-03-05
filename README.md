@@ -135,7 +135,7 @@ It is either because of the newer protections I have added since adding licencin
 		
 		Apply in sequence until BLOD with checkUpdVersion 0xfffffff AND secure loader version lower than standby version.
 
-			1. Patch CoreOS Header & UART Automatically (x6 Times)
+			1. Patch CoreOS Header & UART Automatically (x8 Times)
 			2. CoreOS Header Only
 			3. Southbridge Header Only
 
@@ -174,7 +174,7 @@ It is either because of the newer protections I have added since adding licencin
 
 		MANU Mode will enable Service Mode on older firmwares.
 		
-		Memory Clock Speed can be adjusted from 400mhz to 2000mhz. Underclocking may repair Loadbios and Memory errors!
+		Memory Clock Speed can be adjusted from 400mhz to 2250mhz. Underclocking may repair Loadbios and Memory errors!
 
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
@@ -196,7 +196,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: A0E1A2733017BF1FDC711773B14D2324 
+	File MD5: 6B455CDEC0BC01EB920EC71A63642050 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -208,12 +208,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	23,209 Lines of Code
-	860KB of Code
-	3027+ Offsets Read
-	3098 Possible Results/Outputs
+	23,240 Lines of Code
+	861KB of Code
+	3013+ Offsets Read
+	3106 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.2 (5/3/23) Added x2 Additional Syscon Patches, Fixed SAMU Boot Flag, Increased Memory CLK to 2250mhz (Samsung HC-25 Recommended), Modified Serial Reader (Removed .BIN Output), Renamed to UART Reader
 	2.1.1 (3/3/23) Critical Bug Fix In Syscon Patcher
 	2.1.0 (2/3/23) Added SAMU Boot Flag and Memory Clock Speed Editing (Can Potentially Fix LoadBios/Memory Issues), Added x2 Additional Syscon Patches, Removed Southbridge Patch From Main Patch Option (Only Use For SB FW Errors), Patching Bug
 	2.0.9 (1/3/23) Small Bug Fixes, Trial Removed
