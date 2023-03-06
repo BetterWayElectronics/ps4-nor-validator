@@ -196,7 +196,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: BA530894B74DF086D8849B3C8FB77269 
+	File MD5: C1861790DCB766A95945AA5A6DD2B698 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -214,8 +214,9 @@ It is either because of the newer protections I have added since adding licencin
 	3202 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.4 (6/3/23) Critical Bug Fix In Downgrade Patches (Whoops)
 	2.1.3 (5/3/23) Upgraded/Reworked System Patch Handling & Validation (Important Update!), Added New UNK Validation, Won't Ask For UART @ End If Already Enabled!
-	2.1.2 (5/3/23) Added x2 Additional Syscon Patches, Fixed SAMU Boot Flag, Increased Memory CLK to 2250mhz (Samsung HC-25 Recommended), Modified Serial Reader (Removed .BIN Output), Renamed to UART Reader
+	2.1.2 (5/3/23) Added x2 Additional Downgrade Patches, Fixed SAMU Boot Flag, Increased Memory CLK to 2250mhz (Samsung HC-25 Recommended), Modified Serial Reader (Removed .BIN Output), Renamed to UART Reader
 	2.1.1 (3/3/23) Critical Bug Fix In Syscon Patcher
 	2.1.0 (2/3/23) Added SAMU Boot Flag and Memory Clock Speed Editing (Can Potentially Fix LoadBios/Memory Issues), Added x2 Additional Syscon Patches, Removed Southbridge Patch From Main Patch Option (Only Use For SB FW Errors), Patching Bug
 	2.0.9 (1/3/23) Small Bug Fixes, Trial Removed
