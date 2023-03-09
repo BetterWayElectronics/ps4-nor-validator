@@ -143,8 +143,12 @@ It is either because of the newer protections I have added since adding licencin
 		https://betterwayelectronics.com.au/sce_syscon.html
 		https://betterwayelectronics.com.au/syscon.html
 		https://www.youtube.com/watch?v=hcmMSYmwSUQ
+		
+	6 - Patch Empty UNK (1CA000-1CAFFF or 1CD000-1CDFFF)
 
-	6 - Enable/Disable/Toggle 16 System Flags
+		Will detect blank data in either 1CA000 or 1CD000 and patch them by swapping them. If both are blank it will replace with generic data.
+
+	7 - Enable/Disable/Toggle 16 System Flags
 
 		These flags will work without the need to jailbreak. 
 
@@ -178,25 +182,25 @@ It is either because of the newer protections I have added since adding licencin
 
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 
-	7 - Extract (BwE Style)
+	8 - Extract (BwE Style)
 
 		Extract based on literal files and does so dynamically based on their size.
 
-	8 - Extract (Zecoxao Style)
+	9 - Extract (Zecoxao Style)
 
 		Extracting file sections pursuant to Sony's file blocks.
 
-	9 - Upload Only
+	10 - Upload Only
 
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 
-	9/10 - Validate
+	10/11 - Validate
 
-		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 7 if offline.
+		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 10 if offline.
 
 
 ## File Information: ##
-	File MD5: C1861790DCB766A95945AA5A6DD2B698 
+	File MD5: 62929F5E6071E3CD039C25EA71020679 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -208,12 +212,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	23,748 Lines of Code
-	883KB of Code
-	3116+ Offsets Read
-	3202 Possible Results/Outputs
+	24,281 Lines of Code
+	904KB of Code
+	3187+ Offsets Read
+	3290 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.5 (9/3/23) Significant Updates and Changes to UNK & CID Validations, Added New Empty 1CA000-1CA5FF / 1CD000-1CDFFF Patch Option, Added Unlisted & New Validations.
 	2.1.4 (6/3/23) Critical Bug Fix In Downgrade Patches (Whoops)
 	2.1.3 (5/3/23) Upgraded/Reworked System Patch Handling & Validation (Important Update!), Added New UNK Validation, Won't Ask For UART @ End If Already Enabled!
 	2.1.2 (5/3/23) Added x2 Additional Downgrade Patches, Fixed SAMU Boot Flag, Increased Memory CLK to 2250mhz (Samsung HC-25 Recommended), Modified Serial Reader (Removed .BIN Output), Renamed to UART Reader
