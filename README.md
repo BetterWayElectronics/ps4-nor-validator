@@ -135,9 +135,17 @@ It is either because of the newer protections I have added since adding licencin
 		
 		Apply in sequence until BLOD with checkUpdVersion 0xfffffff AND secure loader version lower than standby version.
 
-			1. Patch CoreOS Header & UART Automatically (x8 Times)
-			2. CoreOS Header Only
-			3. Southbridge Header Only
+		1. Auto Patch CoreOS Header & UART 
+			Automatically applies x14 patches, it is up to you to determine which is valid. You will have to upload each one individually and use UART to see which one is successful or not.
+
+		2. Manually Patch CoreOS Header & UART
+			Select one of the 14 patches yourself, if you are confident in the patches that is. This may save some users time, but I doubt it.
+
+		3. Generate Legitimate CoreOS Header Patch
+			Creates a patch based on what the PS4 will naturally produce. This requires you to update the current console to the same version via safe mode. Instructions and automated patching within the app.
+
+		4. Southbridge Header Only
+			May fix issues with patches that worked, but have EMC related issues in the UART.
 
 		See Guide/s:
 		https://betterwayelectronics.com.au/sce_syscon.html
@@ -193,6 +201,8 @@ It is either because of the newer protections I have added since adding licencin
 	10 - Upload Only
 
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
+		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
+
 
 	10/11 - Validate
 
@@ -200,7 +210,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 62929F5E6071E3CD039C25EA71020679 
+	File MD5: 6D6E2543EB09AB4AAE5E3D8007ED891F 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -212,12 +222,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	24,281 Lines of Code
-	904KB of Code
+	24,492 Lines of Code
+	913KB of Code
 	3187+ Offsets Read
 	3290 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.6 (22/3/23) Added New CoreOS Header Patching Methodology & 6 New Patches, Added UART .txt Uploading (Please Use!), Added Unlisted & New Validations, Other Small Fixes.
 	2.1.5 (9/3/23) Significant Updates and Changes to UNK & CID Validations, Added New Empty 1CA000-1CA5FF / 1CD000-1CDFFF Patch Option, Added Unlisted & New Validations.
 	2.1.4 (6/3/23) Critical Bug Fix In Downgrade Patches (Whoops)
 	2.1.3 (5/3/23) Upgraded/Reworked System Patch Handling & Validation (Important Update!), Added New UNK Validation, Won't Ask For UART @ End If Already Enabled!
