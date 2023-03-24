@@ -135,7 +135,7 @@ It is either because of the newer protections I have added since adding licencin
 		
 		Apply in sequence until BLOD with checkUpdVersion 0xfffffff AND secure loader version lower than standby version.
 
-		1. Auto Patch CoreOS Header & UART 
+		1. Auto Generate CoreOS Header & UART Patches
 			Automatically applies x14 patches, it is up to you to determine which is valid. You will have to upload each one individually and use UART to see which one is successful or not.
 
 		2. Manually Patch CoreOS Header & UART
@@ -144,13 +144,13 @@ It is either because of the newer protections I have added since adding licencin
 		3. Generate Legitimate CoreOS Header Patch
 			Creates a patch based on what the PS4 will naturally produce. This requires you to update the current console to the same version via safe mode. Instructions and automated patching within the app.
 
-		4. Southbridge Header Only
+		4. Patch Southbridge Header Only
 			May fix issues with patches that worked, but have EMC related issues in the UART.
 
 		See Guide/s:
-		https://betterwayelectronics.com.au/sce_syscon.html
-		https://betterwayelectronics.com.au/syscon.html
-		https://www.youtube.com/watch?v=hcmMSYmwSUQ
+			https://betterwayelectronics.com.au/sce_syscon.html
+			https://betterwayelectronics.com.au/syscon.html
+			https://www.youtube.com/watch?v=hcmMSYmwSUQ
 		
 	6 - Patch Empty UNK (1CA000-1CAFFF or 1CD000-1CDFFF)
 
@@ -210,7 +210,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 6D6E2543EB09AB4AAE5E3D8007ED891F 
+	File MD5: 703D3F633A736866542809A83DB6FD61 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -222,12 +222,13 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	24,492 Lines of Code
-	913KB of Code
+	24,555 Lines of Code
+	916KB of Code
 	3187+ Offsets Read
 	3290 Possible Results/Outputs
 	
 ## Version History: ##
+	2.1.7 (24/3/23) Added the 6 New Patches to Auto Patcher (Total of 14! - I Recommend New Method!), Some Validation Updates, Changes to Internal Messages
 	2.1.6 (22/3/23) Added New CoreOS Header Patching Methodology & 6 New Patches, Added UART .txt Uploading (Please Use!), Added Unlisted & New Validations, Other Small Fixes.
 	2.1.5 (9/3/23) Significant Updates and Changes to UNK & CID Validations, Added New Empty 1CA000-1CA5FF / 1CD000-1CDFFF Patch Option, Added Unlisted & New Validations.
 	2.1.4 (6/3/23) Critical Bug Fix In Downgrade Patches (Whoops)
