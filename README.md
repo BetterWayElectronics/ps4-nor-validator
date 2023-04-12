@@ -307,7 +307,10 @@ It is either because of the newer protections I have added since adding licencin
 ### Greetz/Credit: ###
 	Thailand (Xohke!)
 	PS3/PS4 Dev Wiki (+ Its Contributors)
-	DARKNESMONK
+	DarkNESMonk
+	JEFF
+	Wildcard
+	fail0verflow
 	PDJ
 	eussNL (<3)
 	cfwprpht
@@ -328,6 +331,7 @@ It is either because of the newer protections I have added since adding licencin
 	luminouslamp367 for Regex: (\S*)\s?(\$\S*)\s*?(\$FOO)\s?(\S*)
 	Hoea
 	DigiMod 
+	Indonesia!
 	SCE
 	You! 
 	
