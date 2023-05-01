@@ -125,7 +125,7 @@ It is either because of the newer protections I have added since adding licencin
 		
 	4 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error)
 	
-		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots. If patch fails, there is a reverse patch option.
+		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots. If patch fails, there is a reverse patch option which copies the data the other way around.
 		Repairs BLOD related to EAP Key panic.
 		
 	5 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
@@ -210,7 +210,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 703D3F633A736866542809A83DB6FD61 
+	File MD5: 18C527625E2F0E8DEA7D404C63C749CD 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -222,12 +222,15 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	24,555 Lines of Code
-	916KB of Code
-	3187+ Offsets Read
-	3290 Possible Results/Outputs
+	24,835 Lines of Code
+	929KB of Code
+	3230+ Offsets Read
+	3301 Possible Results/Outputs
 	
 ## Version History: ##
+	2.2.0 (1/5/23) Fixed Versioning, Fixed USB Licensing, Other Small Changes
+	2.1.9 (30/4/23) Added USB License Support, Bug Fixes, Fixed SB Patch Error, Better UART Log Handling, Added Unlisted/New Validations, Improved UNK Validation (Block Corruption Detection)
+	2.1.8 (28/3/23) Bug Fixes, Updates to Validation Processes, More Windows 11 Support
 	2.1.7 (24/3/23) Added the 6 New Patches to Auto Patcher (Total of 14! - I Recommend New Method!), Some Validation Updates, Changes to Internal Messages
 	2.1.6 (22/3/23) Added New CoreOS Header Patching Methodology & 6 New Patches, Added UART .txt Uploading (Please Use!), Added Unlisted & New Validations, Other Small Fixes.
 	2.1.5 (9/3/23) Significant Updates and Changes to UNK & CID Validations, Added New Empty 1CA000-1CA5FF / 1CD000-1CDFFF Patch Option, Added Unlisted & New Validations.
