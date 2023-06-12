@@ -152,9 +152,15 @@ It is either because of the newer protections I have added since adding licencin
 			https://betterwayelectronics.com.au/syscon.html
 			https://www.youtube.com/watch?v=hcmMSYmwSUQ
 		
-	6 - Patch Empty UNK (1CA000-1CAFFF or 1CD000-1CDFFF)
+	6 - Patch Empty or Corrupt Blocks
 
-		Will detect blank data in either 1CA000 or 1CD000 and patch them by swapping them. If both are blank it will replace with generic data.
+		Allows for patching of these corrupt blocks by swapping them with their backup data. Run this BEFORE patching UART or anything else.
+		Confirm the areas are corrupt/empty by running validator.
+
+		1. 1CA000-1CAFFF <-> 1CD000-1CDFFF
+		2. 1C9000-1CA610 <-> 1CC000-1CD610
+
+		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 
 	7 - Enable/Disable/Toggle 16 System Flags
 
@@ -210,7 +216,7 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: 18C527625E2F0E8DEA7D404C63C749CD 
+	File MD5: ED94FB6B901DEA3E0FAE3185E9B189A2 
 	Technical Support: bwe_is_1337@betterwayelectronics.com.au
 
 	System Requirements:
@@ -222,12 +228,18 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	24,835 Lines of Code
-	929KB of Code
-	3230+ Offsets Read
-	3301 Possible Results/Outputs
+	25,707 Lines of Code
+	958KB of Code
+	3278+ Offsets Read
+	3327 Possible Results/Outputs
 	
 ## Version History: ##
+	2.2.6 (12/6/23) Wider System Compatibility, Updated & Fixed HWID Processes
+	2.2.5 (10/6/23) Bug Fixes, New HWID Generation Process
+	2.2.4 (9/6/23) Updated Syscon Patcher, Bug Fix to Patching & Extracting, Updated Validations & Results, Server Updates (Future Proofing/Downtime Protection)
+	2.2.3 (27/5/23) Updates to Corrupt/Blank Area Patching, Update to CID Corrupt/Blank Block Detection, Better Auto Deletion of %TMP%, Updated Unlisted/New Results, UART Reader Updated, HWID Generator Updated.
+	2.2.2 (9/5/23) Greatly Improved Patching & Validation for CID/UNK Areas, Potentially Less Issues With HWID Generator, Better Menu Flow.
+	2.2.1 (2/5/23) Fixed Compatibility Issue #5 (Maybe), Fixed Accidental Highlighting, Fixed Assignment Operator Error/s, Other Improvements!
 	2.2.0 (1/5/23) Fixed Versioning, Fixed USB Licensing, Other Small Changes
 	2.1.9 (30/4/23) Added USB License Support, Bug Fixes, Fixed SB Patch Error, Better UART Log Handling, Added Unlisted/New Validations, Improved UNK Validation (Block Corruption Detection)
 	2.1.8 (28/3/23) Bug Fixes, Updates to Validation Processes, More Windows 11 Support
@@ -353,9 +365,12 @@ https://www.buymeacoffee.com/BwE
 - https://discord.com/servers/console-repair-discord-754165317961383997
 - https://discord.gg/pXeUHMy
 
-### Videos Featuring My Program: ###
-- https://www.youtube.com/watch?v=hcmMSYmwSUQ <--- My video!
+### Videos Featuring My Program: ###	- https://www.youtube.com/watch?v=hcmMSYmwSUQ <--- My Video!
+- https://www.youtube.com/watch?v=noS8wfZA99g <--- My Other Video!
+- https://www.youtube.com/watch?v=NDNld92tsZc <--- My PS5 Video
 - https://www.youtube.com/watch?v=fE4qGHJyX8E
+- https://www.youtube.com/watch?v=q1F0AL3ttjY
+- https://www.youtube.com/watch?v=W7RpkG5hiA0
 - https://www.youtube.com/watch?v=2hXO60rUt40
 - https://www.youtube.com/watch?v=D8-AMvsfadM (Uncredited)
 - https://www.youtube.com/watch?v=syfiph70reQ
@@ -372,6 +387,9 @@ https://www.buymeacoffee.com/BwE
 - https://www.youtube.com/watch?v=laxB_D80nJE
 - https://www.youtube.com/watch?v=7D4Zte3vzvg 
 - https://www.youtube.com/watch?v=35DFGCim_WY
+- https://www.youtube.com/watch?v=m9nopeQw6dI (Uncredited)
+- https://www.youtube.com/watch?v=mSiMdqTJTk8 (Uncredited - Spanish)
+- https://www.youtube.com/watch?v=mEDRb-XIqlw (Uncredited - Spanish)
 - https://www.youtube.com/watch?v=G7Vboawafc4 (Uncredited)
 - https://www.youtube.com/watch?v=5q0WWyYNsTs (Uncredited)
 - https://www.youtube.com/watch?v=AH-9jE1uDPk
