@@ -43,31 +43,41 @@ As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provi
 	
 What can you do with the Syscon?
 
-	- Downgrade (CoreOS Swap)
-	- Repair LoadBios -8 Error
-	- Repair sceSblSlLoadSelf -8 Error
-	- Repair checkUpdVersion Error 
-	- Repair BlStorageHeader Error
+	Downgrade Firmware (CoreOS Swap/Revert)
+	Repair LoadBios -8 Error
+	Repair SU-39176-6 Error
+	Repair BlStorageHeader Error
+	Repair checkUpdVersion Error
+	Manipulate Entire Syscon (Debug Mode)
+	Manipulate PSN Activation
+	Repair Obscure UART Errors
+	Store & Revert Syscon Images
+	Rebuild Syscon 
+	Change Boot Modes
 
-More Information/Guide: https://betterwayelectronics.com.au/syscon.html or https://betterwayelectronics.com.au/sce_syscon.html or https://www.youtube.com/watch?v=hcmMSYmwSUQ
+More Information/Guide: https://betterwayelectronics.com.au/sce_syscon.html or https://www.youtube.com/watch?v=hcmMSYmwSUQ
 
 
 ### Why is your software no longer free? ###
-I would like to say the lack of donations, but ultimately I am very busy and working on this project has become difficult, I started in 2008 and since then it has been free. 
-However, I am now spending time I shouldn't be spending developing PS5 software and continued innovations for the PS4.
-Finally, the majority of endusers for this program are businesses (and that is the target market) so while they profit off my program, I do not.
+My software was free from 2008-2022 and in that time I recieved next to no donations (under $500aud). While this was happening businesses were making money using my software.
+So while I updated weekly/monthly I got nothing in return but a few thank yous and blog posts. Now since 2022 I have become very busy, stopped repairing and started a PhD.
 
-If you enjoy my program visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a key!
+So given this is a business to business product I feel it best to charge for it.
+
+If you enjoy my program visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a license!
 
 Each licence allows once PC and is locked to your HWID. You can change your HD and format your PC and the licence will work, but you cannot use it on another PC.
+You can also upgrade an existing license to a USB based one so you can use it on multiple PCS.
 
 Trials have been removed due to abuse!
 	
-### Your program is a VIRUS! ### 
-I protect my program with Themida. The problem with this is that heuristically some AV software see it as a threat.
-This is because people who make or redistribute old malware also use Themida to help make themselves undetected.
-Ultimately, it is up to you to trust the program and me. I encourage you to upload to a malware sandbox or virustotal to see for yourself.
-This is why there is a password on the RAR file (that being 'BwE')
+### Your program is a VIRUS/SPYWARE! WAAAH! ### 
+I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
+This is totally fine and normal, but also very annoying and unavoidable.
+
+My program collects user data via the HWID generator as to be able to generate your license details. The validator itself also communicates with my website to store use data which must then match the HWID data.
+This is a totally normal and boring process that has nothing to do with spying on the end user. If you consider that me knowing that you are using my program is spying on you, then don't use my program.
+
 
 ### Whats up with the image that pops up when the program starts? ###
 Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
@@ -216,8 +226,8 @@ It is either because of the newer protections I have added since adding licencin
 
 
 ## File Information: ##
-	File MD5: ED94FB6B901DEA3E0FAE3185E9B189A2 
-	Technical Support: bwe_is_1337@betterwayelectronics.com.au
+	File MD5: E4CD881FF8F315F3D90878F16BCE6174 
+	Technical Support: hellomoto@betterwayelectronics.com.au
 
 	System Requirements:
 	Minimum 4 CPU Threads
@@ -234,6 +244,7 @@ It is either because of the newer protections I have added since adding licencin
 	3327 Possible Results/Outputs
 	
 ## Version History: ##
+	2.2.7 (27/6/23) Updated UNK Validation, Updated Syscon Patching, Better Suited for Current OFW.
 	2.2.6 (12/6/23) Wider System Compatibility, Updated & Fixed HWID Processes
 	2.2.5 (10/6/23) Bug Fixes, New HWID Generation Process
 	2.2.4 (9/6/23) Updated Syscon Patcher, Bug Fix to Patching & Extracting, Updated Validations & Results, Server Updates (Future Proofing/Downtime Protection)
@@ -347,6 +358,7 @@ It is either because of the newer protections I have added since adding licencin
 	Hoea
 	DigiMod 
 	Indonesia!
+ 	Egypt!
 	SCE
 	You! 
 	
@@ -365,7 +377,8 @@ https://www.buymeacoffee.com/BwE
 - https://discord.com/servers/console-repair-discord-754165317961383997
 - https://discord.gg/pXeUHMy
 
-### Videos Featuring My Program: ###	- https://www.youtube.com/watch?v=hcmMSYmwSUQ <--- My Video!
+### Videos Featuring My Program: ###	
+- https://www.youtube.com/watch?v=hcmMSYmwSUQ <--- My Video!
 - https://www.youtube.com/watch?v=noS8wfZA99g <--- My Other Video!
 - https://www.youtube.com/watch?v=NDNld92tsZc <--- My PS5 Video
 - https://www.youtube.com/watch?v=fE4qGHJyX8E
