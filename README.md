@@ -1,47 +1,46 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/rSFmV3Y.png)
+![BwE](https://i.imgur.com/h2HHFsg.png)
+
 
 ## Introduction ##
 
-I am BwE of betterwayelectronics.com.au and I have been creating software to validate the PlayStation's flash since 2008 with the help of psdevwiki.com :)
-I also repair consoles locally in Australia and have been doing that since 2008 also. I am only recently slowing that down due to commitments with a PhD I am undertaking.
+	I am BwE of betterwayelectronics.com.au and I have been creating software to validate the PlayStation's flash since 2008 with the help of psdevwiki.com :)
+	I also repair consoles locally in Australia and have been doing that since 2008 also. I am only recently slowing that down due to commitments with a PhD I am undertaking.
 
 ## FAQ ##
 
 ### So what is this program exactly and why should you use it? ###
-This program is for those with the BLOD or 'blue light of death' or any other weird issue with their PS4. Using my program can help you determine if its a software or hardware issue.
-It might sound a bit basic to say that my program just checks what the problem is, but ultimately without it you could be repairing things for no reason and wondering why it isn't working.
-This program is designed and catered to other console repair professionals, this is why it is simple and straightforward. If you cannot desolder/reflash your PS4 then you're doomed.
-I am happy to say that my program will check every single byte of the flash, either individually as a value or as an area (such as encrypted/filled). Nothing is skipped.
+	This program is for those with the BLOD or 'blue light of death' or any other weird issue with their PS4. Using my program can help you determine if its a software or hardware issue.
+	It might sound a bit basic to say that my program just checks what the problem is, but ultimately without it you could be repairing things for no reason and wondering why it isn't working.
+	This program is designed and catered to other console repair professionals, this is why it is simple and straightforward. If you cannot desolder/reflash your PS4 then you're doomed.
+	I am happy to say that my program will check every single byte of the flash, either individually as a value or as an area (such as encrypted/filled). Nothing is skipped.
 
 ### What if my problem is indeed software? Your program is spitting out WARNING and DANGER everywhere! ###
-Depending on where in the flash there's corruption also depends if it can be fixed. The flash is semi-encrypted with per-console data as well as universal data.
-You can for example easily patch a corrupt WiFi/BT module on the PS4, I even have a separate program to do just that. This is because that data is NOT unique to anybody's console.
-Other areas such as the CoreOS can be patched for common corruptions, but the patches are generic and technically do NOT match your console as your CoreOS is entirely UNIQUE.
-The rest of the console is a bit of a hit and miss. I may be able to help by using existing data from the 1000's of dumps I have, but your specific corruption may be unfixable.
+	Depending on where in the flash there's corruption also depends if it can be fixed. The flash is semi-encrypted with per-console data as well as universal data.
+	You can for example easily patch a corrupt WiFi/BT module on the PS4, I even have a separate program to do just that. This is because that data is NOT unique to anybody's console.
+	Other areas such as the CoreOS can be patched for common corruptions, but the patches are generic and technically do NOT match your console as your CoreOS is entirely UNIQUE.
+	The rest of the console is a bit of a hit and miss. I may be able to help by using existing data from the 1000's of dumps I have, but your specific corruption may be unfixable.
 
 ### What is this UART thing I hear about? ###
-Well this is the debugging system Sony uses. I added an ability to patch your dump to enable it, both before and after validation.
-Have a look at https://repair.wiki/w/PS4_UART_Guide for a guide on how to do this.
-Once you start outputting a log, the last thing it ends on is generally the error thats stopping your console from booting (or what's causing it to crash).
-Since I don't work for Sony I cannot tell you what every single error code means, but I or others can surely help (check my discord for example).
-My program will fix a majority of issues that UART outputs, some issues like IDPS error and SAMU Enter/Leave cannot be fixed at this time.
-
+	Well this is the debugging system Sony uses. I added an ability to patch your dump to enable it, both before and after validation.
+	Have a look at https://repair.wiki/w/PS4_UART_Guide for a guide on how to do this.
+	Once you start outputting a log, the last thing it ends on is generally the error thats stopping your console from booting (or what's causing it to crash).
+	Since I don't work for Sony I cannot tell you what every single error code means, but I or others can surely help (check my discord for example).
+	My program will fix a majority of issues that UART outputs, some issues like IDPS error and SAMU Enter/Leave cannot be fixed at this time.
 
 ### What else can your program do? ###
-I have bundled in my comparison program as well as my patching, flagging and extraction tools. Some of these are on my Github (https://github.com/BetterWayElectronics/) as individual apps.
-I have designed it to read dumps from either the same directory you run the program from or a /dumps/ directory. It also accepts different file formats beyond .bin. 
-You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
-There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
-I have lots of patches for corruption and for various flags, this will fix and or enable lots of new interesting features on your PS4.
-
+	I have bundled in my comparison program as well as my patching, flagging and extraction tools. Some of these are on my Github (https://github.com/BetterWayElectronics/) as individual apps.
+	I have designed it to read dumps from either the same directory you run the program from or a /dumps/ directory. It also accepts different file formats beyond .bin. 
+	You can have 1000's of dumps in the one folder, it will simply ask which one you want to validate.
+	There is also the ability to upload dumps to me after the validation is complete (or before) - this is how I keep updating my program, with your new/interesting dumps :)
+	I have lots of patches for corruption and for various flags, this will fix and or enable lots of new interesting features on your PS4.
 
 ### Syscon? ###
-As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors. Do not use separately, you will brick.
-	Add your 512kb .bin file in the same folder as this program :)
-	
-What can you do with the Syscon?
+	As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors. Do not use separately, you will brick.
+		Add your 512kb .bin file in the same folder as this program :)
+		
+	What can you do with the Syscon?
 
 	Downgrade Firmware (CoreOS Swap/Revert)
 	Repair LoadBios -8 Error
@@ -55,35 +54,50 @@ What can you do with the Syscon?
 	Rebuild Syscon 
 	Change Boot Modes
 
-More Information/Guide: https://betterwayelectronics.com.au/sce_syscon.html or https://www.youtube.com/watch?v=hcmMSYmwSUQ
+	More Information/Guide: https://betterwayelectronics.com.au/sce_syscon.html or https://www.youtube.com/watch?v=hcmMSYmwSUQ
 
 
 ### Why is your software no longer free? ###
-My software was free from 2008-2022 and in that time I recieved next to no donations (under $500aud). While this was happening businesses were making money using my software.
-So while I updated weekly/monthly I got nothing in return but a few thank yous and blog posts. Now since 2022 I have become very busy, stopped repairing and started a PhD.
-
-So given this is a business to business product I feel it best to charge for it.
-
-If you enjoy my program visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a license!
-
-Each licence allows once PC and is locked to your HWID. You can change your HD and format your PC and the licence will work, but you cannot use it on another PC.
-You can also upgrade an existing license to a USB based one so you can use it on multiple PCS.
-
-Trials have been removed due to abuse!
+	My software was free from 2008-2022 and in that time I recieved next to no donations (under $500aud). While this was happening businesses were making money using my software.
+	So while I updated weekly/monthly I got nothing in return but a few thank yous and blog posts. Now since 2022 I have become very busy, stopped repairing and started a PhD.
 	
+	So given this is a business to business product I feel it best to charge for it.
+	
+	If you enjoy my program visit https://betterwayelectronics.com.au/bweps4norvalidator to purchase a license!
+	
+	Each licence allows once PC and is locked to your HWID. You can change your HD and format your PC and the licence will work, but you cannot use it on another PC.
+	You can also upgrade an existing license to a USB based one so you can use it on multiple PCS.
+	
+	Trials have been removed due to abuse!
+		
 ### Your program is a VIRUS/SPYWARE! WAAAH! ### 
-I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
-This is totally fine and normal, but also very annoying and unavoidable.
-
-My program collects user data via the HWID generator as to be able to generate your license details. The validator itself also communicates with my website to store use data which must then match the HWID data.
-This is a totally normal and boring process that has nothing to do with spying on the end user. If you consider that me knowing that you are using my program is spying on you, then don't use my program.
-
+	I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
+	This is totally fine and normal, but also very annoying and unavoidable.
+	
+	My program collects user data via the HWID generator as to be able to generate your license details. The validator itself also communicates with my website to store use data which must then match the HWID data.
+	This is a totally normal and boring process that has nothing to do with spying on the end user. If you consider that me knowing that you are using my program is spying on you, then don't use my program.
 
 ### Whats up with the image that pops up when the program starts? ###
-Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
+	Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
 
-### Your program is crashing!? ###
-It is either because of the newer protections I have added since adding licencing, or your antivirus is having an issue with the program. Contact me and provide what AV, OS and whether you had issues with older versions.
+### Your program is crashing! ###
+	It is either because of the newer protections I have added since adding licencing, or your antivirus is having an issue with the program. Contact me and provide what AV, OS and whether you had issues with older versions.
+	I have since fixed a lot of the issues found with the 1.9.0+ updates. So please confirm it is not your PC or AV before contacting me.
+	
+### What is the HWID Generator? ###
+	You use it to generate your Hardware Identification. I then use that to create your license file. The one that pops up when you first open the program is NOT ENOUGH! 
+	You wont get a license without running the HWID Generator.
+	https://betterwayelectronics.com.au/hwid.html
+	
+### SDK Version?! ###
+	No its not the firmware you can downgrade to. Its the consoles lowest possible firmware, think of it as the 'factory firmware'.
+	Perhaps one day you can go to this firmware, just not now.
+	
+### Do people even read this? ###
+	Unfortunately not
+	
+### Yeah but how often do you update it? ###
+	Not that often, I always forget.
 
 ## TLDR ##
 * TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 (or from a different section) - but NOT perconsole data (maybe)!
@@ -106,14 +120,14 @@ It is either because of the newer protections I have added since adding licencin
 ## NOR Menu Options: ##
 
 	1 - Comparison
-
-		Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). FFeatures multiple output and filter options.
+	
+		Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output and filter options.
 		
 			1. Compare Specific Version Only
 			2. Compare Specific SKU Only
 			3. Compare Specific Version & SKU Only
 			4. Compare All Dumps
-
+	
 			1. Compare Offsets (Hex)
 			2. Compare Offsets (ASCII)
 			3. Compare Offsets MD5
@@ -122,60 +136,74 @@ It is either because of the newer protections I have added since adding licencin
 			6. Dynamic MD5 Calculation
 			7. Compare File MD5
 			8. Compare File Entropy & Byte Count
-
-	2 - Patch (/Patches/)
-
+	
+	2 - Extract Dump (2 Methods)
+		
+		1. Extract (BwE Style)
+	
+			Extract based on literal files and does so dynamically based on their size.
+	
+		2. Extract (Traditional Style)
+	
+			Extracting file sections pursuant to Sony's file blocks.
+	
+	3 - Patch (/Patches/)
+	
 		Designed to load .bin patches from the /patches/ directory. It will interpret and auto locate patch offsets if they've been extracted by my program. If not it will ask for a start address.
-
-	3 - Patch Corrupt CoreOS (SU-30631-3 Error)
-
+	
+	4 - Patch Corrupt CoreOS (SU-30631-3 Error)
+	
 		Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 		If you have this error (or SU-37553-3) but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 		Another option is to wipe the flash entirely with FF or 00 and re-read it and THEN reflash your original valid dump. Do not just use the default wipe+flash option in your software.
 		
-	4 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error)
-	
+	5 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error) (SU-30645-8 Potentially)
+		
 		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots. If patch fails, there is a reverse patch option which copies the data the other way around.
 		Repairs BLOD related to EAP Key panic.
 		
-	5 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
-
+		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
+		
+	6 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
+	
 		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used without first backing up Syscon chip.
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
 		
+		To see what the previous version is, simply patch the syscon then upload and run it without patching NOR. The UART will tell you the standby mode, which is the previous FW.
+		
 		Apply in sequence until BLOD with checkUpdVersion 0xfffffff AND secure loader version lower than standby version.
-
+		
 		1. Auto Generate CoreOS Header & UART Patches
 			Automatically applies x14 patches, it is up to you to determine which is valid. You will have to upload each one individually and use UART to see which one is successful or not.
-
+			
 		2. Manually Patch CoreOS Header & UART
 			Select one of the 14 patches yourself, if you are confident in the patches that is. This may save some users time, but I doubt it.
-
+			
 		3. Generate Legitimate CoreOS Header Patch
 			Creates a patch based on what the PS4 will naturally produce. This requires you to update the current console to the same version via safe mode. Instructions and automated patching within the app.
-
+			
 		4. Patch Southbridge Header Only
 			May fix issues with patches that worked, but have EMC related issues in the UART.
-
+				
 		See Guide/s:
 			https://betterwayelectronics.com.au/sce_syscon.html
 			https://betterwayelectronics.com.au/syscon.html
 			https://www.youtube.com/watch?v=hcmMSYmwSUQ
 		
-	6 - Patch Empty or Corrupt Blocks
-
+	7 - Patch Empty or Corrupt Blocks
+	
 		Allows for patching of these corrupt blocks by swapping them with their backup data. Run this BEFORE patching UART or anything else.
 		Confirm the areas are corrupt/empty by running validator.
-
+	
 		1. 1CA000-1CAFFF <-> 1CD000-1CDFFF
 		2. 1C9000-1CA610 <-> 1CC000-1CD610
-
+		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
-
-	7 - Enable/Disable/Toggle 16 System Flags
-
+	
+	8 - Enable/Disable/Toggle 16 System Flags
+	
 		These flags will work without the need to jailbreak. 
-
+	
 			1. Enable/Disable UART
 			2. Enable/Disable IDU Mode
 			3. Toggle Boot Parameter Modes
@@ -191,42 +219,33 @@ It is either because of the newer protections I have added since adding licencin
 			13. Modify SAMU Boot Flag
 			14. Modify Memory Clock Speed
 			15. Swap X and O Buttons
-			16. Enable/Disable UART & Memory & RNG/Keystorage Test
-
+			16. Enable/Disable UART, Memory Test & RNG/Keystorage Test
+	
 		UART is well vetted, the others are not so use at own risk.
 		I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide It includes drivers and programming software you may need.
-
-		Memory Test mode tests the memory within UART.
-
-		Update mode may fix CE-35888-2/SU-35888-2 errors.
-
+		
+		Memory Test mode tests the memory within UART. It will do a checksum to confirm if its valid or not. Disable when finished to avoid issues.
+		
+		Update mode may fix CE-35888-2/SU-35888-2 errors - it may not and you will require repair to your BD chip.
+		
 		MANU Mode will enable Service Mode on older firmwares.
 		
 		Memory Clock Speed can be adjusted from 400mhz to 2250mhz. Underclocking may repair Loadbios and Memory errors!
-
+		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
-
-	8 - Extract (BwE Style)
-
-		Extract based on literal files and does so dynamically based on their size.
-
-	9 - Extract (Zecoxao Style)
-
-		Extracting file sections pursuant to Sony's file blocks.
-
-	10 - Upload Only
-
+	
+	9 - Upload Only
+	
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
-
-
-	10/11 - Validate
-
+	
+	9/10 - Validate
+	
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 10 if offline.
 
 
 ## File Information: ##
-	File MD5: E4CD881FF8F315F3D90878F16BCE6174 
+	File MD5: BE6D8A36C406E3057ABFE44547B23930 
 	Technical Support: hellomoto@betterwayelectronics.com.au
 
 	System Requirements:
@@ -238,12 +257,16 @@ It is either because of the newer protections I have added since adding licencin
 	BwE
 
 ## Stats: ##
-	25,707 Lines of Code
-	958KB of Code
-	3278+ Offsets Read
-	3327 Possible Results/Outputs
+	27,518 Lines of Code
+	3361+ Possible HTML Outputs
 	
 ## Version History: ##
+	2.3.3 (23/7/23) Updated Syscon Patching, Updating Southbridge Detection (Chip Type), Re-Arranged Menu, Other Small/Important Changes
+	2.3.2 (18/7/23) Added Block Validation for EMC_IPL, EAP_KBL and Torus (Detect & Describe Southbridge Version/Type), Improved CID Validation, HTML Output Fixed
+	2.3.1 (12/7/23) Changes for Chinese Language Users
+	2.3.0 (11/7/23) Added SDK Versioning (Lowest Downgradeable Firmware), Better FW Detection, Slightly Changed Warning for Memory Overclocking, HWID Generator Update, Better Support for Chinese Systems
+	2.2.9 (10/7/23) 8th Hour Bug Fixes! (Nothing Major).
+	2.2.8 (9/7/23) Updated Syscon Patching, Updated Validations, Future Proofing, Bug Fixes.
 	2.2.7 (27/6/23) Updated UNK Validation, Updated Syscon Patching, Better Suited for Current OFW.
 	2.2.6 (12/6/23) Wider System Compatibility, Updated & Fixed HWID Processes
 	2.2.5 (10/6/23) Bug Fixes, New HWID Generation Process
