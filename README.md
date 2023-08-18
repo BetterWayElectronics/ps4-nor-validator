@@ -245,7 +245,7 @@
 
 
 ## File Information: ##
-	File MD5: BE6D8A36C406E3057ABFE44547B23930 
+	File MD5: 51F19DABD9CBE27CB1FFD5733FC64DC3 
 	Technical Support: hellomoto@betterwayelectronics.com.au
 
 	System Requirements:
@@ -257,10 +257,16 @@
 	BwE
 
 ## Stats: ##
-	27,518 Lines of Code
-	3361+ Possible HTML Outputs
+	27,440 Lines of Code
+	3300+ Possible HTML Outputs
 	
 ## Version History: ##
+	2.3.9 (13/8/23) Updated to Suit 10.71, Updated CID Validation
+	2.3.8 (9/8/23) Added New Validations & Flags, Bug Fix in Comparison Tool
+	2.3.7 (2/8/23) Updated Comparison Tool (Better Outputs, More Options), Changed EAP Key Patching Slightly.
+	2.3.6 (2/8/23) 9th Hour Critical Bug Fix. I Need Beta Testers!
+	2.3.5 (1/8/23) Major Update to EAP Key Patching, Updated Version Detection, Changed SDK to 'Lowest FW' (Who Cares About SDK), Added 'Potential Previous FW' (Based on EMC - Not Reliable), Added Southbridge Type In Main Menu.
+	2.3.4 (31/7/23) Updated Validations to Suit 10.70 Firmware, Removed Individual File Entropy, Updated UNK/CID Validations & Flags, Other Validation Improvements!
 	2.3.3 (23/7/23) Updated Syscon Patching, Updating Southbridge Detection (Chip Type), Re-Arranged Menu, Other Small/Important Changes
 	2.3.2 (18/7/23) Added Block Validation for EMC_IPL, EAP_KBL and Torus (Detect & Describe Southbridge Version/Type), Improved CID Validation, HTML Output Fixed
 	2.3.1 (12/7/23) Changes for Chinese Language Users
