@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/NwuulQo.png)
+![BwE](https://i.imgur.com/rPlY17x.png)
 
 
 ## Introduction ##
@@ -200,7 +200,15 @@
 		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 	
-	8 - Enable/Disable/Toggle 16 System Flags
+	8 - Patch EAP & EMC (Southbridge)
+
+	Validation and patching of your entire Southbridge firmware.
+	Allows for the repair of consoles that have no power response (caused by corrupt Southbridge).
+	Fixes 'EMC VERSION DOWN' errors.
+	Allows you to replace the Southbridge chip with a cheaper model (46 to 36 for example).
+	Allows for the replacement of processor bundles that have different Southbridges (SAE/SAD Slim 21xx -> 22xx, Pro 71xx -> 72xx)
+	
+	9 - Enable/Disable/Toggle 16 System Flags
 	
 		These flags will work without the need to jailbreak. 
 	
@@ -234,18 +242,18 @@
 		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 	
-	9 - Upload Only
+	10 - Upload Only
 	
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
 	
-	9/10 - Validate
+	10/11 - Validate
 	
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 10 if offline.
 
 
 ## File Information: ##
-	File MD5: 51F19DABD9CBE27CB1FFD5733FC64DC3 
+	File MD5: 1E9F9C147751619CDB8F7C6D79964E10 
 	Technical Support: hellomoto@betterwayelectronics.com.au
 
 	System Requirements:
@@ -257,11 +265,13 @@
 	BwE
 
 ## Stats: ##
-	27,440 Lines of Code
+	27,582 Lines of Code
 	3300+ Possible HTML Outputs
 	
 ## Version History: ##
-	2.3.9 (13/8/23) Updated to Suit 10.71, Updated CID Validation
+	2.4.1 (23/8/23) Critical Bug Fix (Syscon Patcher) (Thanks to Updated Menu Behaviour...)
+	2.4.0 (23/8/23) Added Southbridge Patching/Converting, Updated Validations, Code Optimization, Updated Menu Behaviour, Updated HWID Generator
+ 	2.3.9 (13/8/23) Updated to Suit 10.71, Updated CID Validation
 	2.3.8 (9/8/23) Added New Validations & Flags, Bug Fix in Comparison Tool
 	2.3.7 (2/8/23) Updated Comparison Tool (Better Outputs, More Options), Changed EAP Key Patching Slightly.
 	2.3.6 (2/8/23) 9th Hour Critical Bug Fix. I Need Beta Testers!
