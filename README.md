@@ -201,13 +201,13 @@
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 	
 	8 - Patch EAP & EMC (Southbridge)
-
-	Validation and patching of your entire Southbridge firmware.
-	Allows for the repair of consoles that have no power response (caused by corrupt Southbridge).
-	Fixes 'EMC VERSION DOWN' errors.
-	Allows you to replace the Southbridge chip with a cheaper model (46 to 36 for example).
-	Allows for the replacement of processor bundles that have different Southbridges (SAE/SAD Slim 21xx -> 22xx, Pro 71xx -> 72xx)
 	
+		Validation and patching of your entire Southbridge firmware.
+		Allows for the repair of consoles that have no power response (caused by corrupt Southbridge).
+		Fixes 'EMC VERSION DOWN' errors.
+		Allows you to replace the Southbridge chip with a cheaper model (46 to 36 for example).
+		Allows for the replacement of processor bundles that have different Southbridges (SAE/SAD Slim 21xx -> 22xx, Pro 71xx -> 72xx)
+		
 	9 - Enable/Disable/Toggle 16 System Flags
 	
 		These flags will work without the need to jailbreak. 
