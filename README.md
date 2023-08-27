@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/rPlY17x.png)
+![BwE](https://i.imgur.com/QUnkTKZ.png)
 
 
 ## Introduction ##
@@ -200,7 +200,7 @@
 		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 	
-	8 - Patch EAP & EMC (Southbridge)
+	8 - Patch Southbridge (EAP & EMC)
 	
 		Validation and patching of your entire Southbridge firmware.
 		Allows for the repair of consoles that have no power response (caused by corrupt Southbridge).
@@ -242,18 +242,23 @@
 		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 	
-	10 - Upload Only
+	10 - Regenerate NVS (CID & UNK)
+	
+		Will entirely regenerate and reset your NVS while also retaining important per-console data. Will likely fix reboot loops, no power and 3 beep of death issues.
+		Can also likely repair consoles that have sceRegMgrCntlStart or partition mount errors or other obscure UART errors.
+	
+	11 - Upload Only
 	
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
 	
-	10/11 - Validate
+	11/12 - Validate
 	
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 10 if offline.
 
 
 ## File Information: ##
-	File MD5: 1E9F9C147751619CDB8F7C6D79964E10 
+	File MD5: 5B796B6C3F104ED50CB2E03BEACD46F5 
 	Technical Support: hellomoto@betterwayelectronics.com.au
 
 	System Requirements:
@@ -265,10 +270,11 @@
 	BwE
 
 ## Stats: ##
-	27,582 Lines of Code
-	3300+ Possible HTML Outputs
+	28,011 Lines of Code
+	3340+ Possible HTML Outputs
 	
 ## Version History: ##
+	2.4.2 (29/8/23) Added NVS Regenerator, Updated Validations and Definitions, Updated EAP Patcher, Updated Corrupt Block Patcher
 	2.4.1 (23/8/23) Critical Bug Fix (Syscon Patcher) (Thanks to Updated Menu Behaviour...)
 	2.4.0 (23/8/23) Added Southbridge Patching/Converting, Updated Validations, Code Optimization, Updated Menu Behaviour, Updated HWID Generator
  	2.3.9 (13/8/23) Updated to Suit 10.71, Updated CID Validation
@@ -385,7 +391,7 @@
 	DEFAULTDNB
 	Stooged
 	GregoryRasputin
-	zecoxao
+	Elhout
 	ProConsoles NL
 	Centrino
 	Viktor TechStars Romania
