@@ -1,10 +1,9 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/QUnkTKZ.png)
+![BwE](https://i.imgur.com/RuqUcvL.png)
 
 
 ## Introduction ##
-
 	I am BwE of betterwayelectronics.com.au and I have been creating software to validate the PlayStation's flash since 2008 with the help of psdevwiki.com :)
 	I also repair consoles locally in Australia and have been doing that since 2008 also. I am only recently slowing that down due to commitments with a PhD I am undertaking.
 
@@ -38,7 +37,7 @@
 
 ### Syscon? ###
 	As of 1.9.2 I added Syscon Scanning & Patching. Use in conjunction with my provided CoreOS patching to downgrade and repair LoadBIOS errors. Do not use separately, you will brick.
-		Add your 512kb .bin file in the same folder as this program :)
+	Add your 512kb .bin file in the same folder as this program :)
 		
 	What can you do with the Syscon?
 
@@ -68,7 +67,7 @@
 	Each licence allows once PC and is locked to your HWID. You can change your HD and format your PC and the licence will work, but you cannot use it on another PC.
 	You can also upgrade an existing license to a USB based one so you can use it on multiple PCS.
 	
-	Trials have been removed due to abuse!
+	Trials have been removed due to abuse! Hello Alexey <3
 		
 ### Your program is a VIRUS/SPYWARE! WAAAH! ### 
 	I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
@@ -89,15 +88,15 @@
 	You wont get a license without running the HWID Generator.
 	https://betterwayelectronics.com.au/hwid.html
 	
-### SDK Version?! ###
-	No its not the firmware you can downgrade to. Its the consoles lowest possible firmware, think of it as the 'factory firmware'.
-	Perhaps one day you can go to this firmware, just not now.
-	
 ### Do people even read this? ###
 	Unfortunately not
 	
 ### Yeah but how often do you update it? ###
 	Not that often, I always forget.
+
+ ### Pro Tips ###
+	Enter an obviously wrong value if there is no 'go back' menu options. You can also likely accept Y/N prompts with 1.
+
 
 ## TLDR ##
 * TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 (or from a different section) - but NOT perconsole data (maybe)!
@@ -113,6 +112,7 @@
 
 		1. Auto Patch
 			Will automatically grab the last 080B and replace it with the first in the current active slot or blank out the latest, depending on your Syscon.
+   
 		2. Manual Patch
 			If it cannot automatically patch, or if you decide to manually patch you may do the above yourself.
 			You must then replace the last active 080B with an earlier one, or with an empty slot/space. Sizing is automatic so if you go over it will auto-trim.
@@ -194,7 +194,9 @@
 	
 		Allows for patching of these corrupt blocks by swapping them with their backup data. Run this BEFORE patching UART or anything else.
 		Confirm the areas are corrupt/empty by running validator.
-	
+
+  		OK Validation only means that the sections arent empty. You can still use this patcher to fix mild corruption.
+
 		1. 1CA000-1CAFFF <-> 1CD000-1CDFFF
 		2. 1C9000-1CA610 <-> 1CC000-1CD610
 		
@@ -246,6 +248,8 @@
 	
 		Will entirely regenerate and reset your NVS while also retaining important per-console data. Will likely fix reboot loops, no power and 3 beep of death issues.
 		Can also likely repair consoles that have sceRegMgrCntlStart or partition mount errors or other obscure UART errors.
+
+		Will ask for patch options, they're only really important if you're doing an APU change/swap or if the patch failed.
 	
 	11 - Upload Only
 	
@@ -254,12 +258,12 @@
 	
 	11/12 - Validate
 	
-		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Remember, you can put multiple dumps in the same directory. Becomes option 10 if offline.
+		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Becomes option 11 if server is offline.
 
 
 ## File Information: ##
-	File MD5: 5B796B6C3F104ED50CB2E03BEACD46F5 
-	Technical Support: hellomoto@betterwayelectronics.com.au
+	File MD5: 017C52D54FAE4253B38151C4A222AF15 
+	Technical Support: iacceptbitcoin@betterwayelectronics.com.au
 
 	System Requirements:
 	Minimum 4 CPU Threads
@@ -270,10 +274,11 @@
 	BwE
 
 ## Stats: ##
-	28,011 Lines of Code
-	3340+ Possible HTML Outputs
+	28,411 Lines of Code
+	3351+ Possible HTML Outpu
 	
 ## Version History: ##
+	2.4.3 (7/9/23) Added Motherboard Type Detection, Significantly Updated NVS Regenerator, Updated NVS Validation (CID & UNK), More Validations Updated to Suit 10.71, Fixed/Updated HTML Output
 	2.4.2 (29/8/23) Added NVS Regenerator, Updated Validations and Definitions, Updated EAP Patcher, Updated Corrupt Block Patcher
 	2.4.1 (23/8/23) Critical Bug Fix (Syscon Patcher) (Thanks to Updated Menu Behaviour...)
 	2.4.0 (23/8/23) Added Southbridge Patching/Converting, Updated Validations, Code Optimization, Updated Menu Behaviour, Updated HWID Generator
