@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/RuqUcvL.png)
+![BwE](https://i.imgur.com/0FdBgNl.png)
 
 
 ## Introduction ##
@@ -105,6 +105,26 @@
 * TLDR; Will this fix my loadBios -8 Error? Yeah with a patched Syscon (Or reduced memory clk)
 * TLDR; OK = OK, Warning = Weird but MIGHT be okay, DANGER = Bad
 
+## Bulk NOR Tools Menu: ##
+
+	Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output and filter options.
+	
+		1. Compare Specific Version Only
+		2. Compare Specific SKU Only
+		3. Compare Specific Version & SKU Only
+		4. Compare All Dumps
+
+		1. Compare Offsets (Hex)
+		2. Compare Offsets (ASCII)
+		3. Compare Offsets MD5
+		4. Compare Offsets Entropy
+		5. Double Offset Comparison (Data 1 & Data 2)
+		6. Double Offset Comparison (Data 1 & MD5 2)
+		7. Dynamic MD5 Calculation
+		8. Compare File Entropy & Byte Count
+		9. Compare File MD5
+		10. Sort Dumps Into Folders (SKU - FW)
+		11. Extract Dumps by Offset
 
 ## Syscon Menu Options: ##
 	
@@ -119,23 +139,7 @@
 
 ## NOR Menu Options: ##
 
-	1 - Comparison
-	
-		Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output and filter options.
-		
-			1. Compare Specific Version Only
-			2. Compare Specific SKU Only
-			3. Compare Specific Version & SKU Only
-			4. Compare All Dumps
-	
-			1. Compare Offsets (Hex)
-			2. Compare Offsets (ASCII)
-			3. Compare Offsets MD5
-			4. Compare Offsets Entropy
-			5. Double Offset Comparison
-			6. Dynamic MD5 Calculation
-			7. Compare File MD5
-			8. Compare File Entropy & Byte Count
+	1 - Select Different Dump
 	
 	2 - Extract Dump (2 Methods)
 		
@@ -262,8 +266,8 @@
 
 
 ## File Information: ##
-	File MD5: 017C52D54FAE4253B38151C4A222AF15 
-	Technical Support: iacceptbitcoin@betterwayelectronics.com.au
+	File MD5: 8421F66599C4E4E9F967BE0368006F13 
+	Technical Support: sendspamhere@betterwayelectronics.com.au
 
 	System Requirements:
 	Minimum 4 CPU Threads
@@ -274,10 +278,13 @@
 	BwE
 
 ## Stats: ##
-	28,411 Lines of Code
-	3351+ Possible HTML Outpu
+	28,649 Lines of Code
+	3353+ Possible HTML Outputs
+	1100+ Hashes
 	
 ## Version History: ##
+	2.4.5 (20/9/23) Updated Validations (11.00), Updated Southbridge Patcher, Updated Potential Lowest FW, Added 138 IPL Hashes + 93 KBL Hashes + 53 Torus Hashes, Fixed Bulk Dump Extractor.
+	2.4.4 (12/9/23) Added Bulk NOR Extractor, Reworked Menu (Moved Dump Tools), Updated Validations
 	2.4.3 (7/9/23) Added Motherboard Type Detection, Significantly Updated NVS Regenerator, Updated NVS Validation (CID & UNK), More Validations Updated to Suit 10.71, Fixed/Updated HTML Output
 	2.4.2 (29/8/23) Added NVS Regenerator, Updated Validations and Definitions, Updated EAP Patcher, Updated Corrupt Block Patcher
 	2.4.1 (23/8/23) Critical Bug Fix (Syscon Patcher) (Thanks to Updated Menu Behaviour...)
