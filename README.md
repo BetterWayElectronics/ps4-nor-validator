@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/0FdBgNl.png)
+![BwE](https://i.imgur.com/efLcW08.png)
 
 
 ## Introduction ##
@@ -255,18 +255,22 @@
 
 		Will ask for patch options, they're only really important if you're doing an APU change/swap or if the patch failed.
 	
-	11 - Upload Only
+	11 - Patch IDATA Keys 
+	
+		Experimental. Will corrupt/damage/alter part of your IDATA file, which stores a lot of keys. This will be developed further in the future.
+	
+	12 - Upload Only
 	
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
 	
-	11/12 - Validate
+	12/13 - Validate
 	
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Becomes option 11 if server is offline.
 
 
 ## File Information: ##
-	File MD5: 8421F66599C4E4E9F967BE0368006F13 
+	File MD5: E9A1966E4386421782E567D97C1ABAAA 
 	Technical Support: sendspamhere@betterwayelectronics.com.au
 
 	System Requirements:
@@ -278,11 +282,12 @@
 	BwE
 
 ## Stats: ##
-	28,649 Lines of Code
-	3353+ Possible HTML Outputs
+	28,951 Lines of Code
+	3371+ Possible HTML Outputs
 	1100+ Hashes
 	
 ## Version History: ##
+	2.4.6 (2/10/23) Added Resolution Patch, Added IDATA Patch, Fixed EAP Patcher (Partially Corrupt Bug Fix), Added More Flags, Improved CID & UNK Validation, Updated UART Reader (Space to Clear, Enter to Quit)
 	2.4.5 (20/9/23) Updated Validations (11.00), Updated Southbridge Patcher, Updated Potential Lowest FW, Added 138 IPL Hashes + 93 KBL Hashes + 53 Torus Hashes, Fixed Bulk Dump Extractor.
 	2.4.4 (12/9/23) Added Bulk NOR Extractor, Reworked Menu (Moved Dump Tools), Updated Validations
 	2.4.3 (7/9/23) Added Motherboard Type Detection, Significantly Updated NVS Regenerator, Updated NVS Validation (CID & UNK), More Validations Updated to Suit 10.71, Fixed/Updated HTML Output
