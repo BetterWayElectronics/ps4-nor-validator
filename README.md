@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/efLcW08.png)
+![BwE](https://i.imgur.com/bDIgXHZ.png)
 
 
 ## Introduction ##
@@ -78,10 +78,6 @@
 
 ### Whats up with the image that pops up when the program starts? ###
 	Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
-
-### Your program is crashing! ###
-	It is either because of the newer protections I have added since adding licencing, or your antivirus is having an issue with the program. Contact me and provide what AV, OS and whether you had issues with older versions.
-	I have since fixed a lot of the issues found with the 1.9.0+ updates. So please confirm it is not your PC or AV before contacting me.
 	
 ### What is the HWID Generator? ###
 	You use it to generate your Hardware Identification. I then use that to create your license file. The one that pops up when you first open the program is NOT ENOUGH! 
@@ -94,8 +90,9 @@
 ### Yeah but how often do you update it? ###
 	Not that often, I always forget.
 
- ### Pro Tips ###
-	Enter an obviously wrong value if there is no 'go back' menu options. You can also likely accept Y/N prompts with 1.
+### Pro Tips ###
+	Enter an obviously wrong value or press ENTER if there is no 'go back' menu options. You can also likely accept Y/N prompts with 1.
+
 
 
 ## TLDR ##
@@ -194,19 +191,19 @@
 			https://betterwayelectronics.com.au/syscon.html
 			https://www.youtube.com/watch?v=hcmMSYmwSUQ
 		
-	7 - Patch Empty or Corrupt Blocks
+	7 - Patch Empty or Corrupt NVS (CID & UNK) Blocks (1CA, 1CD, 1C9, 1CC)
 	
 		Allows for patching of these corrupt blocks by swapping them with their backup data. Run this BEFORE patching UART or anything else.
-		Confirm the areas are corrupt/empty by running validator.
-
-  		OK Validation only means that the sections arent empty. You can still use this patcher to fix mild corruption.
-
+		Confirm the areas are corrupt/empty by running validator. Not as effective on 10xx and 11xx series PS4.
+		
+		OK Validation only means that the sections arent empty. You can still use this patcher to fix mild and unnoticeable corruptions.
+	
 		1. 1CA000-1CAFFF <-> 1CD000-1CDFFF
 		2. 1C9000-1CA610 <-> 1CC000-1CD610
 		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
-	
-	8 - Patch Southbridge (EAP & EMC)
+		
+	8 - Patch or Change Southbridge (EAP & EMC)
 	
 		Validation and patching of your entire Southbridge firmware.
 		Allows for the repair of consoles that have no power response (caused by corrupt Southbridge).
@@ -214,12 +211,16 @@
 		Allows you to replace the Southbridge chip with a cheaper model (46 to 36 for example).
 		Allows for the replacement of processor bundles that have different Southbridges (SAE/SAD Slim 21xx -> 22xx, Pro 71xx -> 72xx)
 		
-	9 - Enable/Disable/Toggle 16 System Flags
+	9 - Patch or Change WiFI/BT Firmware (Torus)
+	
+		Allows for the validating and patching of corrupt WiFi/BT Firmware and or the changing between different physical modules.
+		
+	10 - Enable/Disable/Toggle 17 System Flags
 	
 		These flags will work without the need to jailbreak. 
 	
 			1. Enable/Disable UART
-			2. Enable/Disable IDU Mode
+			2. Enable/Disable IDU Mode (CE-34706-0, CE-30022-7)
 			3. Toggle Boot Parameter Modes
 			4. Toggle Memory Budget Mode
 			5. Toggle Slow HDD Mode
@@ -233,7 +234,10 @@
 			13. Modify SAMU Boot Flag
 			14. Modify Memory Clock Speed
 			15. Swap X and O Buttons
-			16. Enable/Disable UART, Memory Test & RNG/Keystorage Test
+			16. Change/Reset Resolution
+			17. Enable/Disable UART, Memory Test & RNG/Keystorage Test
+			
+		Press ENTER to cancel and return to main menu if you do not want to make any changes!
 	
 		UART is well vetted, the others are not so use at own risk.
 		I recommend the following UART guide: https://repair.wiki/w/PS4_UART_Guide It includes drivers and programming software you may need.
@@ -247,30 +251,31 @@
 		Memory Clock Speed can be adjusted from 400mhz to 2250mhz. Underclocking may repair Loadbios and Memory errors!
 		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
-	
-	10 - Regenerate NVS (CID & UNK)
+		
+	11 - Regenerate New NVS (CID & UNK) (Repair Reset Loop/No Power/3BOD/Some UART Errors)
 	
 		Will entirely regenerate and reset your NVS while also retaining important per-console data. Will likely fix reboot loops, no power and 3 beep of death issues.
 		Can also likely repair consoles that have sceRegMgrCntlStart or partition mount errors or other obscure UART errors.
-
-		Will ask for patch options, they're only really important if you're doing an APU change/swap or if the patch failed.
-	
-	11 - Patch IDATA Keys 
+		
+		Will ask for patch options, they're only really important if you're doing an APU change/swap or if the patch failed. Yes you can do that!
+		
+	12 - Patch IDATA Keys 
 	
 		Experimental. Will corrupt/damage/alter part of your IDATA file, which stores a lot of keys. This will be developed further in the future.
+		Banned PSN? Give it a go!
 	
-	12 - Upload Only
+	13 - Upload Only
 	
 		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
 		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
 	
-	12/13 - Validate
+	13/14 - Validate
 	
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Becomes option 11 if server is offline.
 
 
 ## File Information: ##
-	File MD5: E9A1966E4386421782E567D97C1ABAAA 
+	File MD5: 1CE26FED3AD37C54AD8DF569F16FCC1A 
 	Technical Support: sendspamhere@betterwayelectronics.com.au
 
 	System Requirements:
@@ -282,11 +287,12 @@
 	BwE
 
 ## Stats: ##
-	28,951 Lines of Code
+	29,130 Lines of Code
 	3371+ Possible HTML Outputs
 	1100+ Hashes
 	
 ## Version History: ##
+	2.4.7 (19/10/23) Added WiFi/BT Patching/Changing Option, Fixed Some Sub-Menu Options (Press Enter To Bail On Patching), Other Small Forgettable Fixes/Changes
 	2.4.6 (2/10/23) Added Resolution Patch, Added IDATA Patch, Fixed EAP Patcher (Partially Corrupt Bug Fix), Added More Flags, Improved CID & UNK Validation, Updated UART Reader (Space to Clear, Enter to Quit)
 	2.4.5 (20/9/23) Updated Validations (11.00), Updated Southbridge Patcher, Updated Potential Lowest FW, Added 138 IPL Hashes + 93 KBL Hashes + 53 Torus Hashes, Fixed Bulk Dump Extractor.
 	2.4.4 (12/9/23) Added Bulk NOR Extractor, Reworked Menu (Moved Dump Tools), Updated Validations
