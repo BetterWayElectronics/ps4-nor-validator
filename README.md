@@ -194,14 +194,14 @@
 			https://www.youtube.com/watch?v=hcmMSYmwSUQ
 		
 	7 - Patch Empty or Corrupt NVS (CID & UNK) Blocks (1CA, 1CD, 1C9, 1CC)
-	
+
 		Allows for patching of these corrupt blocks by swapping them with their backup data. Run this BEFORE patching UART or anything else.
 		Confirm the areas are corrupt/empty by running validator. Not as effective on 10xx and 11xx series PS4.
-		
-		OK Validation only means that the sections arent empty. You can still use this patcher to fix mild and unnoticeable corruptions.
 	
-		1. 1CA000-1CAFFF <-> 1CD000-1CDFFF
-		2. 1C9000-1CA610 <-> 1CC000-1CD610
+		Both options detect blank blocks and mismatch blocks and repairs by swapping blocks or regenerate them entirely if needed.
+		
+		1. 1CA000-1CAFFF <-> 1CD000-1CDFFF (UNK + CID)
+		2. 1C9000-1CA610 <-> 1CC000-1CD610 (UNK + CID)
 		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 		
@@ -277,7 +277,7 @@
 
 
 ## File Information: ##
-	File MD5: 1CE26FED3AD37C54AD8DF569F16FCC1A 
+	File MD5: 42AD22367052E262B57028FC93C1A914 
 	Technical Support: sendspamhere@betterwayelectronics.com.au
 
 	System Requirements:
@@ -289,11 +289,12 @@
 	BwE
 
 ## Stats: ##
-	29,130 Lines of Code
-	3371+ Possible HTML Outputs
+	29,228 Lines of Code
+	3377+ Possible HTML Outputs
 	1100+ Hashes
 	
 ## Version History: ##
+	2.4.8 (21/10/23) Updated Validations, Changed CoreOS Header Interpretation, Updated 1CA + 1CD and 1C9 + 1CC (UNK + CID) Patching & Validation, Dump Upload Bugfix, Dump Extract & Patch Bugfixes
 	2.4.7 (19/10/23) Added WiFi/BT Patching/Changing Option, Fixed Some Sub-Menu Options (Press Enter To Bail On Patching), Other Small Forgettable Fixes/Changes
 	2.4.6 (2/10/23) Added Resolution Patch, Added IDATA Patch, Fixed EAP Patcher (Partially Corrupt Bug Fix), Added More Flags, Improved CID & UNK Validation, Updated UART Reader (Space to Clear, Enter to Quit)
 	2.4.5 (20/9/23) Updated Validations (11.00), Updated Southbridge Patcher, Updated Potential Lowest FW, Added 138 IPL Hashes + 93 KBL Hashes + 53 Torus Hashes, Fixed Bulk Dump Extractor.
