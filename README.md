@@ -137,6 +137,8 @@
 ## NOR Menu Options: ##
 
 	1 - Select Different Dump
+
+   		Return to main menu!
 	
 	2 - Extract Dump (2 Methods)
 		
