@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/uaeGg6h.png)
+![BwE](https://i.imgur.com/ovsHSbD.png)
 
 
 ## Introduction ##
@@ -115,13 +115,15 @@
 		2. Compare Offsets (ASCII)
 		3. Compare Offsets MD5
 		4. Compare Offsets Entropy
-		5. Double Offset Comparison (Data 1 & Data 2)
-		6. Double Offset Comparison (Data 1 & MD5 2)
-		7. Dynamic MD5 Calculation
-		8. Compare File Entropy & Byte Count
-		9. Compare File MD5
-		10. Sort Dumps Into Folders (SKU - FW)
-		11. Extract Dumps by Offset
+  		5. Compare Offsets Statistics
+		6. Double Offset Comparison (Data 1 & Data 2)
+		7. Double Offset Comparison (Data 1 & MD5 2)
+		8. Double Offset Comparison (MD5 1 & MD5 2)
+		9. Dynamic MD5 Calculation
+		10. Compare File Entropy & Byte Count
+		11. Compare File MD5
+		12. Sort Dumps Into Folders (SKU - FW)
+		13. Extract Dumps by Offset
 
 ## Syscon Menu Options: ##
 	
@@ -277,7 +279,7 @@
 
 
 ## File Information: ##
-	File MD5: 42AD22367052E262B57028FC93C1A914 
+	File MD5: BE71D002BB6E82E8A2C409083BDF9521 
 	Technical Support: sendspamhere@betterwayelectronics.com.au
 
 	System Requirements:
@@ -289,11 +291,13 @@
 	BwE
 
 ## Stats: ##
-	29,228 Lines of Code
-	3377+ Possible HTML Outputs
-	1100+ Hashes
+	29,618 Lines of Code
+	3384+ Possible HTML Outputs
+	1720+ Hashes
 	
 ## Version History: ##
+	2.5.0 (11/12/23) Updated Validations (Including 11.02 Specific), Added Statistics To Bulk Tools, Bug Fixes
+	2.4.9 (15/11/23) Improved Previous Firmware Detection, Updated Validations, Removed Block Matching (Not Reliable)
 	2.4.8 (21/10/23) Updated Validations, Changed CoreOS Header Interpretation, Updated 1CA + 1CD and 1C9 + 1CC (UNK + CID) Patching & Validation, Dump Upload Bugfix, Dump Extract & Patch Bugfixes
 	2.4.7 (19/10/23) Added WiFi/BT Patching/Changing Option, Fixed Some Sub-Menu Options (Press Enter To Bail On Patching), Other Small Forgettable Fixes/Changes
 	2.4.6 (2/10/23) Added Resolution Patch, Added IDATA Patch, Fixed EAP Patcher (Partially Corrupt Bug Fix), Added More Flags, Improved CID & UNK Validation, Updated UART Reader (Space to Clear, Enter to Quit)
