@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/ovsHSbD.png)
+![BwE](https://i.imgur.com/Wds9cCH.png)
 
 
 ## Introduction ##
@@ -68,6 +68,8 @@
 	You can also upgrade an existing license to a USB based one so you can use it on multiple PCS.
 	
 	Trials have been removed due to abuse! Hello Alexey <3
+
+	Don't want to buy? Try the online version instead! https://validate.betterwayelectronics.com.au/
 		
 ### Your program is a VIRUS/SPYWARE! WAAAH! ### 
 	I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
@@ -279,8 +281,8 @@
 
 
 ## File Information: ##
-	File MD5: BE71D002BB6E82E8A2C409083BDF9521 
-	Technical Support: sendspamhere@betterwayelectronics.com.au
+	File MD5: 84229BF7B2D68E264FEB2D46FD10CD50 
+	Technical Support: spamlist@betterwayelectronics.com.au
 
 	System Requirements:
 	Minimum 4 CPU Threads
@@ -291,11 +293,12 @@
 	BwE
 
 ## Stats: ##
-	29,618 Lines of Code
-	3384+ Possible HTML Outputs
-	1720+ Hashes
+	29,755 Lines of Code
+	3389+ Possible HTML Outputs
+	1750+ Hashes
 	
 ## Version History: ##
+	2.5.1 (10/1/24) Updated Southbrige Patcher, Updated Extractor, Updated Validations, UI Improvements (Can Return After Validation)
 	2.5.0 (11/12/23) Updated Validations (Including 11.02 Specific), Added Statistics To Bulk Tools, Bug Fixes
 	2.4.9 (15/11/23) Improved Previous Firmware Detection, Updated Validations, Removed Block Matching (Not Reliable)
 	2.4.8 (21/10/23) Updated Validations, Changed CoreOS Header Interpretation, Updated 1CA + 1CD and 1C9 + 1CC (UNK + CID) Patching & Validation, Dump Upload Bugfix, Dump Extract & Patch Bugfixes
@@ -525,6 +528,8 @@ If you are a commercial user, I highly suggest you buy the software here: https:
 I also sell Syscon writing hardware here: https://betterwayelectronics.com.au/#hardware
 
 Provide your HWID (via the provided application) and email it to sales(at)betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
+
+Don't want to buy? Try the online version instead! https://validate.betterwayelectronics.com.au/
 
 
 ![End](https://i.imgur.com/iauhGcv.png)
