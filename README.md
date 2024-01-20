@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/Wds9cCH.png)
+![BwE](https://i.imgur.com/ILTP6hU.png)
 
 
 ## Introduction ##
@@ -281,7 +281,7 @@
 
 
 ## File Information: ##
-	File MD5: 84229BF7B2D68E264FEB2D46FD10CD50 
+	File MD5: 9670E4C44EFBDADF4AEEA7E4F5ECB9FE 
 	Technical Support: spamlist@betterwayelectronics.com.au
 
 	System Requirements:
@@ -293,11 +293,14 @@
 	BwE
 
 ## Stats: ##
-	29,755 Lines of Code
-	3389+ Possible HTML Outputs
-	1750+ Hashes
+	29,840 Lines of Code
+	3400+ Possible HTML Outputs
+	1760+ Hashes
 	
 ## Version History: ##
+
+	2.5.3 (20/1/24) Updated Validations, Bug Fixes/Improvements
+	2.5.2 (11/1/24) Bug Fix (Repeated Validation False Positives), Changed HTML Styling, Other Small Changes/Fixes
 	2.5.1 (10/1/24) Updated Southbrige Patcher, Updated Extractor, Updated Validations, UI Improvements (Can Return After Validation)
 	2.5.0 (11/12/23) Updated Validations (Including 11.02 Specific), Added Statistics To Bulk Tools, Bug Fixes
 	2.4.9 (15/11/23) Improved Previous Firmware Detection, Updated Validations, Removed Block Matching (Not Reliable)
