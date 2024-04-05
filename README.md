@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/ILTP6hU.png)
+![BwE](https://i.imgur.com/ZeuixZd.png)
 
 
 ## Introduction ##
@@ -23,7 +23,7 @@
 
 ### What is this UART thing I hear about? ###
 	Well this is the debugging system Sony uses. I added an ability to patch your dump to enable it, both before and after validation.
-	Have a look at https://repair.wiki/w/PS4_UART_Guide for a guide on how to do this.
+	Have a look at https://betterwayelectronics.com.au/uart.html for a guide on how to do this.
 	Once you start outputting a log, the last thing it ends on is generally the error thats stopping your console from booting (or what's causing it to crash).
 	Since I don't work for Sony I cannot tell you what every single error code means, but I or others can surely help (check my discord for example).
 	My program will fix a majority of issues that UART outputs, some issues like IDPS error and SAMU Enter/Leave cannot be fixed at this time.
@@ -73,10 +73,9 @@
 		
 ### Your program is a VIRUS/SPYWARE! WAAAH! ### 
 	I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
-	This is totally fine and normal, but also very annoying and unavoidable.
+	This is totally fine and normal, but also very annoying and unavoidable. 
 	
-	My program collects user data via the HWID generator as to be able to generate your license details. The validator itself also communicates with my website to store use data which must then match the HWID data.
-	This is a totally normal and boring process that has nothing to do with spying on the end user. If you consider that me knowing that you are using my program is spying on you, then don't use my program.
+	Visit https://betterwayelectronics.com.au/virus.html for more information!
 
 ### Whats up with the image that pops up when the program starts? ###
 	Hey, I am allowed some creativity aren't I? I have no GUI so this is all I can do design wise. Older versions of my program had chiptunes, be happy they're gone!
@@ -281,7 +280,7 @@
 
 
 ## File Information: ##
-	File MD5: 9670E4C44EFBDADF4AEEA7E4F5ECB9FE 
+	File MD5: B6130E9F1BEA9F61425BA2C0800F2B65 
 	Technical Support: spamlist@betterwayelectronics.com.au
 
 	System Requirements:
@@ -298,7 +297,9 @@
 	1760+ Hashes
 	
 ## Version History: ##
-
+	2.5.6 (31/3/24) Updated Validations, Updated Southbridge Patcher to 11.50, Small Fixes
+	2.5.5 (5/3/24) Bug Fixes From Previous Improvements
+	2.5.4 (4/3/24) Added Corrupt Syscon Patcher, Updated Validations, Bug Fixes/Improvements, Improved NOR/Syscon Uploading
 	2.5.3 (20/1/24) Updated Validations, Bug Fixes/Improvements
 	2.5.2 (11/1/24) Bug Fix (Repeated Validation False Positives), Changed HTML Styling, Other Small Changes/Fixes
 	2.5.1 (10/1/24) Updated Southbrige Patcher, Updated Extractor, Updated Validations, UI Improvements (Can Return After Validation)
