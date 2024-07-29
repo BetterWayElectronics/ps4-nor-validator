@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/fymXruT.png)
+![BwE](https://i.imgur.com/STQcTCv.png)
 
 
 ## Introduction ##
@@ -280,7 +280,7 @@
 
 
 ## File Information: ##
-	File MD5: B81C478D83076DFFB1474F4DAA41424E 
+	File MD5: F1C52D056092C51ED1ECA4F2500A049A 
 	Technical Support: spamlist@betterwayelectronics.com.au
 
 	System Requirements:
@@ -292,11 +292,14 @@
 	BwE
 
 ## Stats: ##
-	30,600 Lines of Code
+	31,560 Lines of Code
 	3400+ Possible HTML Outputs
-	3000+ Hashes
+	3100+ Hashes
 	
 ## Version History: ##
+	2.6.2 (29/7/24) Updated Torus (WiFi/BT) Patches, Bug Fix in Southbridge Patching, Other Bug Fixes
+	2.6.1 (28/7/24) Validation Updates (Including 11.52 Specific), Updated Southbridge Patcher to 11.52, Other Internal Code Updates (Expect Bugs - Maybe...)
+	2.6.0 (14/4/24) More Chinese Language Fixes
 	2.5.9 (12/4/24) Better Chinese Language Support, HWID Bug Fix
 	2.5.8 (11/4/24) USB License Bug Fix
 	2.5.7 (10/4/24) Updated Validations, Updated Upload Feature, Updated Older Code, Small Changes/Fixes
