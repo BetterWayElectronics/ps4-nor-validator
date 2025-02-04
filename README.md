@@ -1,6 +1,6 @@
 # Better Way Electronics - PS4 NOR Validator & Syscon Patcher
  
-![BwE](https://i.imgur.com/R8XrR7U.png)
+![BwE](https://webtools.bwe.dev/img/ps4.png)
 
 
 ## Introduction ##
@@ -94,7 +94,8 @@
 ### Pro Tips ###
 	Enter an obviously wrong value or press ENTER if there is no 'go back' menu options. You can also likely accept Y/N prompts with 1.
 
-
+### Do you have any guideS? ###
+	https://betterwayelectronics.com.au/guide
 
 ## TLDR ##
 * TLDR; Will this fix my BLOD? Well yes and no, if there are sections that are corrupt it is possible to patch it with valid data from another PS4 (or from a different section) - but NOT perconsole data (maybe)!
@@ -140,8 +141,8 @@
 ## NOR Menu Options: ##
 
 	1 - Select Different Dump
-
-   		Return to main menu!
+	
+		Return to Main Menu!
 	
 	2 - Extract Dump (2 Methods)
 		
@@ -153,24 +154,28 @@
 	
 			Extracting file sections pursuant to Sony's file blocks.
 	
-	3 - Patch (/Patches/)
-	
-		Designed to load .bin patches from the /patches/ directory. It will interpret and auto locate patch offsets if they've been extracted by my program. If not it will ask for a start address.
-	
-	4 - Patch Corrupt CoreOS (SU-30631-3 Error)
+	3 - Patch Corrupt CoreOS (SU-30631-3 Error)
 	
 		Basically an automated version of what Andrew Paul suggests (https://youtu.be/35DFGCim_WY). It will scan the CoreOS and patch the corrupt sections within about 1 second.
 		If you have this error (or SU-37553-3) but my program tells you that there is no corruption, you need to replace the actual NOR IC itself and reflash it.
 		Another option is to wipe the flash entirely with FF or 00 and re-read it and THEN reflash your original valid dump. Do not just use the default wipe+flash option in your software.
 		
-	5 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error) (SU-30645-8 Potentially)
-		
-		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots. If patch fails, there is a reverse patch option which copies the data the other way around.
+	4 - Patch Corrupt EAP Key (Panic EAP Key Not Available Error) (SU-30645-8 Potentially)
+	
 		Repairs BLOD related to EAP Key panic.
+		
+		Compare both EAP keys against eachother, if one is corrupt or blank it will copy it over. If both are blank it will generate a new one for both slots. 
+		If patch fails, there is a reverse patch option which copies the data the other way around.
+		
+		If both EAP keys are corrupt/missing or you only have one EAP key you will get 3 methods of repair (will auto detect appropriate key length).
+		
+		1. Generates Entire Block
+		2. Generates Key Only 
+		3. Generates Entire Block + HDD Flags
 		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 		
-	6 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
+	5 - Patch & Switch CoreOS + Southbridge Slots (LoadBios & Downgrade)
 	
 		Allows for switching of the CoreOS and or Southbridge slots to aid in either downgrading or repairing LoadBios/No Beep errors. Must not be used without first backing up Syscon chip.
 		Header patches are provided but you can also insert your own. This is because some patches may not work, you may need to apply multiple until it works.
@@ -196,8 +201,8 @@
 			https://betterwayelectronics.com.au/syscon.html
 			https://www.youtube.com/watch?v=hcmMSYmwSUQ
 		
-	7 - Patch Empty or Corrupt NVS (CID & UNK) Blocks (1CA, 1CD, 1C9, 1CC)
-
+	6 - Patch Empty or Corrupt NVS (CID & UNK) Blocks (1CA, 1CD, 1C9, 1CC)
+	
 		Allows for patching of these corrupt blocks by swapping them with their backup data. Run this BEFORE patching UART or anything else.
 		Confirm the areas are corrupt/empty by running validator. Not as effective on 10xx and 11xx series PS4.
 	
@@ -208,7 +213,7 @@
 		
 		Guide: https://www.youtube.com/watch?v=noS8wfZA99g 
 		
-	8 - Patch or Change Southbridge (EAP & EMC)
+	7 - Patch or Change Southbridge (EAP & EMC)
 	
 		Validation and patching of your entire Southbridge firmware.
 		Allows for the repair of consoles that have no power response (caused by corrupt Southbridge).
@@ -216,11 +221,11 @@
 		Allows you to replace the Southbridge chip with a cheaper model (46 to 36 for example).
 		Allows for the replacement of processor bundles that have different Southbridges (SAE/SAD Slim 21xx -> 22xx, Pro 71xx -> 72xx)
 		
-	9 - Patch or Change WiFI/BT Firmware (Torus)
+	8 - Patch or Change WiFI/BT Firmware (Torus)
 	
 		Allows for the validating and patching of corrupt WiFi/BT Firmware and or the changing between different physical modules.
 		
-	10 - Enable/Disable/Toggle 17 System Flags
+	9 - Enable/Disable/Toggle 17 System Flags
 	
 		These flags will work without the need to jailbreak. 
 	
@@ -257,30 +262,29 @@
 		
 		Info on IDU Mode: https://youtube.com/watch?v=HlpjWLbL67Y
 		
-	11 - Regenerate New NVS (CID & UNK) (Repair Reset Loop/No Power/3BOD/Some UART Errors)
+	10 - Regenerate New NVS (CID & UNK) (Repair Reset Loop/No Power/3BOD/Some UART Errors)
 	
 		Will entirely regenerate and reset your NVS while also retaining important per-console data. Will likely fix reboot loops, no power and 3 beep of death issues.
 		Can also likely repair consoles that have sceRegMgrCntlStart or partition mount errors or other obscure UART errors.
 		
 		Will ask for patch options, they're only really important if you're doing an APU change/swap or if the patch failed. Yes you can do that!
 		
-	12 - Patch IDATA Keys 
+	11 - Patch IDATA Keys 
 	
 		Experimental. Will corrupt/damage/alter part of your IDATA file, which stores a lot of keys. This will be developed further in the future.
-		Banned PSN? Give it a go!
+		Banned PSN? Give it a go! Idps Error? Give it a go!
 	
-	13 - Upload Only
+	12 - Read Error Codes & Fault Statistics
 	
-		If this appears, you have a good connection to my server and you can upload without validating - good if you forgot to do it earlier. Does not appear if offline.
-		Can also upload your UART output if you saved it as a .txt file and stored it with your NOR dump. I highly recommend doing this for BLOD consoles!
-	
-	13/14 - Validate
+		Error Codes relating to hardware issues that prevented the console from booting will be read and parsed. Also has statistics on these errors.
+		
+	13 - Validate
 	
 		Will scan the entire dump from start to finish and produce a readable validation output in HTML format. Becomes option 11 if server is offline.
 
 
 ## File Information: ##
-	File MD5: C1EDC5043D4049B1991B15B69AED4E5C 
+	File MD5: 805FC91E9DD783E7EEB518ED0967557E 
 	Technical Support: Whatsapp
 
 	System Requirements:
@@ -297,6 +301,24 @@
 	3100+ Hashes
 	
 ## Version History: ##
+	> Loader:
+
+	1.1.0 (3/2/25) Bug Fixes, Upload Fixes, Refreshing Code Compared To Other Web Uploaders, Still No Dual NOR Upload - Soon!
+	1.0.9 (22/1/25) Bug Fixes With Selecting Files (Dual NOR Upload In Next Version)
+	1.0.8 (14/10/24) Bug Fixes Again
+	1.0.7 (11/10/24) Bug Fixes
+	1.0.6 (11/10/24) Incompatibility Transparency 
+	1.0.5 (10/10/24) Better Error Handling, Internal Changes
+	1.0.4 (25/9/24) Upload NOR & Syscon Together, x4 Upload Speed, Bug Fixes
+	1.0.3 (24/9/24) Better Handling Of Corrupt Files
+	1.0.2 (23/9/24) Fixed Bugs In WebTools
+	1.0.1 (23/9/24) Fixed Bugs In WebTools
+	
+	> Main App:
+	
+	2.6.6 (29/1/25) Updated Error Code Reading
+	2.6.5 (28/1/25) Added Error Code Reading
+	2.6.4 (23/9/24) Updated CoreOS Patching, Updated EAP Patching
 	2.6.3 (2/8/24) Internal Improvements, Better Non-UTF8 OS Support
 	2.6.2 (29/7/24) Updated Torus (WiFi/BT) Patches, Bug Fix in Southbridge Patching, Other Bug Fixes
 	2.6.1 (28/7/24) Validation Updates (Including 11.52 Specific), Updated Southbridge Patcher to 11.52, Other Internal Code Updates (Expect Bugs - Maybe...)
@@ -540,7 +562,7 @@ I also sell Syscon writing hardware here: https://betterwayelectronics.com.au/#h
 
 Provide your HWID (via the provided application) and email it to sales(at)betterwayelectronics.com.au along with your proof of purchase to obtain your license key.
 
-Don't want to buy? Try the online version instead! https://validate.betterwayelectronics.com.au/
+Don't want to buy? Try the online version instead! https://webtools.bwe.dev/
 
 
 ![End](https://i.imgur.com/iauhGcv.png)
