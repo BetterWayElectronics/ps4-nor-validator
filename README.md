@@ -69,7 +69,7 @@
 	
 	Trials have been removed due to abuse! Hello Alexey <3
 
-	Don't want to buy? Try the online version instead! https://validate.betterwayelectronics.com.au/
+	Don't want to buy? Try the online version instead! https://webtools.bwe.dev/
 		
 ### Your program is a VIRUS/SPYWARE! WAAAH! ### 
 	I protect my programs with Themida. The problem with this is that heuristically some AV software see it as a threat.
@@ -530,6 +530,7 @@ https://www.buymeacoffee.com/BwE
 - https://github.com/BetterWayElectronics/
 - https://twitter.com/BwE_Dev
 - http://www.ps5repair.com.au/
+- https://webtools.bwe.dev/
 
 ## Purchase Link ##
 
