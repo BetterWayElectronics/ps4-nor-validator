@@ -104,29 +104,6 @@
 * TLDR; Will this fix my loadBios -8 Error? Yeah with a patched Syscon (Or reduced memory clk)
 * TLDR; OK = OK, Warning = Weird but MIGHT be okay, DANGER = Bad
 
-## Bulk NOR Tools Menu: ##
-
-	Launches the comparison app, used for the bulk diagnosis and comparison of dumps (Put multiple .bin files in the same directory). Features multiple output and filter options.
-	
-		1. Compare Specific Version Only
-		2. Compare Specific SKU Only
-		3. Compare Specific Version & SKU Only
-		4. Compare All Dumps
-
-		1. Compare Offsets (Hex)
-		2. Compare Offsets (ASCII)
-		3. Compare Offsets MD5
-		4. Compare Offsets Entropy
-  		5. Compare Offsets Statistics
-		6. Double Offset Comparison (Data 1 & Data 2)
-		7. Double Offset Comparison (Data 1 & MD5 2)
-		8. Double Offset Comparison (MD5 1 & MD5 2)
-		9. Dynamic MD5 Calculation
-		10. Compare File Entropy & Byte Count
-		11. Compare File MD5
-		12. Sort Dumps Into Folders (SKU - FW)
-		13. Extract Dumps by Offset
-
 ## Syscon Menu Options: ##
 	
 	Syscon Menu:
